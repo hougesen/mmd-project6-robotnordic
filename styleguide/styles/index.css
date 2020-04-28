@@ -5,34 +5,88 @@
   font-family: "Titillium Web", sans-serif;
 }
 
+.container {
+  background-color: #ffffff;
+  display: flex;
+  height: 100vh;
+}
+.fixed {
+  background-color: #212529;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 5px solid #f15a22;
+}
+.fixed li {
+  list-style: none;
+  padding: 25px;
+}
+.fixed a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 42px;
+  transition: 300ms;
+}
+.fixed a:hover {
+  color: #f15a22;
+}
+.fixed img {
+  height: 96px;
+  width: 96px;
+}
+.fixed li a.active {
+  color: #f15a22;
+}
 
-
-.styleWrapper {
-    display: flex;
-    justify-content: space-around;
-    width: 150px;
-    min-height: 100vh;
-    background-color: #212529;
-    z-index: 3;
-  }
-
-  .logo  {
-      height: 72px;
-      width: 72px;
-  }
-  
-  .styleNav{
-    display: flex;
-    justify-content: space-around;
-    flex-direction:column; 
-    list-style: none;
-  }
-  .styleNav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-  }
-  .styleNav a:hover {
-    color: #F15A22;
-  }
+.fixed li a:hover:not(.active) {
+  color: #f15a22;
+}
+.flex-item {
+  margin-top: 120px;
+  padding: 25px;
+  background-color: #ffffff;
+  flex-grow: 1;
+}
+.flex-itemGrid {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-gap: 10px;
+}
+.flexTxtDiv {
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexdiv1 {
+  height: 100px;
+  width: 100px;
+  background-color: #f15a22;
+  border: 2px solid black;
+}
+.flexdiv2 {
+  height: 100px;
+  width: 100px;
+  background-color: #212529;
+  border: 2px solid black;
+}
+.flexdiv3 {
+  height: 100px;
+  width: 100px;
+  background-color: #081225;
+  border: 2px solid black;
+}
+.flexdiv4 {
+  height: 100px;
+  width: 100px;
+  background-color: #eeeeee;
+  border: 2px solid black;
+}
+.flexdiv5 {
+  height: 100px;
+  width: 100px;
+  background-color: #ffffff;
+  border: 2px solid black;
+}
