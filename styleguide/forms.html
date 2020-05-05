@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Styleguide</title>
+    <script>
+        function isNumberKey(evt){
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }    
+        </script>
+        
+  </head>
+  <body>
+    <div class="container">
+      <div class="fixed">
+        <a href="index.html"><img src="./images/RN.svg" alt=""></a>
+        <ul>
+          <li><a href="index.html" class="active">Intro</a></li>
+          <li><a href="farver.html">Farver</a></li>
+          <li><a href="knapper.html">Knapper</a></li>
+          <li><a href="forms.html" class="active">Forms</a></li>
+          <li><a href="typografi.html">Typografi</a></li>
+        </ul>
+      </div>
+      <div class="flex-item">
+        <div class="flex-itemGrid">
+                <div>
+                  <label for="12">hello</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+                </div>
+            
+                <div>
+                  <label for="Paller">Paller</label> 
+                  <select id="paller" name="paller">
+                    <option value="Palle 1">Palle 1</option>
+                    <option value="Palle 2">Palle 2</option>
+                    <option value="Palle 3">Palle 3</option>
+                    <option value="Palle 4">Palle 4</option>
+                    <option value="Palle 5">Palle 5</option>
+                    <option value="Palle 6">Palle 6</option>
+                    <option value="Palle 7">Palle 7</option>
+                    <option value="Palle 8">Palle 8</option>
+                    <option value="Palle 9">Palle 9</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="myChoice1">Center load<br />
+                      <input type="radio" id="Center load" name="myChoice" value="1" />
+                    </label>
+                </div>
+                <div>
+                    <label for="myChoice1">Bind lag<br />
+                        <input type="radio" id="Bind lag" name="myChoice" value="1" />
+                      </label>
+                  </div>
+                  <div>
+                    <label for="Antal produkter">Antal produkter</label> 
+                    <input type="number" name="someid" onkeypress="return isNumberKey(event)" /> 
+                  </div>
+                
+        </div>
+      </div>
+  </body>
+</html>
