@@ -5,15 +5,15 @@
      line-height: 1.6;
      margin: 0;
      padding: 0;
+     font-family: 'Titillium Web',
+         sans-serif;
  }
 
-
- /*loginside start*/
+ /*Loginside start*/
  .login {
      margin-top: 5rem;
      text-align: center;
  }
-
 
  .loginLogo {
      width: 100%;
@@ -45,4 +45,117 @@
      color: white;
  }
 
- /*loginside slut*/
+ /*Loginside slut*/
+
+ /*Navbar start*/
+ .navbar {
+     top: 0;
+     position: fixed;
+     width: 100%;
+     font-size: 18px;
+     background-color: #212529;
+     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+     padding-bottom: 10px;
+ }
+
+ .main-nav {
+     list-style-type: none;
+     display: none;
+ }
+
+ .nav-links,
+ .logo {
+     text-decoration: none;
+     color: #EEEEEF;
+ }
+
+ .main-nav li {
+     text-align: center;
+     margin: 15px auto;
+ }
+
+ .logo {
+     text-decoration: none;
+     display: inline-block;
+     font-size: 35px;
+     margin-top: 10px;
+     margin-left: 20px;
+ }
+
+ .nav-links {
+     font-size: 20px;
+     font-family: 'Rubik',
+         sans-serif;
+ }
+
+ .navbar-toggle {
+     vertical-align: middle;
+     position: absolute;
+     top: 15px;
+     right: 20px;
+     cursor: pointer;
+     color: #1b2021;
+     font-size: 24px;
+ }
+
+ #chkToggle {
+     display: none;
+ }
+
+ #chkToggle:checked+ul.main-nav {
+     display: block;
+ }
+
+ li a:hover {
+     text-decoration: none;
+     color: #1b2021;
+ }
+
+ .fa {
+     color: white;
+ }
+
+ @media screen and (min-width: 1000px) {
+     .navbar {
+         display: flex;
+         justify-content: space-between;
+         padding-bottom: 0;
+         height: 70px;
+         align-items: center;
+     }
+
+     #chkToggle:checked+ul.main-nav {
+         display: flex;
+     }
+
+     .main-nav {
+         display: flex;
+         margin-right: 30px;
+         flex-direction: row;
+         justify-content: flex-end;
+     }
+
+     .main-nav li {
+         margin: 0;
+     }
+
+     .nav-links {
+         margin-left: 40px;
+
+     }
+
+     .logo {
+         margin-top: 0;
+     }
+
+     .navbar-toggle {
+         display: none;
+     }
+
+     .nav-links:hover {
+         color: white;
+         text-decoration: none;
+     }
+ }
+
+ /*Navbar slut*/
