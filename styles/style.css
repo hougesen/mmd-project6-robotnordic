@@ -1,0 +1,48 @@
+ @charset "UTF-8";
+
+ * {
+     box-sizing: border-box;
+     line-height: 1.6;
+     margin: 0;
+     padding: 0;
+ }
+
+
+ /*loginside start*/
+ .login {
+     margin-top: 5rem;
+     text-align: center;
+ }
+
+
+ .loginLogo {
+     width: 100%;
+     height: auto;
+ }
+
+ .loginInput input[type=text],
+ input[type=password] {
+     width: 20%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+ }
+
+ .loginInput button {
+     background-color: grey;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 10%;
+ }
+
+ .loginInput a {
+     text-decoration: none;
+     color: white;
+ }
+
+ /*loginside slut*/
