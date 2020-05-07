@@ -33,82 +33,161 @@
             </li>
         </ul>
     </nav>
+
+
     <section>
-        <div class="breadcrumb">
-            <div>
-                <h2 style="text-align: right; margin-right: 1rem;">Palle oplysninger</h2>
-                <hr class="breadcrumbHrLeft">
-            </div>
-            <div>
-                <h2 class="breadcrumbNotActive">Produkter</h2>
-                <hr class="breadcrumbHrMid">
-
-            </div>
-            <div>
-                <h2 style="text-align: left;  margin-left: 1rem;" class="breadcrumbNotActive">Godkend</h2>
-                <hr class="breadcrumbHrRight">
-
-            </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openProduktInfo(event, 'palleoplysninger')" id="defaultOpen">Palle
+                oplysninger</button>
+            <button class="tablinks" onclick="openProduktInfo(event, 'produkter')">Produkter</button>
+            <button class="tablinks" onclick="openProduktInfo(event, 'godkend')">Godkend</button>
         </div>
-    </section>
 
-    <section>
-        <h1>Palle oplysninger</h1>
-        <a href="#" onClick="autoFill();">Europalle</a>
+        <div id="palleoplysninger" class="tabcontent">
+            <h1>Palle oplysninger</h1>
+            <a href="#" onClick="autoFill();">Europalle</a>
 
-        <form action="">
+            <form action="">
 
-            <label for="patternName">Mønsternavn </label>
-            <input type="text" name="patternName" id="patternName">
-            <br>
-            <label for="palletype">Palle-type</label>
-            <select name="" id="palletype">
-                <option value="" disabled selected>Vælg palle type</option>
-                <option value="europalle" onClick="autoFill();">Euro-palle</option>
-                <option value="palletype2" onClick="autoFill();">palletype2</option>
+                <label for="patternName">Mønsternavn </label>
+                <input type="text" name="patternName" id="patternName">
+                <br>
+                <label for="palletype">Palle-type</label>
+                <select name="" id="palletype">
+                    <option value="" disabled selected>Vælg palle type</option>
+                    <option value="europalle" onClick="autoFill();">Euro-palle</option>
+                    <option value="palletype2" onClick="autoFill();">palletype2</option>
 
-            </select>
-            <br>
+                </select>
+                <br>
 
-            <label for=" fyldningsHeight">Fyldnings højde </label>
-            <input type="text" name="fyldningsHeight" id="fyldningsHeight">
-            <br>
+                <label for=" fyldningsHeight">Fyldnings højde </label>
+                <input type="number" name="fyldningsHeight" id="fyldningsHeight">
+                <br>
 
-            <label for="fyldningsProcent">Fyldnings procent </label>
-            <input type="text" name="fyldningsProcent" id="fyldningsProcent">
-            <br>
+                <label for="fyldningsProcent">Fyldnings procent </label>
+                <input type="number" name="fyldningsProcent" id="fyldningsProcent">
+                <br>
 
-            <label for="tilladtUdhæng">Tilladt udhæng</label>
-            <input type="text" name="tilladtUdhæng" id="tilladtUdhæng">
-            <br>
+                <label for="tilladtUdhæng">Tilladt udhæng</label>
+                <input type="number" name="tilladtUdhæng" id="tilladtUdhæng">
+                <br>
 
-            <label for="palleBredde">Palle bredde</label>
-            <input type="text" name="palleBredde" id="palleBredde">
-            <br>
+                <label for="palleBredde">Palle bredde</label>
+                <input type="number" name="palleBredde" id="palleBredde">
+                <br>
 
-            <label for="palleHeight">Palle højde</label>
-            <input type="text" name="palleHeight" id="palleHeight">
-            <br>
+                <label for="palleHeight">Palle højde</label>
+                <input type="number" name="palleHeight" id="palleHeight">
+                <br>
 
-            <label for="palleLength">Palle længde</label>
-            <input type="text" name="palleLength" id="palleLength">
-            <br>
+                <label for="palleLength">Palle længde</label>
+                <input type="number" name="palleLength" id="palleLength">
+                <br>
 
-            <label for="senorMaxPosMar">Senor ma</label>
-            <input type="text" name="senorMaxPosMar" id="senorMaxPosMar">
-            <br>
+                <label for="senorMaxPosMar">Senor max positive margin</label>
+                <input type="number" name="senorMaxPosMar" id="senorMaxPosMar">
+                <br>
 
-            <label for="senorMaxNegMar">senorMaxNegMar</label>
-            <input type="text" name="senorMaxNegMar" id="senorMaxNegMar">
-            <br>
+                <label for="senorMaxNegMar">Senor max negative margin</label>
+                <input type="number" name="senorMaxNegMar" id="senorMaxNegMar">
+                <br>
 
-            <label for="udregn">Udregn i</label>
-            <select name="udregn" id="udregn">
-                <option value="mm">mm</option>
-                <option value="procent">procent</option>
-            </select>
+                <label for="udregn">Udregn i</label>
+                <select name="udregn" id="udregn">
+                    <option value="mm">mm</option>
+                    <option value="procent">procent</option>
+                </select>
+                <br>
 
-        </form>
+                <input type="checkbox" name="" id="blandedeLag">
+                <label for="blandedeLag">Blandede lag</label>
+                <br>
+
+                <input type="checkbox" name="" id="spredPakker">
+                <label for="spredPakker">Spred pakker</label>
+                <br>
+
+                <input type="checkbox" name="" id="kunFuldeLag">
+                <label for="kunFuldeLag">Kun fulde lag</label>
+                <br>
+
+                <input type="checkbox" name="" id="centerLoad">
+                <label for="centerLoad">Center load</label>
+                <br>
+
+                <input type="checkbox" name="" id="pakkerVedKant">
+                <label for="pakkerVedKant">Sæt pakker ved kant</label>
+                <br>
+
+                <input type="checkbox" name="" id="bindLag">
+                <label for="bindLag">Bind lag</label>
+                <br>
+
+            </form>
+            <button class="tablinks" onclick="openProduktInfo(event, 'produkter')">Videre</button>
+
+        </div>
+
+        <div id="produkter" class="tabcontent">
+            <h1>Produkt info</h1>
+
+            <form action="">
+                <label for="produktNavn">Produkt navn</label>
+                <input type="text" name="produktNavn" id="produktNavn">
+                <br>
+
+                <label for="antalProdukter">Antal produkter</label>
+                <input type="number" name="antalProdukter" id="antalProdukter">
+                <br>
+
+                <label for="pakkeFrom">Pakke form</label>
+                <select name="pakkeFrom" id="pakkeFrom">
+                    <option value="kasse">Kasse</option>
+                    <option value="rund">Rund</option>
+                </select>
+                <br>
+                <label for="pakkeBredde">Pakke bredde</label>
+                <input type="number" name="pakkeBredde" id="pakkeBredde">
+                <br>
+
+                <label for="pakkeHøjde">Pakke højde</label>
+                <input type="number" name="pakkeHøjde" id="pakkeHøjde">
+                <br>
+
+                <label for="pakkeLængde">Pakke længde</label>
+                <input type="number" name="pakkeLængde" id="pakkeLængde">
+                <br>
+
+                <label for="vægt">Vægt</label>
+                <input type="number" name="vægt" id="vægt">
+                <br>
+
+                <label for="sideUd">Side ud</label>
+                <input type="text" name="sideUd" id="sideUd">
+                <br>
+
+                <input type="checkbox" name="" id="kunTopPlacering">
+                <label for="kunTopPlacering">Kun top placering</label>
+                <br>
+
+                <input type="checkbox" name="" id="kunBundPlacering">
+                <label for="kunBundPlacering">Kun bund placering</label>
+                <br>
+
+                <input type="checkbox" name="" id="forsigtig">
+                <label for="forsigtig">Forsigtig</label>
+                <br>
+
+            </form>
+            <button class="tablinks" onclick="openProduktInfo(event, 'palleoplysninger')">Tilbage</button>
+            <button class="tablinks" onclick="openProduktInfo(event, 'godkend')">Videre</button>
+        </div>
+
+        <div id="godkend" class="tabcontent">
+            <button class="tablinks" onclick="openProduktInfo(event, 'produkter')">Tilbage</button>
+            <button class="tablinks" onclick="openProduktInfo(event, 'godkend')">Godkend</button>
+        </div>
     </section>
 
 

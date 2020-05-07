@@ -7,6 +7,19 @@ function autoFill() {
     document.getElementById("palleLength").value = "1200";
     document.getElementById("senorMaxPosMar").value = "0";
     document.getElementById("senorMaxNegMar").value = "0";
-
-
 }
+
+function openProduktInfo(evt, produktInfo) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(produktInfo).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();

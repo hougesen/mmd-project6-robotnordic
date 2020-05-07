@@ -125,10 +125,7 @@
  }
 
 
- .breadcrumb h1 {
-     text-align: center;
 
- }
 
  .breadcrumbHrLeft {
      text-align: right;
@@ -167,6 +164,37 @@
 
  .breadcrumbNotActive {
      color: grey;
+ }
+
+ .tab {
+     overflow: hidden;
+     display: none;
+ }
+
+ .tab button {
+     text-align: center;
+     background-color: inherit;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     transition: 0.3s;
+     font-size: 17px;
+ }
+
+ .tab button.active {
+     text-decoration: underline;
+ }
+
+
+ .tabcontent {
+     text-align-last: center;
+     width: 60%;
+     display: none;
+     padding: 6px 12px;
+     animation: fadeEffect 1s;
+     margin: auto;
+     font-weight: 300;
  }
 
  /*Nyt layout slut*/
