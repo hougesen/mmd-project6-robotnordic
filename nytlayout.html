@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyt Layout</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="scrips/js.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+            <i class="fa fa-bars fa-fw"></i>
+        </label>
+        <a href="dashboard.html">
+            <img src="assets\images\rnlogo1.png" alt=""> </a>
+        <input type="checkbox" id="chkToggle"></input>
+        <ul class="main-nav" id="js-menu">
+
+            <li>
+                <a href="dashboard.html" class="nav-links">DASHBOARD</a>
+            </li>
+            <li>
+                <a href="nytlayout.html" class="nav-links">NYT LAYOUT</a>
+            </li>
+            <li>
+                <a href="tutorial.html" class="nav-links">TUTORIAL</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="breadcrumb">
+            <div>
+                <h2 style="text-align: right; margin-right: 1rem;">Palle oplysninger</h2>
+                <hr class="breadcrumbHrLeft">
+            </div>
+            <div>
+                <h2 class="breadcrumbNotActive">Produkter</h2>
+                <hr class="breadcrumbHrMid">
+
+            </div>
+            <div>
+                <h2 style="text-align: left;  margin-left: 1rem;" class="breadcrumbNotActive">Godkend</h2>
+                <hr class="breadcrumbHrRight">
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Palle oplysninger</h1>
+        <a href="#" onClick="autoFill();">Europalle</a>
+
+        <form action="">
+
+            <label for="patternName">Mønsternavn </label>
+            <input type="text" name="patternName" id="patternName">
+            <br>
+            <label for="palletype">Palle-type</label>
+            <select name="" id="palletype">
+                <option value="" disabled selected>Vælg palle type</option>
+                <option value="europalle" onClick="autoFill();">Euro-palle</option>
+                <option value="palletype2" onClick="autoFill();">palletype2</option>
+
+            </select>
+            <br>
+
+            <label for=" fyldningsHeight">Fyldnings højde </label>
+            <input type="text" name="fyldningsHeight" id="fyldningsHeight">
+            <br>
+
+            <label for="fyldningsProcent">Fyldnings procent </label>
+            <input type="text" name="fyldningsProcent" id="fyldningsProcent">
+            <br>
+
+            <label for="tilladtUdhæng">Tilladt udhæng</label>
+            <input type="text" name="tilladtUdhæng" id="tilladtUdhæng">
+            <br>
+
+            <label for="palleBredde">Palle bredde</label>
+            <input type="text" name="palleBredde" id="palleBredde">
+            <br>
+
+            <label for="palleHeight">Palle højde</label>
+            <input type="text" name="palleHeight" id="palleHeight">
+            <br>
+
+            <label for="palleLength">Palle længde</label>
+            <input type="text" name="palleLength" id="palleLength">
+            <br>
+
+            <label for="senorMaxPosMar">Senor ma</label>
+            <input type="text" name="senorMaxPosMar" id="senorMaxPosMar">
+            <br>
+
+            <label for="senorMaxNegMar">senorMaxNegMar</label>
+            <input type="text" name="senorMaxNegMar" id="senorMaxNegMar">
+            <br>
+
+            <label for="udregn">Udregn i</label>
+            <select name="udregn" id="udregn">
+                <option value="mm">mm</option>
+                <option value="procent">procent</option>
+            </select>
+
+        </form>
+    </section>
+
+
+</body>
+
+</html>
