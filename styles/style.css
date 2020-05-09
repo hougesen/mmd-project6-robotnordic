@@ -1,246 +1,413 @@
- @charset "UTF-8";
+@charset "UTF-8";
 
- * {
-     box-sizing: border-box;
-     line-height: 1.6;
-     margin: 0;
-     padding: 0;
-     font-family: 'Titillium Web',
-         sans-serif;
- }
+* {
+  box-sizing: border-box;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
 
- /*Loginside*/
- .login {
-     margin-top: 5rem;
-     text-align: center;
- }
+/*Loginside*/
+.login {
+  margin-top: 5rem;
+  text-align: center;
+}
 
- .loginLogo {
-     width: 100%;
-     height: auto;
- }
+.loginLogo {
+  width: 100%;
+  height: auto;
+}
 
- .loginInput input[type=text],
- input[type=password] {
-     width: 20%;
-     padding: 12px 20px;
-     margin: 8px 0;
-     display: inline-block;
-     border: 1px solid #ccc;
-     box-sizing: border-box;
- }
+.loginInput input[type="text"],
+input[type="password"] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
- .loginInput button {
-     background-color: #F15A22;
-     color: white;
-     padding: 14px 20px;
-     margin: 8px 0;
-     border: none;
-     cursor: pointer;
-     width: 10%;
- }
+.loginInput button {
+  background-color: #f15a22;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
 
- .loginInput a {
-     text-decoration: none;
-     color: white;
- }
+.loginInput a {
+  text-decoration: none;
+  color: white;
+}
 
- /*Loginside slut*/
+/*Loginside slut*/
 
- /*Navbar*/
- .navbar {
-     top: 0;
-     width: 100%;
-     font-size: 18px;
-     background-color: #212529;
-     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-     padding-bottom: 10px;
- }
+/*Navbar*/
+.navbar {
+  top: 0;
+  width: 100%;
+  font-size: 18px;
+  background-color: #212529;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  padding-bottom: 10px;
+}
 
- .main-nav {
-     list-style-type: none;
-     display: none;
- }
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
 
- .nav-links,
- .logo {
-     text-decoration: none;
-     color: #EEEEEF;
- }
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: #eeeeef;
+}
 
- .main-nav li {
-     text-align: center;
-     margin: 15px auto;
- }
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
 
- .logo {
-     text-decoration: none;
-     display: inline-block;
-     font-size: 35px;
-     margin-top: 10px;
-     margin-left: 20px;
- }
+.logo {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
 
- .nav-links {
-     font-size: 20px;
-     font-family: 'Rubik',
-         sans-serif;
- }
+.nav-links {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+}
 
- .navbar-toggle {
-     vertical-align: middle;
-     position: absolute;
-     top: 15px;
-     right: 20px;
-     cursor: pointer;
-     color: #1b2021;
-     font-size: 24px;
- }
+.navbar-toggle {
+  vertical-align: middle;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  color: #1b2021;
+  font-size: 24px;
+}
 
- #chkToggle {
-     display: none;
- }
+#chkToggle {
+  display: none;
+}
 
- #chkToggle:checked+ul.main-nav {
-     display: block;
- }
+#chkToggle:checked + ul.main-nav {
+  display: block;
+}
 
- li a:hover {
-     text-decoration: none;
-     color: #1b2021;
- }
+li a:hover {
+  text-decoration: none;
+  color: #1b2021;
+}
 
- .fa {
-     color: white;
- }
+.fa {
+  color: white;
+}
 
- /*Navbar slut*/
+/*Navbar slut*/
 
+/*Nyt layout*/
+.breadcrumb {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
+.breadcrumbHrLeft {
+  text-align: right;
+  margin: 0 0 0 auto;
+  width: 50%;
+  color: #f15a22;
+  background: #f15a22;
+  height: 10px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
 
- /*Nyt layout*/
- .breadcrumb {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
- }
+.breadcrumbHrMid {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  color: #f15a22;
+  background: #f15a22;
+  height: 10px;
+  border: none;
+}
 
+.breadcrumbHrRight {
+  text-align: left;
+  margin: 0 auto 0 0;
+  width: 50%;
+  color: #f15a22;
+  background: #f15a22;
+  height: 10px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
+.breadcrumbNotActive {
+  color: grey;
+}
 
+.tab {
+  overflow: hidden;
+  display: none;
+}
 
- .breadcrumbHrLeft {
-     text-align: right;
-     margin: 0 0 0 auto;
-     width: 50%;
-     color: #F15A22;
-     background: #F15A22;
-     height: 10px;
-     border: none;
-     border-top-left-radius: 5px;
-     border-bottom-left-radius: 5px;
- }
+.tab button {
+  text-align: center;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
 
- .breadcrumbHrMid {
-     text-align: center;
-     margin: 0 auto;
-     width: 100%;
-     color: #F15A22;
-     background: #F15A22;
-     height: 10px;
-     border: none;
+.tab button.active {
+  text-decoration: underline;
+}
 
- }
+.tabcontent {
+  text-align-last: center;
+  width: 60%;
+  display: none;
+  padding: 6px 12px;
+  animation: fadeEffect 1s;
+  margin: auto;
+  font-weight: 300;
+}
 
- .breadcrumbHrRight {
-     text-align: left;
-     margin: 0 auto 0 0;
-     width: 50%;
-     color: #F15A22;
-     background: #F15A22;
-     height: 10px;
-     border: none;
-     border-top-right-radius: 5px;
-     border-bottom-right-radius: 5px;
- }
+/*Nyt layout slut*/
 
- .breadcrumbNotActive {
-     color: grey;
- }
+/*Dashboard start*/
+* {
+  box-sizing: border-box;
+  margin-top: 0px;
+  padding: 0px;
+  font-family: "Titillium Web", sans-serif;
+}
 
- .tab {
-     overflow: hidden;
-     display: none;
- }
+.dashboardGridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 0px 10px 100px 10px;
+}
 
- .tab button {
-     text-align: center;
-     background-color: inherit;
-     border: none;
-     outline: none;
-     cursor: pointer;
-     padding: 14px 16px;
-     transition: 0.3s;
-     font-size: 17px;
- }
+.one {
+  grid-column: 1 / 1;
+  grid-row: 1/ 6;
+  background-color: #ffffff;
+  border: 3px solid #707070;
+  border-radius: 3px;
+  text-align: center;
+}
 
- .tab button.active {
-     text-decoration: underline;
- }
+.two {
+  grid-column: 3 / 2;
+  grid-row: 1/6;
+  background-color: #f7f5f5;
+  border: 3px solid #707070;
+  border-radius: 3px;
+}
+.three {
+  grid-column: 4 / 3;
+  grid-row: 1 / 2;
+  background-color: #f7f5f5;
+  border: 3px solid #707070;
+  border-radius: 3px;
+  text-align: center;
+}
+.four {
+  grid-column: 4 / 3;
+  grid-row: 2 / 4;
+  background-color: #f7f5f5;
+  border: 3px solid #707070;
+  border-radius: 3px;
+  text-align: center;
+}
+.five {
+  grid-column: 4 / 3;
+  grid-row: 4 / 5;
+  background-color: #f7f5f5;
+  border: 3px solid #707070;
+  border-radius: 3px;
+  text-align: center;
+}
+.six {
+  grid-column: 3 / 3;
+  grid-row: 6/ 5;
+  background-color: #f7f5f5;
+  border: 3px solid #707070;
+  border-radius: 3px;
+  text-align: center;
+}
 
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  margin: 12px 50px 0px 50px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
- .tabcontent {
-     text-align-last: center;
-     width: 60%;
-     display: none;
-     padding: 6px 12px;
-     animation: fadeEffect 1s;
-     margin: auto;
-     font-weight: 300;
- }
+/* Hide the browser's default checkbox */
+.container input {
+  padding: 50px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
 
- /*Nyt layout slut*/
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border: 2px black solid;
+  border-radius: 3px;
+}
 
- /*Mediaqueries*/
- @media screen and (min-width: 1000px) {
-     .navbar {
-         display: flex;
-         justify-content: space-between;
-         padding-bottom: 0;
-         height: 70px;
-         align-items: center;
-     }
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #eeeeee;
+}
 
-     #chkToggle:checked+ul.main-nav {
-         display: flex;
-     }
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #f15a22;
+}
 
-     .main-nav {
-         display: flex;
-         margin-right: 30px;
-         flex-direction: row;
-         justify-content: flex-end;
-     }
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
 
-     .main-nav li {
-         margin: 0;
-     }
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
 
-     .nav-links {
-         margin-left: 40px;
+.loadLayoutSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.loadLayoutSection a {
+  margin: 10px;
+}
+.loadButton {
+  background-color: #f15a22;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  width: 70px;
+  height: 30px;
+  border-radius: 3px;
+}
 
-     }
+.nytLayoutButton {
+  background-color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  color: #f15a22;
+  border: 2px solid #f15a22;
+  border-radius: 3px;
+  width: 90px;
+  height: 30px;
+}
+.loadLayoutGridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 25px 100px 10px 100px;
+}
 
-     .logo {
-         margin-top: 0;
-     }
+.oneLoad {
+  grid-column: 1 / 1;
+  grid-row: 1/ 6;
+  background-color: #ffffff;
+  border: 3px solid #707070;
+  border-radius: 3px;
+  text-align: center;
+}
+.twoLoad {
+  grid-column: 2 / 2;
+  grid-row: 1/6;
+  background-color: #f7f5f5;
+  border: 3px solid #707070;
+  border-radius: 3px;
+}
 
-     .navbar-toggle {
-         display: none;
-     }
+/*Dashboard Slut*/
 
-     .nav-links:hover {
-         color: white;
-         text-decoration: none;
-     }
- }
+/*Mediaqueries*/
+@media screen and (min-width: 1000px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
 
- /*Mediaqueries slut*/
+  #chkToggle:checked + ul.main-nav {
+    display: flex;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-links:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/*Mediaqueries slut*/
