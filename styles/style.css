@@ -99,7 +99,7 @@ input[type="password"] {
   display: none;
 }
 
-#chkToggle:checked + ul.main-nav {
+#chkToggle:checked+ul.main-nav {
   display: block;
 }
 
@@ -116,46 +116,44 @@ li a:hover {
 
 /*Nyt layout*/
 .breadcrumb {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+  margin: auto;
 }
 
-.breadcrumbHrLeft {
-  text-align: right;
-  margin: 0 0 0 auto;
-  width: 50%;
-  color: #f15a22;
-  background: #f15a22;
-  height: 10px;
-  border: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+.breadcrumbContainer {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  border-top: 2px solid #f15a22;
+  padding-top: 15px;
+  margin-top: 15px;
 }
 
-.breadcrumbHrMid {
+.breadcrumbContainer div {
+  font-weight: bold;
+  border: 2px solid #f15a22;
+  margin-top: -40px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
-  margin: 0 auto;
-  width: 100%;
-  color: #f15a22;
-  background: #f15a22;
-  height: 10px;
-  border: none;
-}
-
-.breadcrumbHrRight {
-  text-align: left;
-  margin: 0 auto 0 0;
-  width: 50%;
-  color: #f15a22;
-  background: #f15a22;
-  height: 10px;
-  border: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 50%;
 }
 
 .breadcrumbNotActive {
-  color: grey;
+  background-color: white;
+}
+
+.breadcrumbActive {
+  background-color: #f15a22;
+}
+
+.breadcrumbText {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-bottom: 1.5em;
 }
 
 .tab {
@@ -222,6 +220,7 @@ li a:hover {
   border: 3px solid #707070;
   border-radius: 3px;
 }
+
 .three {
   grid-column: 4 / 3;
   grid-row: 1 / 2;
@@ -230,6 +229,7 @@ li a:hover {
   border-radius: 3px;
   text-align: center;
 }
+
 .four {
   grid-column: 4 / 3;
   grid-row: 2 / 4;
@@ -238,6 +238,7 @@ li a:hover {
   border-radius: 3px;
   text-align: center;
 }
+
 .five {
   grid-column: 4 / 3;
   grid-row: 4 / 5;
@@ -246,6 +247,7 @@ li a:hover {
   border-radius: 3px;
   text-align: center;
 }
+
 .six {
   grid-column: 3 / 3;
   grid-row: 6/ 5;
@@ -291,12 +293,12 @@ li a:hover {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #eeeeee;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: #f15a22;
 }
 
@@ -308,7 +310,7 @@ li a:hover {
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -318,9 +320,11 @@ li a:hover {
   align-items: center;
   flex-direction: row;
 }
+
 .loadLayoutSection a {
   margin: 10px;
 }
+
 .loadButton {
   background-color: #f15a22;
   text-decoration: none;
@@ -341,6 +345,7 @@ li a:hover {
   width: 90px;
   height: 30px;
 }
+
 .loadLayoutGridContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -357,6 +362,7 @@ li a:hover {
   border-radius: 3px;
   text-align: center;
 }
+
 .twoLoad {
   grid-column: 2 / 2;
   grid-row: 1/6;
@@ -377,7 +383,7 @@ li a:hover {
     align-items: center;
   }
 
-  #chkToggle:checked + ul.main-nav {
+  #chkToggle:checked+ul.main-nav {
     display: flex;
   }
 
