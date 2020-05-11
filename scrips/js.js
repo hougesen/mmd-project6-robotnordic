@@ -1,13 +1,3 @@
-function autoFill() {
-  document.getElementById("fyldningsHeight").value = "300";
-  document.getElementById("fyldningsProcent").value = "70";
-  document.getElementById("tilladtUdhæng").value = "0";
-  document.getElementById("palleBredde").value = "800";
-  document.getElementById("palleHeight").value = "144";
-  document.getElementById("palleLength").value = "1200";
-  document.getElementById("senorMaxPosMar").value = "0";
-  document.getElementById("senorMaxNegMar").value = "0";
-}
 function check(form) {
   if (form.username.value == "robotnordic" && form.password.value == "123") {
     window.open("dashboard.html");
@@ -29,3 +19,39 @@ function openProduktInfo(evt, produktInfo) {
   evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+function palleAutofill() {
+  var e = document.getElementById("palletype");
+  e.addEventListener("change", function () {
+    var val = e.options[e.selectedIndex].number;
+    if (e.selectedIndex == "1") {
+      document.getElementById("fyldningsHeight").value = "300";
+      document.getElementById("fyldningsProcent").value = "70";
+      document.getElementById("tilladtUdhæng").value = "0";
+      document.getElementById("palleBredde").value = "800";
+      document.getElementById("palleHeight").value = "144";
+      document.getElementById("palleLength").value = "1200";
+      document.getElementById("senorMaxPosMar").value = "0";
+      document.getElementById("senorMaxNegMar").value = "0";
+    } else if (e.selectedIndex == "2") {
+      document.getElementById("fyldningsHeight").value = "300";
+      document.getElementById("fyldningsProcent").value = "70";
+      document.getElementById("tilladtUdhæng").value = "0";
+      document.getElementById("palleBredde").value = "600";
+      document.getElementById("palleHeight").value = "144";
+      document.getElementById("palleLength").value = "800";
+      document.getElementById("senorMaxPosMar").value = "0";
+      document.getElementById("senorMaxNegMar").value = "0";
+    } else if (e.selectedIndex == "3") {
+      document.getElementById("fyldningsHeight").value = "300";
+      document.getElementById("fyldningsProcent").value = "70";
+      document.getElementById("tilladtUdhæng").value = "0";
+      document.getElementById("palleBredde").value = "400";
+      document.getElementById("palleHeight").value = "144";
+      document.getElementById("palleLength").value = "600";
+      document.getElementById("senorMaxPosMar").value = "0";
+      document.getElementById("senorMaxNegMar").value = "0";
+    }
+  });
+}
+palleAutofill();
