@@ -14,12 +14,13 @@
         <img src="assets\images\rnlogo2.png" alt="" />
       </div>
       <div class="loginInput">
-        <form name="logind">
+        <form name="logind" id="loginForm">
           <input
             id="username"
             type="text"
             placeholder="Brugernavn"
             name="username"
+            oninvalid="this.setCustomValidity('Indtast korrekt Brugernavn')"
             required
           />
 
@@ -30,10 +31,11 @@
             type="password"
             placeholder="Kodeord"
             name="password"
+            oninvalid="this.setCustomValidity('Forkert kode')"
             required
           />
           <br />
-          <button type="submit" onclick="check(this.form)" value="logind">
+          <button type="submit" onclick="loginCheck(this.form)" value="logind">
             Login
           </button>
         </form>

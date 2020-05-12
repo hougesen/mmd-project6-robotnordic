@@ -1,4 +1,5 @@
-function check(form) {
+function loginCheck() {
+  var form = document.getElementById("loginForm");
   if (form.username.value == "robotnordic" && form.password.value == "123") {
     window.open("dashboard.html");
   } else {
