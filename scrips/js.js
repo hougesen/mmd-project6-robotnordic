@@ -51,6 +51,15 @@ function palleAutofill() {
       document.getElementById("palleLength").value = "600";
       document.getElementById("senorMaxPosMar").value = "0";
       document.getElementById("senorMaxNegMar").value = "0";
+    } else if (e.selectedIndex == "4") {
+      document.getElementById("fyldningsHeight").value = "";
+      document.getElementById("fyldningsProcent").value = "";
+      document.getElementById("tilladtUdhæng").value = "";
+      document.getElementById("palleBredde").value = "";
+      document.getElementById("palleHeight").value = "";
+      document.getElementById("palleLength").value = "";
+      document.getElementById("senorMaxPosMar").value = "";
+      document.getElementById("senorMaxNegMar").value = "";
     }
   });
 }
