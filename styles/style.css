@@ -177,7 +177,6 @@ li a:hover {
 }
 
 .tabcontent {
-  text-align-last: center;
   width: 60%;
   display: none;
   padding: 6px 12px;
@@ -185,6 +184,28 @@ li a:hover {
   margin: auto;
   font-weight: 300;
 }
+
+.notActive {
+  color: grey;
+}
+
+.formGrid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: left;
+}
+
+input[type=text],
+input[type="number"],
+select {
+  width: 90%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
 
 /*Nyt layout slut*/
 
