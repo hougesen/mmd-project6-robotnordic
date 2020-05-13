@@ -394,33 +394,60 @@
                         </select>
                     </div>
                     <div>
-                        <input type="checkbox" name="" id="blandedeLag">
-                        <label for="blandedeLag">Blandede lag</label>
+
+                        <label class="checkboxContainerLayout">
+                            <input type="checkbox" name="blandedeLag" id="blandedeLag" />
+                            <span class="checkmarkLayout"></span>
+                            <p style="margin-left: 2rem;">Blandede lag</p>
+                        </label>
+
                     </div>
                     <div>
-                        <input type="checkbox" name="" id="spredPakker">
-                        <label for="spredPakker">Spred pakker</label>
+                        <label class="checkboxContainerLayout">
+                            <input type="checkbox" name="spredPakker" id="spredPakker" />
+                            <span class="checkmarkLayout"></span>
+                            <p style="margin-left: 2rem;">Spred pakker</p>
+                        </label>
                     </div>
                     <div>
-                        <input type="checkbox" name="" id="kunFuldeLag">
-                        <label for="kunFuldeLag">Kun fulde lag</label>
+                        <label class="checkboxContainerLayout">
+                            <input type="checkbox" name="kunFuldeLag" id="kunFuldeLag" />
+                            <span class="checkmarkLayout"></span>
+                            <p style="margin-left: 2rem;">Kun fulde lag</p>
+                        </label>
+
                     </div>
                     <div>
-                        <input type="checkbox" name="" id="centerLoad">
-                        <label for="centerLoad">Center load</label>
+                        <label class="checkboxContainerLayout">
+                            <input type="checkbox" name="centerLoad" id="centerLoad" />
+                            <span class="checkmarkLayout"></span>
+                            <p style="margin-left: 2rem;">Center load</p>
+                        </label>
+
                     </div>
                     <div>
-                        <input type="checkbox" name="" id="pakkerVedKant">
-                        <label for="pakkerVedKant">Sæt pakker ved kant</label>
+                        <label class="checkboxContainerLayout">
+                            <input type="checkbox" name="pakkerVedKant" id="pakkerVedKant" />
+                            <span class="checkmarkLayout"></span>
+                            <p style="margin-left: 2rem;">Sæt pakker ved kant</p>
+                        </label>
+
+
                     </div>
                     <div>
-                        <input type="checkbox" name="" id="bindLag">
-                        <label for="bindLag">Bind lag</label>
+                        <label class="checkboxContainerLayout">
+                            <input type="checkbox" name="bindLag" id="bindLag" />
+                            <span class="checkmarkLayout"></span>
+                            <p style="margin-left: 2rem;">Bind lag</p>
+                        </label>
+
                     </div>
                 </div>
             </form>
-            <h1 style="text-align: center;">Produkt info</h1>
-             <form action="">
+            <br>
+            <h1>Produkt info</h1>
+
+            <form action="">
                 <div class="formGrid3">
                     <div>
                         <label for="produktNavn">Produkt navn</label>
@@ -431,8 +458,12 @@
                         <input type="number" name="antalProdukter" id="antalProdukter">
                     </div>
                     <div>
-                        <input type="checkbox" name="" id="fyldPalleProdukt">
-                        <label for="fyldPalleProdukt">Fyld palle med produkt</label>
+                        <label class="checkboxContainerLayout">
+                            <input type="checkbox" name="fyldPalleProdukt" id="fyldPalleProdukt" />
+                            <span class="checkmarkLayout "></span>
+                            <p style="margin-left: 2rem;">Fyld palle med produkt</p>
+                        </label>
+
                     </div>
                     <div>
                         <label for="pakkeFrom">Pakke form</label>
@@ -465,20 +496,32 @@
                     </div>
                     <div></div>
                     <div>
-                        <input type="checkbox" name="" id="kunTopPlacering">
-                        <label for="kunTopPlacering">Kun top placering</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="" id="kunBundPlacering">
-                        <label for="kunBundPlacering">Kun bund placering</label>
-                    </div>
-                    <div>
+                        <label class="checkboxContainerLayout">
+                            <input type="checkbox" name="kunTopPlacering" id="kunTopPlacering" />
+                            <span class="checkmarkLayout"></span>
+                            <p style="margin-left: 2rem;">Kun top placering</p>
+                        </label>
 
-                        <input type="checkbox" name="" id="forsigtig">
-                        <label for="forsigtig">Forsigtig</label>
+                    </div>
+                    <div>
+                        <label class="checkboxContainerLayout">
+                            <input type="checkbox" name="kunBundPlacering" id="kunBundPlacering" />
+                            <span class="checkmarkLayout"></span>
+                            <p style="margin-left: 2rem;">Kun bund placering</p>
+                        </label>
+
+                    </div>
+                    <div>
+                        <label class="checkboxContainerLayout">
+                            <input type="checkbox" name="forsigtig" id="forsigtig" />
+                            <span class="checkmarkLayout"></span>
+                            <p style="margin-left: 2rem;">Forsigtig</p>
+                        </label>
+
                     </div>
                 </div>
             </form>
+           
             
             <button class="tablinks" onclick="openProduktInfo(event, 'produkter')">Tilbage</button>
             <button class="tablinks" onclick="openProduktInfo(event, 'godkend')">Godkend</button>
