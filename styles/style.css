@@ -461,14 +461,24 @@ li a:hover {
 /*Manual*/
 .manual-nav{
     margin: 40px 0px 0px 40px;
-    list-style: none;
+    list-style: none;  
+    width: 150px;
+    background-color: #f1f1f1;
 }
 .manual-nav li{
-    margin: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
+}
+.manual-nav li a {
+  display: block;
+ 
 }
 .manual-links{
     text-decoration: none;
+    color: inherit;
+    margin: 0px 0px 0px 10px;
 }
+
+
 /*Manual slut*/
 /*Mediaqueries*/
 @media screen and (min-width: 1000px) {
