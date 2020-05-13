@@ -275,6 +275,171 @@
                     <div class="breadcrumbActive"></div>
                 </div>
             </div>
+            <h1 style="text-align: center;">Palle oplysninger</h1>
+            <form action="">
+                <div class="formGrid3">
+                    <div>
+                        <label for="patternName">Mønsternavn </label>
+                        <br>
+                        <input type="text" name="patternName" id="patternName">
+                    </div>
+                    <div>
+
+                        <label for="palletype">Palle-type</label>
+                        <br>
+                        <select name="" id="palletype">
+                            <option value="" disabled selected>Vælg palle type</option>
+                            <option value="EUR-Palle">EUR-palle</option>
+                            <option value="EUR-Halvpalle">EUR-Halvpalle</option>
+                            <option value="EUR-Kvartpalle">EUR-Kvartpalle</option>
+                            <option value="Reset">Reset</option>
+                        </select>
+                    </div>
+                    <div></div>
+
+                    <div>
+                        <label for=" fyldningsHeight">Fyldnings højde </label>
+                        <br>
+                        <input type="number" name="fyldningsHeight" id="fyldningsHeight">
+                    </div>
+                    <div>
+                        <label for="fyldningsProcent">Fyldnings procent </label>
+                        <br>
+
+                        <input type="number" name="fyldningsProcent" id="fyldningsProcent">
+                    </div>
+                    <div>
+                        <label for="tilladtUdhæng">Tilladt udhæng</label>
+                        <br>
+
+                        <input type="number" name="tilladtUdhæng" id="tilladtUdhæng">
+                    </div>
+                    <div>
+                        <label for="palleBredde">Palle bredde</label>
+                        <br>
+
+                        <input type="number" name="palleBredde" id="palleBredde">
+                    </div>
+                    <div>
+                        <label for="palleHeight">Palle højde</label>
+                        <br>
+
+                        <input type="number" name="palleHeight" id="palleHeight">
+                    </div>
+                    <div>
+                        <label for="palleLength">Palle længde</label>
+                        <br>
+
+                        <input type="number" name="palleLength" id="palleLength">
+                    </div>
+                    <div>
+                        <label for="senorMaxPosMar">Senor max positive margin</label>
+                        <br>
+
+                        <input type="number" name="senorMaxPosMar" id="senorMaxPosMar">
+                    </div>
+                    <div>
+                        <label for="senorMaxNegMar">Senor max negative margin</label>
+                        <br>
+
+                        <input type="number" name="senorMaxNegMar" id="senorMaxNegMar">
+                    </div>
+                    <div>
+                        <label for="udregn">Udregn i</label>
+                        <br>
+
+                        <select name="udregn" id="udregn">
+                            <option value="mm">mm</option>
+                            <option value="procent">procent</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="blandedeLag">
+                        <label for="blandedeLag">Blandede lag</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="spredPakker">
+                        <label for="spredPakker">Spred pakker</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="kunFuldeLag">
+                        <label for="kunFuldeLag">Kun fulde lag</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="centerLoad">
+                        <label for="centerLoad">Center load</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="pakkerVedKant">
+                        <label for="pakkerVedKant">Sæt pakker ved kant</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="bindLag">
+                        <label for="bindLag">Bind lag</label>
+                    </div>
+                </div>
+            </form>
+            <h1 style="text-align: center;">Produkt info</h1>
+             <form action="">
+                <div class="formGrid3">
+                    <div>
+                        <label for="produktNavn">Produkt navn</label>
+                        <input type="text" name="produktNavn" id="produktNavn">
+                    </div>
+                    <div>
+                        <label for="antalProdukter">Antal produkter</label>
+                        <input type="number" name="antalProdukter" id="antalProdukter">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="fyldPalleProdukt">
+                        <label for="fyldPalleProdukt">Fyld palle med produkt</label>
+                    </div>
+                    <div>
+                        <label for="pakkeFrom">Pakke form</label>
+                        <select name="pakkeFrom" id="pakkeFrom">
+                            <option value="kasse">Kasse</option>
+                            <option value="rund">Rund</option>
+                        </select>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <label for="pakkeBredde">Pakke bredde</label>
+                        <input type="number" name="pakkeBredde" id="pakkeBredde">
+                    </div>
+                    <div>
+                        <label for="pakkeHøjde">Pakke højde</label>
+                        <input type="number" name="pakkeHøjde" id="pakkeHøjde">
+                    </div>
+                    <div>
+                        <label for="pakkeLængde">Pakke længde</label>
+                        <input type="number" name="pakkeLængde" id="pakkeLængde">
+                    </div>
+                    <div>
+                        <label for="vægt">Vægt</label>
+                        <input type="number" name="vægt" id="vægt">
+                    </div>
+                    <div>
+                        <label for="sideUd">Side ud</label>
+                        <input type="text" name="sideUd" id="sideUd">
+                    </div>
+                    <div></div>
+                    <div>
+                        <input type="checkbox" name="" id="kunTopPlacering">
+                        <label for="kunTopPlacering">Kun top placering</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="kunBundPlacering">
+                        <label for="kunBundPlacering">Kun bund placering</label>
+                    </div>
+                    <div>
+
+                        <input type="checkbox" name="" id="forsigtig">
+                        <label for="forsigtig">Forsigtig</label>
+                    </div>
+                </div>
+            </form>
+            
             <button class="tablinks" onclick="openProduktInfo(event, 'produkter')">Tilbage</button>
             <button class="tablinks" onclick="openProduktInfo(event, 'godkend')">Godkend</button>
         </div>
