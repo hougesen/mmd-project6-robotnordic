@@ -25,42 +25,51 @@ function palleAutofill() {
   var e = document.getElementById("palletype");
   e.addEventListener("change", function () {
     var val = e.options[e.selectedIndex].number;
+    var fyldningsHeight = document.getElementById("fyldningsHeight");
+    var fyldningsProcent = document.getElementById("fyldningsProcent");
+    var tilladtUdhæng = document.getElementById("tilladtUdhæng");
+    var palleBredde = document.getElementById("palleBredde");
+    var palleHeight = document.getElementById("palleHeight");
+    var palleLength = document.getElementById("palleLength");
+    var senorMaxPosMar =  document.getElementById("senorMaxPosMar");
+    var senorMaxNegMar = document.getElementById("senorMaxNegMar");
+
     if (e.selectedIndex == "1") {
-      document.getElementById("fyldningsHeight").value = "300";
-      document.getElementById("fyldningsProcent").value = "70";
-      document.getElementById("tilladtUdhæng").value = "0";
-      document.getElementById("palleBredde").value = "800";
-      document.getElementById("palleHeight").value = "144";
-      document.getElementById("palleLength").value = "1200";
-      document.getElementById("senorMaxPosMar").value = "0";
-      document.getElementById("senorMaxNegMar").value = "0";
+      fyldningsHeight.value = "300";
+      fyldningsProcent.value = "70";
+      tilladtUdhæng.value = "0";
+      palleBredde.value = "600";
+      palleHeight.value = "144";
+      palleLength.value = "1200";
+      senorMaxPosMar.value = "0";
+      senorMaxNegMar.value = "0";
     } else if (e.selectedIndex == "2") {
-      document.getElementById("fyldningsHeight").value = "300";
-      document.getElementById("fyldningsProcent").value = "70";
-      document.getElementById("tilladtUdhæng").value = "0";
-      document.getElementById("palleBredde").value = "600";
-      document.getElementById("palleHeight").value = "144";
-      document.getElementById("palleLength").value = "800";
-      document.getElementById("senorMaxPosMar").value = "0";
-      document.getElementById("senorMaxNegMar").value = "0";
+      fyldningsHeight.value = "300";
+      fyldningsProcent.value = "70";
+      tilladtUdhæng.value = "0";
+      palleBredde.value = "600";
+      palleHeight.value = "144";
+      palleLength.value = "800";
+      senorMaxPosMar.value = "0";
+      senorMaxNegMar.value = "0";
     } else if (e.selectedIndex == "3") {
-      document.getElementById("fyldningsHeight").value = "300";
-      document.getElementById("fyldningsProcent").value = "70";
-      document.getElementById("tilladtUdhæng").value = "0";
-      document.getElementById("palleBredde").value = "400";
-      document.getElementById("palleHeight").value = "144";
-      document.getElementById("palleLength").value = "600";
-      document.getElementById("senorMaxPosMar").value = "0";
-      document.getElementById("senorMaxNegMar").value = "0";
+      fyldningsHeight.value = "300";
+      fyldningsProcent.value = "70";
+      tilladtUdhæng.value = "0";
+      palleBredde.value = "600";
+      palleHeight.value = "144";
+      palleLength.value = "600";
+      senorMaxPosMar.value = "0";
+      senorMaxNegMar.value = "0";
     } else if (e.selectedIndex == "4") {
-      document.getElementById("fyldningsHeight").value = "";
-      document.getElementById("fyldningsProcent").value = "";
-      document.getElementById("tilladtUdhæng").value = "";
-      document.getElementById("palleBredde").value = "";
-      document.getElementById("palleHeight").value = "";
-      document.getElementById("palleLength").value = "";
-      document.getElementById("senorMaxPosMar").value = "";
-      document.getElementById("senorMaxNegMar").value = "";
+      fyldningsHeight.value = "";
+      fyldningsProcent.value = "";
+      tilladtUdhæng.value = "";
+      palleBredde.value = "";
+      palleHeight.value = "";
+      palleLength.value = "";
+      senorMaxPosMar.value = "";
+      senorMaxNegMar.value = "";
     }
   });
 }
