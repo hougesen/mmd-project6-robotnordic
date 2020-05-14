@@ -253,6 +253,7 @@ li a:hover {
   border-radius: 3px;
 }
 
+
 /* Nytlayout */
 .checkboxContainerDashboard {
   display: block;
@@ -315,6 +316,20 @@ li a:hover {
   margin-top: 0px;
   padding: 0px;
   font-family: "Titillium Web", sans-serif;
+}
+
+.forsideKnap {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.loadLayoutSection select {
+  width: 20%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 3px;
 }
 
 .dashboardGridContainer {
@@ -540,16 +555,19 @@ li a:hover {
   color: inherit;
   margin: 15px 0px 0px 15px;
 }
+
 .manual-links::before {
   display: inline-block;
   padding-right: 8px;
   content: "-";
   transition: transform 0.3s ease-out;
 }
+
 .manual-links:hover::before {
   content: ">";
   transform: translateX(4px);
 }
+
 .manual-sider {
   text-decoration: none;
   color: inherit;
