@@ -540,7 +540,16 @@ li a:hover {
   color: inherit;
   margin: 15px 0px 0px 15px;
 }
-
+.manual-links::before {
+  display: inline-block;
+  padding-right: 8px;
+  content: "-";
+  transition: transform 0.3s ease-out;
+}
+.manual-links:hover::before {
+  content: ">";
+  transform: translateX(4px);
+}
 .manual-sider {
   text-decoration: none;
   color: inherit;
