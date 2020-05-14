@@ -460,10 +460,12 @@ li a:hover {
 
 /*Manual*/
 .manual-nav{
-    margin: 40px 0px 0px 40px;
+    margin: 0px 30px 0px 5px;
+    padding: 0px 0px 0px 0px;
     list-style: none;  
     width: 150px;
     background-color: #f1f1f1;
+    float: left;
 }
 .manual-nav li{
     margin: 5px 0px 0px 0px;
@@ -471,6 +473,9 @@ li a:hover {
 .manual-nav li a {
   display: block;
  
+}
+.manual-nav li a:hover{
+    color: #F15A22;
 }
 .manual-links{
     text-decoration: none;
