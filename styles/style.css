@@ -556,7 +556,9 @@ li a:hover {
   font-weight: bold;
   font-size: 130%;
 }
-
+.dashboardimg{
+    
+}
 /*Manual slut*/
 /*Mediaqueries*/
 @media screen and (min-width: 1000px) {
