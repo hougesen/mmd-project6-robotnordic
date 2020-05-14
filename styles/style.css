@@ -507,11 +507,13 @@ li a:hover {
 /*Dashboard Slut*/
 
 /*Manual*/
-.manual-nav {
-  margin: 40px 0px 0px 40px;
-  list-style: none;
-  width: 150px;
-  background-color: #f1f1f1;
+.manual-nav{
+    margin: 0px 30px 0px 5px;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    width: 150px;
+    background-color: #f1f1f1;
+    float: left;
 }
 
 .manual-nav li {
@@ -523,12 +525,20 @@ li a:hover {
 
 }
 
-.manual-links {
-  text-decoration: none;
-  color: inherit;
-  margin: 15px 0px 0px 15px;
+.manual-nav li a:hover{
+    color: #F15A22;
 }
-
+.manual-links{
+    text-decoration: none;
+    color: inherit;
+    margin: 15px 0px 0px 15px;
+}
+.manual-sider{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 130%;
+}
 
 /*Manual slut*/
 /*Mediaqueries*/
