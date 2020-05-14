@@ -7,7 +7,7 @@ html{
   font-family: "Titillium Web", sans-serif;
 }
 
-.container {
+.Container {
   background-color: #ffffff;
   display: flex;
   height: 100vh;
