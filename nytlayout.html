@@ -191,8 +191,9 @@
                     </div>
                 </div>
             </form>
-            <button class="tablinks" onclick="openProduktInfo(event, 'produkter')">Videre</button>
-
+            <div class="tabButton">
+                <button class="tablinks frem" onclick="openProduktInfo(event, 'produkter')">Videre</button>
+            </div>
         </div>
 
         <div id="produkter" class="tabcontent">
@@ -290,9 +291,9 @@
                     </div>
                 </div>
             </form>
-            <div>
-                <button class="tablinks" onclick="openProduktInfo(event, 'palleoplysninger')">Tilbage</button>
-                <button class="tablinks" onclick="openProduktInfo(event, 'godkend')">Videre</button>
+            <div class="tabButton">
+                <button class="tablinks tilbage" onclick="openProduktInfo(event, 'palleoplysninger')">Tilbage</button>
+                <button class="tablinks frem" onclick="openProduktInfo(event, 'godkend')">Videre</button>
             </div>
         </div>
 
@@ -521,10 +522,11 @@
                     </div>
                 </div>
             </form>
-           
-            
-            <button class="tablinks" onclick="openProduktInfo(event, 'produkter')">Tilbage</button>
-            <button class="tablinks" onclick="openProduktInfo(event, 'godkend')">Godkend</button>
+
+            <div class="tabButton">
+                <button class="tablinks tilbage" onclick="openProduktInfo(event, 'produkter')">Tilbage</button>
+                <button class="tablinks frem" onclick="openProduktInfo(event, 'godkend')">Godkend</button>
+            </div>
         </div>
     </section>
 
