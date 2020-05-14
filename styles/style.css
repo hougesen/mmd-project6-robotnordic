@@ -81,7 +81,7 @@
 }
 
 .nav-links {
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Rubik", sans-serif;
 }
 
@@ -105,7 +105,6 @@
 
 li a:hover {
   text-decoration: none;
-  color: #1b2021;
 }
 
 .fa {
@@ -505,6 +504,12 @@ li a:hover {
   border-radius: 3px;
 }
 
+.linkActive {
+  color: #F15A22;
+}
+
+
+
 /*Dashboard Slut*/
 
 /*Manual*/
@@ -581,10 +586,6 @@ li a:hover {
     display: none;
   }
 
-  .nav-links:hover {
-    color: white;
-    text-decoration: none;
-  }
 }
 
 /*Mediaqueries slut*/
