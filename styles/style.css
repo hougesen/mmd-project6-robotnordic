@@ -7,8 +7,7 @@
   padding: 0;
   font-family: "Titillium Web", sans-serif;
 }
-
-html {
+html{
   scroll-behavior: smooth;
 }
 
@@ -397,10 +396,6 @@ li a:hover {
   text-align: center;
 }
 
-.twoTitel {
-  text-align: center;
-}
-
 /* The container */
 .checkboxContainerLayout {
   display: block;
@@ -468,10 +463,7 @@ li a:hover {
   display: block;
 }
 
-.produktFarver{
-  padding-left: 50px;
-  font-size: 14px;
-}
+
 
 .loadLayoutSection {
   display: flex;
@@ -554,12 +546,10 @@ li a:hover {
   flex-direction: column;
   align-items: flex-start;
 }
-
 .manualItem {
   background-color: #ffffff;
-  flex-grow: 1;
+  flex-grow: 1; 
 }
-
 #inner {
   width: 60%;
   margin: 0 auto;
