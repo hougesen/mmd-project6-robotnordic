@@ -31,45 +31,62 @@ function palleAutofill() {
     var palleBredde = document.getElementById("palleBredde");
     var palleHeight = document.getElementById("palleHeight");
     var palleLength = document.getElementById("palleLength");
-    var senorMaxPosMar =  document.getElementById("senorMaxPosMar");
+    var senorMaxPosMar = document.getElementById("senorMaxPosMar");
     var senorMaxNegMar = document.getElementById("senorMaxNegMar");
 
+    var fyldningsHeightgodkend = document.getElementById(
+      "fyldningsHeightGodkend"
+    );
+    var fyldningsProcentgodkend = document.getElementById(
+      "fyldningsProcentGodkend"
+    );
+    var tilladtUdhænggodkend = document.getElementById("tilladtUdhængGodkend");
+    var palleBreddegodkend = document.getElementById("palleBreddeGodkend");
+    var palleHeightgodkend = document.getElementById("palleHeightGodkend");
+    var palleLengthgodkend = document.getElementById("palleLengthGodkend");
+    var senorMaxPosMargodkend = document.getElementById(
+      "senorMaxPosMarGodkend"
+    );
+    var senorMaxNegMargodkend = document.getElementById(
+      "senorMaxNegMarGodkend"
+    );
+
     if (e.selectedIndex == "1") {
-      fyldningsHeight.value = "300";
-      fyldningsProcent.value = "70";
-      tilladtUdhæng.value = "0";
-      palleBredde.value = "600";
-      palleHeight.value = "144";
-      palleLength.value = "1200";
-      senorMaxPosMar.value = "0";
-      senorMaxNegMar.value = "0";
+      fyldningsHeight.value = fyldningsHeightgodkend.value = "300";
+      fyldningsProcent.value = fyldningsProcentgodkend.value = "70";
+      tilladtUdhæng.value = tilladtUdhænggodkend.value = "0";
+      palleBredde.value = palleBreddegodkend.value = "600";
+      palleHeight.value = palleHeightgodkend.value = "144";
+      palleLength.value = palleLengthgodkend.value = "1200";
+      senorMaxPosMar.value = senorMaxNegMargodkend.value = "0";
+      senorMaxNegMar.value = senorMaxPosMargodkend.value = "0";
     } else if (e.selectedIndex == "2") {
-      fyldningsHeight.value = "300";
-      fyldningsProcent.value = "70";
-      tilladtUdhæng.value = "0";
-      palleBredde.value = "600";
-      palleHeight.value = "144";
-      palleLength.value = "800";
-      senorMaxPosMar.value = "0";
-      senorMaxNegMar.value = "0";
+      fyldningsHeight.value = fyldningsHeightgodkend.value = "300";
+      fyldningsProcent.value = fyldningsProcentgodkend.value = "70";
+      tilladtUdhæng.value = tilladtUdhænggodkend.value = "0";
+      palleBredde.value = palleBreddegodkend.value = "600";
+      palleHeight.value = palleHeightgodkend.value = "144";
+      palleLength.value = palleLengthgodkend.value = "800";
+      senorMaxPosMar.value = senorMaxNegMargodkend.value = "0";
+      senorMaxNegMar.value = senorMaxPosMargodkend.value = "0";
     } else if (e.selectedIndex == "3") {
-      fyldningsHeight.value = "300";
-      fyldningsProcent.value = "70";
-      tilladtUdhæng.value = "0";
-      palleBredde.value = "600";
-      palleHeight.value = "144";
-      palleLength.value = "600";
-      senorMaxPosMar.value = "0";
-      senorMaxNegMar.value = "0";
+      fyldningsHeight.value = fyldningsHeightgodkend.value = "300";
+      fyldningsProcent.value = fyldningsProcentgodkend.value = "70";
+      tilladtUdhæng.value = tilladtUdhænggodkend.value = "0";
+      palleBredde.value = palleBreddegodkend.value = "600";
+      palleHeight.value = palleHeightgodkend.value = "144";
+      palleLength.value = palleLengthgodkend.value = "600";
+      senorMaxPosMar.value = senorMaxNegMargodkend.value = "0";
+      senorMaxNegMar.value = senorMaxPosMargodkend.value = "0";
     } else if (e.selectedIndex == "4") {
-      fyldningsHeight.value = "";
-      fyldningsProcent.value = "";
-      tilladtUdhæng.value = "";
-      palleBredde.value = "";
-      palleHeight.value = "";
-      palleLength.value = "";
-      senorMaxPosMar.value = "";
-      senorMaxNegMar.value = "";
+      fyldningsHeight.value = fyldningsHeightgodkend.value = "0";
+      fyldningsProcent.value = fyldningsProcentgodkend.value = "0";
+      tilladtUdhæng.value = tilladtUdhænggodkend.value = "0";
+      palleBredde.value = palleBreddegodkend.value = "0";
+      palleHeight.value = palleHeightgodkend.value = "0";
+      palleLength.value = palleLengthgodkend.value = "0";
+      senorMaxPosMar.value = senorMaxNegMargodkend.value = "0";
+      senorMaxNegMar.value = senorMaxPosMargodkend.value = "0";
     }
   });
 }
