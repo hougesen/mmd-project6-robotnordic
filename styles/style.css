@@ -7,7 +7,8 @@
   padding: 0;
   font-family: "Titillium Web", sans-serif;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -396,6 +397,10 @@ li a:hover {
   text-align: center;
 }
 
+.twoTitel {
+  text-align: center;
+}
+
 /* The container */
 .checkboxContainerLayout {
   display: block;
@@ -546,11 +551,13 @@ li a:hover {
   flex-direction: column;
   align-items: flex-start;
 }
+
 .manualItem {
   padding: 25px;
   background-color: #ffffff;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
+
 #inner {
   width: 40%;
   margin: 0 auto;
@@ -606,7 +613,7 @@ span.black {
   margin-right: 15px;
   margin-top: 10px;
   text-align: center;
-  width: 1.6em; 
+  width: 1.6em;
 }
 
 /*Manual slut*/
