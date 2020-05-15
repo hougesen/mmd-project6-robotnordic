@@ -547,12 +547,11 @@ li a:hover {
   align-items: flex-start;
 }
 .manualItem {
-  padding: 25px;
   background-color: #ffffff;
   flex-grow: 1; 
 }
 #inner {
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -607,6 +606,10 @@ span.black {
   margin-top: 10px;
   text-align: center;
   width: 1.6em; 
+  transition: 300ms;
+}
+span.black:hover {
+  background: #F15A22;
 }
 
 /*Manual slut*/
