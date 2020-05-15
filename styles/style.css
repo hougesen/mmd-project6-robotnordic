@@ -463,7 +463,10 @@ li a:hover {
   display: block;
 }
 
-
+.produktFarver{
+  padding-left: 50px;
+  font-size: 14px;
+}
 
 .loadLayoutSection {
   display: flex;
@@ -548,7 +551,7 @@ li a:hover {
 }
 .manualItem {
   background-color: #ffffff;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 #inner {
   width: 60%;
@@ -605,7 +608,7 @@ span.black {
   margin-right: 15px;
   margin-top: 10px;
   text-align: center;
-  width: 1.6em; 
+  width: 1.6em;
   transition: 300ms;
 }
 span.black:hover {
