@@ -558,10 +558,23 @@ li a:hover {
 */
 
 .manualGrid{
-  padding:15px;
+  padding:25px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.manual-space{
+    margin: 30px 10px;
+}
+/*her tilføjes der border rundt om hvert billede */
+.dashboardimg, .loadlayoutimg, .palleopimg, .produkterimg, .godkendimg{
+    border: 10px solid #ddd;
+    margin-top: 15px;
+}
+
+/* her tilføjes der en border rundt om hvert tekstboks
+.section-one{
+    border: 7px solid #ddd;
+}*/
 #inner {
   width: 60%;
   margin: 0 auto;
