@@ -23,7 +23,8 @@ function loginCheck() {
   if (form.username.value == "robotnordic" && form.password.value == "123") {
     window.open("dashboard.html");
   } else {
-  }
+      alert("Forkert login information");
+  };
 }
 
 function openProduktInfo(evt, produktInfo) {
