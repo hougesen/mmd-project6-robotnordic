@@ -1,0 +1,241 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    letter-spacing: -0.013em;
+    font-weight: 400;
+    font-family: "Titillium Web", sans-serif;
+}
+body{
+    margin: 0;
+}
+ /*navigationens opsætning */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #081225;
+    border-right: 5px solid #F15A22;
+    flex-direction: column;
+    align-items: center;
+    display:none;
+    justify-content: center;
+    z-index: 3;
+}
+@media (min-width:768px){
+    nav{
+        display: flex;
+    }
+}
+nav img{
+    width: 60%;
+    margin: 50px 0px 0px 0px;
+    display: block;
+    margin-bottom: 35px;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px 50px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.20em;
+}
+nav a:hover{
+    color: #F15A22;
+}
+/*main opsætning */
+main{
+    margin-left: 300px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* logo opsætningen*/
+.logobox{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo1{
+    width: 150px;
+    margin: 20px 30px;
+}
+.logo2{
+    width: 800px;
+    margin: 20px 37px;
+}
+.logo3{
+    width: 170px;
+    margin: 20px;
+}
+/*Farvepalet bokse */
+.farvebox{
+    display: flex;
+    flex-direction: row;
+    
+}
+.farvekode1{
+    background-color: #F15A22;
+    width: 120px;
+    padding: 30px;
+    margin: 10px 10px; 
+    color: #fff;
+}
+.farvekode2{
+    background-color: #212529;
+    width: 120px;
+    padding: 30px;
+    margin: 10px 10px; 
+    color: #fff;
+}
+.farvekode3{
+    background-color: #081225;
+    width: 120px;
+    padding: 30px;
+    margin: 10px 10px; 
+    color: #fff;
+}
+.farvekode4{
+    background-color: #EEEEEE;
+    width: 120px;
+    padding: 30px;
+    margin: 10px 10px; 
+    color: #000;
+}
+.farvekode5{
+    background-color: #FFFFFF;
+    width: 120px;
+    padding: 30px;
+    margin: 10px 10px; 
+    border: 1px solid #000;
+    color: #000;
+}
+
+/*Knapper styling */ 
+.knappebox{
+    flex-direction: row;
+    display: flex;
+}
+
+.firstBtn{
+    background-color: #F15A22;
+    width: 140px;
+    height: 50px;
+     margin: 15px 25px; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.secondBtn{
+    background-color: #F15A22;
+    border-radius: 3px;
+    width: 140px;
+    height: 50px;
+    margin: 15px 30px; 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.secondBtn:hover{
+    background-color: #081225;
+}
+.thirdBtn{
+    border: 2px solid #EEE;
+     border-radius: 100px;
+    box-shadow: black;
+    width: 140px;
+    height: 50px;
+    margin: 15px 25px;
+    color: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.arrow {
+  color: #888888;
+  margin: 1em 0;
+}
+.arrow::after {
+  display: inline-block;
+  padding-left: 8px;
+  content: "\0279E";
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.arrow:hover::after {
+  -webkit-transform: translateX(4px);
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -o-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.fourthBtn{
+    background-color: #F15A22;
+    border-radius: 3px;
+    width: 80px;
+    height: 40px;
+    margin: 20px 25px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.fourthBtn:hover{
+    background-color: #d86842;
+}
+
+/* Form opsætning */ 
+
+input[type=text], select, textarea {
+  width: 138px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*Typografi */
+.font1{
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.font2{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
