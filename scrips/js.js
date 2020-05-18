@@ -1,17 +1,16 @@
-
-
-
 // When the user scrolls down 20px from the top of the document, show the button
 
 function scrollFunction() {
-  var mybutton = document.getElementById("myBtn");
+  let mybutton = document.getElementById("myBtn");
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 }
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction()
+};
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
@@ -19,16 +18,16 @@ function topFunction() {
 }
 
 function loginCheck() {
-  var form = document.getElementById("loginForm");
+  let form = document.getElementById("loginForm");
   if (form.username.value == "robotnordic" && form.password.value == "123") {
     window.open("dashboard.html");
   } else {
-      alert("Forkert login information");
+    alert("Forkert login information");
   };
 }
 
 function openProduktInfo(evt, produktInfo) {
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -43,32 +42,32 @@ function openProduktInfo(evt, produktInfo) {
 document.getElementById("defaultOpen").click();
 
 function palleAutofill() {
-  var e = document.getElementById("palletype");
+  let e = document.getElementById("palletype");
   e.addEventListener("change", function () {
-    var val = e.options[e.selectedIndex].number;
-    var fyldningsHeight = document.getElementById("fyldningsHeight");
-    var fyldningsProcent = document.getElementById("fyldningsProcent");
-    var tilladtUdhæng = document.getElementById("tilladtUdhæng");
-    var palleBredde = document.getElementById("palleBredde");
-    var palleHeight = document.getElementById("palleHeight");
-    var palleLength = document.getElementById("palleLength");
-    var senorMaxPosMar = document.getElementById("senorMaxPosMar");
-    var senorMaxNegMar = document.getElementById("senorMaxNegMar");
+    let val = e.options[e.selectedIndex].number;
+    let fyldningsHeight = document.getElementById("fyldningsHeight");
+    let fyldningsProcent = document.getElementById("fyldningsProcent");
+    let tilladtUdhæng = document.getElementById("tilladtUdhæng");
+    let palleBredde = document.getElementById("palleBredde");
+    let palleHeight = document.getElementById("palleHeight");
+    let palleLength = document.getElementById("palleLength");
+    let senorMaxPosMar = document.getElementById("senorMaxPosMar");
+    let senorMaxNegMar = document.getElementById("senorMaxNegMar");
 
-    var fyldningsHeightgodkend = document.getElementById(
+    let fyldningsHeightgodkend = document.getElementById(
       "fyldningsHeightGodkend"
     );
-    var fyldningsProcentgodkend = document.getElementById(
+    let fyldningsProcentgodkend = document.getElementById(
       "fyldningsProcentGodkend"
     );
-    var tilladtUdhænggodkend = document.getElementById("tilladtUdhængGodkend");
-    var palleBreddegodkend = document.getElementById("palleBreddeGodkend");
-    var palleHeightgodkend = document.getElementById("palleHeightGodkend");
-    var palleLengthgodkend = document.getElementById("palleLengthGodkend");
-    var senorMaxPosMargodkend = document.getElementById(
+    let tilladtUdhænggodkend = document.getElementById("tilladtUdhængGodkend");
+    let palleBreddegodkend = document.getElementById("palleBreddeGodkend");
+    let palleHeightgodkend = document.getElementById("palleHeightGodkend");
+    let palleLengthgodkend = document.getElementById("palleLengthGodkend");
+    let senorMaxPosMargodkend = document.getElementById(
       "senorMaxPosMarGodkend"
     );
-    var senorMaxNegMargodkend = document.getElementById(
+    let senorMaxNegMargodkend = document.getElementById(
       "senorMaxNegMarGodkend"
     );
 
