@@ -9,7 +9,7 @@ body{
     margin: 0;
 }
  /*navigationens opsætning */
-nav{
+.navi{
     position: fixed;
     top: 0;
     left: 0;
@@ -19,23 +19,20 @@ nav{
     border-right: 5px solid #F15A22;
     flex-direction: column;
     align-items: center;
-    display:none;
     justify-content: flex-start;
     z-index: 3; 
+    transition: 0.5s;
+    overflow-x: hidden;
 }
-@media (min-width:768px){
-    nav{
-        display: flex;
-    }
-}
-nav img{
+
+.navi img{
     width: 60%;
     margin: 50px 0px 0px 0px;
     display: block;
     margin-bottom: 35px;
     align-items: center;
 }
-nav a{
+.navi a{
     display: inline-block;
     text-decoration: none;
     padding: 30px 30px;
@@ -47,11 +44,25 @@ nav a{
     transition: 300ms;
     align-self: flex-start;
 }
-nav a:hover{
+.nav a:hover{
     color: #F15A22;
 }
+.burger {
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    z-index: 99;
+  }
+  .burger div {
+    width: 35px;
+    height: 3px;
+    background-color: #F15A22;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
 /*main opsætning */
-main{
+.maini{
     margin-left:300px;
     margin-top: 30px;
     padding: 20px;
@@ -242,3 +253,33 @@ input[type=submit]:hover {
   font-size: 14px;
   font-weight: 500;
 }
+
+/* Media queries start*/
+@media (max-width: 767px) { 
+    .navi{
+        width: 0;
+        border: 0px;
+    }
+   
+    .maini{
+        margin-left: 0px;
+        transition: ease 300ms;
+    }
+    .burger {
+        display: block;
+      }
+  }
+/* Media queries slut*/
+
+  
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-6px, 5px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-6px, -4px);
+    background-color: orange;
+  }
+  
