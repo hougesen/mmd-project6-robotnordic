@@ -129,17 +129,24 @@ body{
     color: #000;
 }
 
+
 /*Knapper styling */ 
 .knappebox{
     flex-direction: row;
     display: flex;
+    justify-content: space-between;
+}
+/* koder display*/
+.knappekode{
+    display: flex;
+    flex-direction: row;
 }
 
 .firstBtn{
     background-color: #F15A22;
     width: 140px;
     height: 50px;
-    margin: 15px 25px 15px 10px; 
+    margin: 15px 50px 15px 0px; 
     color: #fff;
     display: flex;
     justify-content: center;
@@ -147,12 +154,19 @@ body{
     cursor: pointer;
 }
 
+/* placering af fremvist kode*/
+.Btn1kode, .Btn2kode,.Btn3kode,.Btn4kode{
+    font-size: 13px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid grey;
+}
+
 .secondBtn{
     background-color: #F15A22;
     border-radius: 3px;
     width: 140px;
     height: 50px;
-    margin: 15px 20px 15px 0px; 
+    margin: 15px 50px 15px 50px; 
     color: #fff;
     display: flex;
     justify-content: center;
@@ -202,7 +216,7 @@ body{
     border-radius: 3px;
     width: 80px;
     height: 40px;
-    margin: 20px 25px;
+    margin: 20px 70px;
     color: #fff;
     display: flex;
     justify-content: center;
