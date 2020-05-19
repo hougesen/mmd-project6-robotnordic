@@ -157,8 +157,10 @@ body{
 /* placering af fremvist kode*/
 .Btn1kode, .Btn2kode,.Btn3kode,.Btn4kode{
     font-size: 13px;
-    padding: 10px 20px 10px 20px;
-    border: 1px solid grey;
+    background: #081225;
+    padding: 10px 20px 10px 10px;
+    color: #F15A22;
+    border: 5px solid #fff;
 }
 
 .secondBtn{
@@ -267,7 +269,17 @@ input[type=submit]:hover {
   font-size: 14px;
   font-weight: 500;
 }
-
+/*Typografi koder */
+.typokode{
+    background: #081225;
+    border-radius: 100px;
+    color: #F15A22;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-content: center;
+    font-size: 13px;
+    justify-content: space-evenly;
+}
 /* Media queries start*/
 @media (max-width: 767px) { 
     .navi{
