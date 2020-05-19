@@ -270,7 +270,7 @@ input[type=submit]:hover {
   font-weight: 500;
 }
 /*Typografi koder */
-.typokode{
+#typokode,#typokode2{
     background: #081225;
     color: #F15A22;
     padding: 10px 0px 10px 0px;

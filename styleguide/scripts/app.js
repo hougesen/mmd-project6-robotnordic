@@ -17,3 +17,12 @@ const navSlide = () => {
     });
 };
 navSlide();
+//vis skjul kode funktionen
+ function showHide(){
+        const click = document.getElementById("typokode");
+        if (click.style.display === "none"){
+            click.style.display ="block";
+        }else {
+            click.style.display ="none";
+        };
+    }
