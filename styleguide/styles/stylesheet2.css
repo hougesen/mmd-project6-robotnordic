@@ -272,7 +272,6 @@ input[type=submit]:hover {
 /*Typografi koder */
 .typokode{
     background: #081225;
-    border-radius: 100px;
     color: #F15A22;
     padding: 10px 0px 10px 0px;
     display: flex;
