@@ -17,12 +17,31 @@ const navSlide = () => {
     });
 };
 navSlide();
-//vis skjul kode funktionen
- function showHide(){
-        const click = document.getElementById("typokode");
+//vis-skjul kode funktionen for knapper
+    let x = document.getElementById("visskjul");
+        x.addEventListener("click", myFunction);
+
+
+        function myFunction() {
+        let click = document.getElementById("displaykode");
         if (click.style.display === "none"){
             click.style.display ="block";
         }else {
             click.style.display ="none";
         };
-    }
+        }
+
+//vis-skjul kode funktionen for typografi
+   let y = document.getElementById("visskjul2");
+        y.addEventListener("click", showHide);
+
+
+        function showHide() {
+        let click = document.getElementById("displaytypo");
+        if (click.style.display === "none"){
+            click.style.display ="block";
+        }else {
+            click.style.display ="none";
+        };
+        }
+

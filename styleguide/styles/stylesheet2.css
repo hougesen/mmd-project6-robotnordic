@@ -137,7 +137,10 @@ body{
     justify-content: space-between;
 }
 /* koder display*/
-.knappekode{
+#displaykode{
+    display: none;
+}
+#knappekode{
     display: flex;
     flex-direction: row;
 }
@@ -270,7 +273,19 @@ input[type=submit]:hover {
   font-weight: 500;
 }
 /*Typografi koder */
-#typokode,#typokode2{
+#displaytypo{
+    display: none;
+}
+#typokode{
+    background: #081225;
+    color: #F15A22;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-content: center;
+    font-size: 13px;
+    justify-content: space-evenly;
+}
+.typokode2{
     background: #081225;
     color: #F15A22;
     padding: 10px 0px 10px 0px;
