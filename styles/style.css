@@ -584,14 +584,19 @@ li a:hover {
 /*her tilføjes der border rundt om hvert billede */
 .dashboardimg, .loadlayoutimg, .palleopimg, .produkterimg, .godkendimg{
     border: 10px solid #ddd;
-    margin-top: 15px;
+    margin-top: px;
     max-width: 100%;
+    width: 700px;
 }
 
-/* her tilføjes der en border rundt om hvert tekstboks
+
 .section-one{
-    border: 7px solid #ddd;
-}*/
+    background-color: #ddd;
+    padding: 10px;
+}
+.manual-p{
+    margin-left: 45px;
+}
 #inner {
   width: 60%;
   margin: 0 auto;
@@ -790,6 +795,27 @@ span.black:hover {
     text-align: center;
   }
 
-
+    .manualContainer{
+        display:flex;
+        flex-direction: row;
+    }
+    .manual-nav{
+        display: none;
+    }
+    .section-one{
+        font-size: 20px;
+        
+    }
+    .dashboardimg, .loadlayoutimg,.produkterimg,.godkendimg{
+        width: 500px;
+    
+    }
+    .manual-space{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    
 }
 /*Mediaqueries slut*/
