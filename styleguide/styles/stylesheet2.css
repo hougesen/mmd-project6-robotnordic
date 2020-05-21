@@ -4,6 +4,7 @@
     letter-spacing: -0.013em;
     font-weight: 400;
     font-family: "Titillium Web", sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -63,9 +64,9 @@ body{
   
 /*main opsætning */
 .maini{
-    margin-left:300px;
+    margin-left:250px;
     margin-top: 30px;
-    padding: 20px;
+    padding: 40px;
 }
 
 /* logo opsætningen*/
@@ -134,7 +135,8 @@ body{
 .knappebox{
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: center;
 }
 /* koder display*/
 #displaykode{
@@ -163,6 +165,8 @@ body{
     background: #081225;
     padding: 10px 20px 10px 10px;
     color: #F15A22;
+    height: 100%;
+    width: 100%;
     border: 5px solid #fff;
 }
 
