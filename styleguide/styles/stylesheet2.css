@@ -1,11 +1,13 @@
 @charset "UTF-8";
-*{
+
+* {
     box-sizing: border-box;
     letter-spacing: -0.013em;
     font-weight: 400;
     font-family: "Titillium Web", sans-serif;
 }
-body{
+
+body {
     margin: 0;
 }
  /*navigationens opsætning */
@@ -25,14 +27,14 @@ body{
     overflow-x: hidden;
 }
 
-.navi img{
+.navi img {
     width: 60%;
     margin: 50px 0px 0px 0px;
     display: block;
     margin-bottom: 35px;
     align-items: center;
 }
-.navi a{
+.navi a {
     display: inline-block;
     text-decoration: none;
     padding: 30px 30px;
@@ -261,6 +263,21 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+/* Form koder opsætning */ 
+#form-koder{
+    font-size: 13px;
+    background: #081225;
+    padding: 10px 20px 10px 10px;
+    color: #F15A22;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#form-1, #form-2, #form-3, #form-4, #form-5{
+    display: none;
+}
+
 /*Typografi */
 .font1{
   font-family: 'Rubik', sans-serif;
@@ -273,10 +290,10 @@ input[type=submit]:hover {
   font-weight: 500;
 }
 /*Typografi koder */
-#displaytypo{
+#displaytypo, #displaytypo2{
     display: none;
 }
-#typokode{
+.typokode{
     background: #081225;
     color: #F15A22;
     padding: 10px 0px 10px 0px;
