@@ -795,27 +795,15 @@ span.black:hover {
     text-align: center;
   }
 
-    .manualContainer{
-        display:flex;
-        flex-direction: row;
-    }
+/* manual queries */
+   
     .manual-nav{
         display: none;
-    }
-    .section-one{
+    }    
+
+     .section-one{
         font-size: 20px;
-        
     }
-    .dashboardimg, .loadlayoutimg,.produkterimg,.godkendimg{
-        width: 500px;
-    
-    }
-    .manual-space{
-        display: flex;
-        flex-direction: row;
-        
-    }
-    
     
 }
 /*Mediaqueries slut*/
