@@ -30,14 +30,91 @@ navSlide();
             click.style.display ="none";
         };
         }
-
-//vis-skjul kode funktionen for typografi
-   let y = document.getElementById("visskjul2");
-        y.addEventListener("click", showHide);
+// vis-skjul kode for Forms
+   let z = document.getElementById("visform");
+        z.addEventListener("click", showHide);
 
 
         function showHide() {
+        let click = document.getElementById("form-1");
+        if (click.style.display === "none"){
+            click.style.display ="block";
+        }else {
+            click.style.display ="none";
+        };
+        }
+
+   let zz = document.getElementById("visform2");
+        zz.addEventListener("click", showHidef2);
+
+
+        function showHidef2() {
+        let click = document.getElementById("form-2");
+        if (click.style.display === "none"){
+            click.style.display ="block";
+        }else {
+            click.style.display ="none";
+        };
+        }
+
+   let zzz = document.getElementById("visform3");
+        zzz.addEventListener("click", showHidef3);
+
+
+        function showHidef3() {
+        let click = document.getElementById("form-3");
+        if (click.style.display === "none"){
+            click.style.display ="block";
+        }else {
+            click.style.display ="none";
+        };
+        }
+
+  let zzzz = document.getElementById("visform4");
+        zzzz.addEventListener("click", showHidef4);
+
+
+        function showHidef4() {
+        let click = document.getElementById("form-4");
+        if (click.style.display === "none"){
+            click.style.display ="block";
+        }else {
+            click.style.display ="none";
+        };
+        }
+
+  let zzzzz = document.getElementById("visform5");
+        zzzzz.addEventListener("click", showHidef5);
+
+
+        function showHidef5() {
+        let click = document.getElementById("form-5");
+        if (click.style.display === "none"){
+            click.style.display ="block";
+        }else {
+            click.style.display ="none";
+        };
+        }
+
+//vis-skjul kode funktionen for typografi
+   let y = document.getElementById("visskjul2");
+        y.addEventListener("click", showHideTypo);
+
+
+        function showHideTypo() {
         let click = document.getElementById("displaytypo");
+        if (click.style.display === "none"){
+            click.style.display ="block";
+        }else {
+            click.style.display ="none";
+        };
+        }
+  let yy = document.getElementById("visskjul3");
+        yy.addEventListener("click", showHideTypo2);
+
+
+        function showHideTypo2() {
+        let click = document.getElementById("displaytypo2");
         if (click.style.display === "none"){
             click.style.display ="block";
         }else {
