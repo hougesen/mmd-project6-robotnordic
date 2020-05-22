@@ -61,8 +61,6 @@ function loginCheck() {
       return;
     }
   }
-  if(username.value = ""){
-    alert("need password");
 }
 
 function openProduktInfo(evt, produktInfo) {
