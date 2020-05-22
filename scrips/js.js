@@ -2,14 +2,17 @@
 
 function scrollFunction() {
   let mybutton = document.getElementById("myBtn");
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  if (
+    document.body.scrollTop > 500 ||
+    document.documentElement.scrollTop > 500
+  ) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 }
 window.onscroll = function () {
-  scrollFunction()
+  scrollFunction();
 };
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
@@ -18,12 +21,52 @@ function topFunction() {
 }
 
 function loginCheck() {
-  let form = document.getElementById("loginForm");
-  if (form.username.value == "robotnordic" && form.password.value == "123") {
-    window.open("dashboard.html");
-  } else {
-    alert("Forkert login information");
-  };
+  let users = [
+    {
+      // Object @ 0 index
+      username: "robotnordic",
+      password: "so you think you can dance",
+    },
+    {
+      // Object @ 1 index
+      username: "abdul",
+      password: "123",
+    },
+    {
+      // Object @ 2 index
+      username: "mads",
+      password: "123",
+    },
+    {
+      // Object @ 3 index
+      username: "khalid",
+      password: "123",
+    },
+    {
+      // Object @ 4 index
+      username: "sebastian",
+      password: "123",
+    },
+  ];
+
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+
+  for (var i = 0; i < users.length; i++) {
+    // check is user input matches username and password of a current index of the objPeople array
+    // hvis user 
+    if (
+      username == users[i].username &&
+      password == users[i].password
+    ) {
+      window.open("dashboard.html");
+      // stop the function if this is found to be true
+      return;
+    }
+  }
+  if(username.value = ""){
+    alert("need password");
+  }
 }
 
 function openProduktInfo(evt, produktInfo) {
@@ -80,6 +123,23 @@ function palleAutofill() {
       palleLength.value = palleLengthgodkend.value = "1200";
       senorMaxPosMar.value = senorMaxNegMargodkend.value = "0";
       senorMaxNegMar.value = senorMaxPosMargodkend.value = "0";
+
+      localStorage.setItem("fyldningsHeight", fyldningsHeight.value);
+      localStorage.setItem("fyldningsProcent", fyldningsProcent.value);
+      localStorage.setItem("tilladtUdhæng", tilladtUdhæng.value);
+      localStorage.setItem("palleBredde", palleBredde.value);
+      localStorage.setItem("palleHeight", palleHeight.value);
+      localStorage.setItem("palleLength", palleLength.value);
+      localStorage.setItem("senorMaxPosMar", senorMaxPosMar.value);
+      localStorage.setItem("senorMaxNegMar", senorMaxNegMar.value);
+
+      fyldningsProcent;
+      tilladtUdhæng;
+      palleBredde;
+      palleHeight;
+      palleLength;
+      senorMaxPosMar;
+      senorMaxNegMar;
     } else if (e.selectedIndex == "2") {
       fyldningsHeight.value = fyldningsHeightgodkend.value = "300";
       fyldningsProcent.value = fyldningsProcentgodkend.value = "70";
