@@ -54,11 +54,8 @@ function loginCheck() {
 
   for (var i = 0; i < users.length; i++) {
     // check is user input matches username and password of a current index of the objPeople array
-    // hvis user 
-    if (
-      username == users[i].username &&
-      password == users[i].password
-    ) {
+    // hvis user
+    if (username == users[i].username && password == users[i].password) {
       window.open("dashboard.html");
       // stop the function if this is found to be true
       return;
@@ -66,7 +63,6 @@ function loginCheck() {
   }
   if(username.value = ""){
     alert("need password");
-  }
 }
 
 function openProduktInfo(evt, produktInfo) {
@@ -115,58 +111,73 @@ function palleAutofill() {
     );
 
     if (e.selectedIndex == "1") {
-      fyldningsHeight.value = fyldningsHeightgodkend.value = "300";
-      fyldningsProcent.value = fyldningsProcentgodkend.value = "70";
-      tilladtUdhæng.value = tilladtUdhænggodkend.value = "0";
-      palleBredde.value = palleBreddegodkend.value = "600";
-      palleHeight.value = palleHeightgodkend.value = "144";
-      palleLength.value = palleLengthgodkend.value = "1200";
-      senorMaxPosMar.value = senorMaxNegMargodkend.value = "0";
-      senorMaxNegMar.value = senorMaxPosMargodkend.value = "0";
-
-      localStorage.setItem("fyldningsHeight", fyldningsHeight.value);
-      localStorage.setItem("fyldningsProcent", fyldningsProcent.value);
-      localStorage.setItem("tilladtUdhæng", tilladtUdhæng.value);
-      localStorage.setItem("palleBredde", palleBredde.value);
-      localStorage.setItem("palleHeight", palleHeight.value);
-      localStorage.setItem("palleLength", palleLength.value);
-      localStorage.setItem("senorMaxPosMar", senorMaxPosMar.value);
-      localStorage.setItem("senorMaxNegMar", senorMaxNegMar.value);
-
-      fyldningsProcent;
-      tilladtUdhæng;
-      palleBredde;
-      palleHeight;
-      palleLength;
-      senorMaxPosMar;
-      senorMaxNegMar;
+      localStorage.setItem("fyldningsHeight", (fyldningsHeight.value = "300"));
+      localStorage.setItem("fyldningsProcent", (fyldningsProcent.value = "70"));
+      localStorage.setItem("tilladtUdhæng", (tilladtUdhæng.value = "0"));
+      localStorage.setItem("palleBredde", (palleBredde.value = "600"));
+      localStorage.setItem("palleHeight", (palleHeight.value = "144"));
+      localStorage.setItem("palleLength", (palleLength.value = "1200"));
+      localStorage.setItem("senorMaxPosMar", (senorMaxPosMar.value = "0"));
+      localStorage.setItem("senorMaxNegMar", (senorMaxNegMar.value = "0"));
+      fyldningsHeightgodkend.value = localStorage.getItem("fyldningsHeight");
+      fyldningsProcentgodkend.value = localStorage.getItem("fyldningsProcent");
+      tilladtUdhænggodkend.value = localStorage.getItem("tilladtUdhæng");
+      palleBreddegodkend.value = localStorage.getItem("palleBredde");
+      palleHeightgodkend.value = localStorage.getItem("palleHeight");
+      palleLengthgodkend.value = localStorage.getItem("palleLength");
+      senorMaxNegMargodkend.value = localStorage.getItem("senorMaxPosMar");
+      senorMaxPosMargodkend.value = localStorage.getItem("senorMaxNegMar");
     } else if (e.selectedIndex == "2") {
-      fyldningsHeight.value = fyldningsHeightgodkend.value = "300";
-      fyldningsProcent.value = fyldningsProcentgodkend.value = "70";
-      tilladtUdhæng.value = tilladtUdhænggodkend.value = "0";
-      palleBredde.value = palleBreddegodkend.value = "600";
-      palleHeight.value = palleHeightgodkend.value = "144";
-      palleLength.value = palleLengthgodkend.value = "800";
-      senorMaxPosMar.value = senorMaxNegMargodkend.value = "0";
-      senorMaxNegMar.value = senorMaxPosMargodkend.value = "0";
+      localStorage.setItem("fyldningsHeight", (fyldningsHeight.value = "300"));
+      localStorage.setItem("fyldningsProcent", (fyldningsProcent.value = "70"));
+      localStorage.setItem("tilladtUdhæng", (tilladtUdhæng.value = "0"));
+      localStorage.setItem("palleBredde", (palleBredde.value = "600"));
+      localStorage.setItem("palleHeight", (palleHeight.value = "144"));
+      localStorage.setItem("palleLength", (palleLength.value = "800"));
+      localStorage.setItem("senorMaxPosMar", (senorMaxPosMar.value = "0"));
+      localStorage.setItem("senorMaxNegMar", (senorMaxNegMar.value = "0"));
+      fyldningsHeightgodkend.value = localStorage.getItem("fyldningsHeight");
+      fyldningsProcentgodkend.value = localStorage.getItem("fyldningsProcent");
+      tilladtUdhænggodkend.value = localStorage.getItem("tilladtUdhæng");
+      palleBreddegodkend.value = localStorage.getItem("palleBredde");
+      palleHeightgodkend.value = localStorage.getItem("palleHeight");
+      palleLengthgodkend.value = localStorage.getItem("palleLength");
+      senorMaxNegMargodkend.value = localStorage.getItem("senorMaxPosMar");
+      senorMaxPosMargodkend.value = localStorage.getItem("senorMaxNegMar");
     } else if (e.selectedIndex == "3") {
-      fyldningsHeight.value = fyldningsHeightgodkend.value = "300";
-      fyldningsProcent.value = fyldningsProcentgodkend.value = "70";
-      tilladtUdhæng.value = tilladtUdhænggodkend.value = "0";
-      palleBredde.value = palleBreddegodkend.value = "600";
-      palleHeight.value = palleHeightgodkend.value = "144";
-      palleLength.value = palleLengthgodkend.value = "600";
-      senorMaxPosMar.value = senorMaxNegMargodkend.value = "0";
-      senorMaxNegMar.value = senorMaxPosMargodkend.value = "0";
+      localStorage.setItem("fyldningsHeight", (fyldningsHeight.value = "300"));
+      localStorage.setItem("fyldningsProcent", (fyldningsProcent.value = "70"));
+      localStorage.setItem("tilladtUdhæng", (tilladtUdhæng.value = "0"));
+      localStorage.setItem("palleBredde", (palleBredde.value = "600"));
+      localStorage.setItem("palleHeight", (palleHeight.value = "144"));
+      localStorage.setItem("palleLength", (palleLength.value = "600"));
+      localStorage.setItem("senorMaxPosMar", (senorMaxPosMar.value = "0"));
+      localStorage.setItem("senorMaxNegMar", (senorMaxNegMar.value = "0"));
+      fyldningsHeightgodkend.value = localStorage.getItem("fyldningsHeight");
+      fyldningsProcentgodkend.value = localStorage.getItem("fyldningsProcent");
+      tilladtUdhænggodkend.value = localStorage.getItem("tilladtUdhæng");
+      palleBreddegodkend.value = localStorage.getItem("palleBredde");
+      palleHeightgodkend.value = localStorage.getItem("palleHeight");
+      palleLengthgodkend.value = localStorage.getItem("palleLength");
+      senorMaxNegMargodkend.value = localStorage.getItem("senorMaxPosMar");
+      senorMaxPosMargodkend.value = localStorage.getItem("senorMaxNegMar");
     } else if (e.selectedIndex == "4") {
-      fyldningsHeight.value = fyldningsHeightgodkend.value = "0";
-      fyldningsProcent.value = fyldningsProcentgodkend.value = "0";
-      tilladtUdhæng.value = tilladtUdhænggodkend.value = "0";
-      palleBredde.value = palleBreddegodkend.value = "0";
-      palleHeight.value = palleHeightgodkend.value = "0";
-      palleLength.value = palleLengthgodkend.value = "0";
-      senorMaxPosMar.value = senorMaxNegMargodkend.value = "0";
-      senorMaxNegMar.value = senorMaxPosMargodkend.value = "0";
+      localStorage.setItem("fyldningsHeight", (fyldningsHeight.value = ""));
+      localStorage.setItem("fyldningsProcent", (fyldningsProcent.value = ""));
+      localStorage.setItem("tilladtUdhæng", (tilladtUdhæng.value = ""));
+      localStorage.setItem("palleBredde", (palleBredde.value = ""));
+      localStorage.setItem("palleHeight", (palleHeight.value = ""));
+      localStorage.setItem("palleLength", (palleLength.value = ""));
+      localStorage.setItem("senorMaxPosMar", (senorMaxPosMar.value = ""));
+      localStorage.setItem("senorMaxNegMar", (senorMaxNegMar.value = ""));
+      fyldningsHeightgodkend.value = localStorage.getItem("fyldningsHeight");
+      fyldningsProcentgodkend.value = localStorage.getItem("fyldningsProcent");
+      tilladtUdhænggodkend.value = localStorage.getItem("tilladtUdhæng");
+      palleBreddegodkend.value = localStorage.getItem("palleBredde");
+      palleHeightgodkend.value = localStorage.getItem("palleHeight");
+      palleLengthgodkend.value = localStorage.getItem("palleLength");
+      senorMaxNegMargodkend.value = localStorage.getItem("senorMaxPosMar");
+      senorMaxPosMargodkend.value = localStorage.getItem("senorMaxNegMar");
     }
   });
 }
