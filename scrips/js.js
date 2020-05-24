@@ -180,3 +180,42 @@ function palleAutofill() {
   });
 }
 palleAutofill();
+document.getElementById("videre").addEventListener("click", function () {
+  let mønsterNavn = document.getElementById("patternName");
+  let mønsterNavnGodkend = document.getElementById("patternNameGodkend");
+  let blandedeLag = document.getElementById("blandedeLag");
+  let spredPakker = document.getElementById("spredPakker");
+  let kunFuldeLag = document.getElementById("kunFuldeLag");
+  let centerLoad = document.getElementById("centerLoad");
+  let pakkerVedKant = document.getElementById("pakkerVedKant");
+  let bindLag = document.getElementById("bindLag");
+
+  let blandedeLagGodkend = document.getElementById("blandedeLagGodkend");
+  let spredPakkerGodkend = document.getElementById("spredPakkerGodkend");
+  let kunFuldeLagGodkend = document.getElementById("kunFuldeLagGodkend");
+  let centerLoadGodkend = document.getElementById("centerLoadGodkend");
+  let pakkerVedKantGodkend = document.getElementById("pakkerVedKantGodkend");
+  let bindLagGodkend = document.getElementById("bindLagGodkend");
+
+  if (mønsterNavn.value) {
+    mønsterNavnGodkend.value = mønsterNavn.value;
+  }
+  if (blandedeLag.checked) {
+    blandedeLagGodkend.checked = blandedeLag.checked;
+  }
+  if (spredPakker.checked) {
+    spredPakkerGodkend.checked = spredPakker.checked;
+  }
+  if (kunFuldeLag.checked) {
+    kunFuldeLagGodkend.checked = kunFuldeLag.checked;
+  }
+  if (centerLoad.checked) {
+    centerLoadGodkend.checked = centerLoad.checked;
+  }
+  if (pakkerVedKant.checked) {
+    pakkerVedKantGodkend.checked = pakkerVedKant.checked;
+  }
+  if (bindLag.checked) {
+    bindLagGodkend.checked = bindLag.checked;
+  }
+});
