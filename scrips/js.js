@@ -63,6 +63,23 @@ function loginCheck() {
   }
 }
 
+
+const manifest = () => {
+  const manifestKnap = document.querySelector(".manifestButton");
+  const manifestInhold = document.querySelector(".manifestContent");
+
+  manifestKnap.addEventListener("click", () => {
+    if(manifestInhold.style.width &&manifestKnap.style.right ){
+      manifestInhold.style.width = "";
+      manifestKnap.style.right = ""
+    }else{
+      manifestInhold.style.width = "355px";
+      manifestKnap.style.right = "355px"
+    }
+  });
+};
+manifest();
+
 function openProduktInfo(evt, produktInfo) {
   let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -202,6 +219,7 @@ document.getElementById("videre").addEventListener("click", function () {
   }
   if (blandedeLag.checked) {
     blandedeLagGodkend.checked = blandedeLag.checked;
+    localStorage.setItem("blandedeLag", blandedeLag.checked);
   }
   if (spredPakker.checked) {
     spredPakkerGodkend.checked = spredPakker.checked;
@@ -219,6 +237,7 @@ document.getElementById("videre").addEventListener("click", function () {
     bindLagGodkend.checked = bindLag.checked;
   }
 });
+
 
 document.getElementById("videre2").addEventListener("click", function () {
   let produktNavn = document.getElementById("produktNavn");
@@ -251,15 +270,38 @@ document.getElementById("videre2").addEventListener("click", function () {
   if (produktNavn.value) {
     produktNavnGodkend.value = produktNavn.value;
   }
-  if(antalProdukter){}
-  if(fyldPalleProdukt){}
-  if(pakkeFrom){}
-  if(pakkeBredde){}
-  if(pakkeHøjde){}
-  if(pakkeLængde){}
-  if(vægt){}
-  if(sideUd){}
-  if(kunTopPlacering){}
-  if(kunBundPlacering){}
-  if(forsigtig){}
+  if(antalProdukter){
+    antalProdukterGodkend.value = antalProdukter.value;
+  }
+  if(fyldPalleProdukt.checked){
+    fyldPalleProduktGodkend.checked = fyldPalleProdukt.checked;
+    antalProdukterGodkend.value = "300";
+  }
+  if(pakkeFrom.value){
+    pakkeFromGodkend.value = pakkeFrom.value;
+  }
+  if(pakkeBredde.value){
+    pakkeBreddeGodkend.value = pakkeBredde.value;
+  }
+  if(pakkeHøjde.value){
+    pakkeHøjdeGodkend.value = pakkeHøjde.value;
+  }
+  if(pakkeLængde.value){
+    pakkeLængdeGodkend.value = pakkeLængde.value;
+  }
+  if(vægt.value){
+    vægtGodkend.value = vægt.value;
+  }
+  if(sideUd.value){
+    sideUdGodkend.value = sideUd.value;
+  }
+  if(kunTopPlacering.checked){
+    kunTopPlaceringGodkend.checked = kunTopPlacering.checked;
+  }
+  if(kunBundPlacering.checked){
+    kunBundPlaceringGodkend.checked = kunBundPlacering.checked;
+  }
+  if(forsigtig.checked){
+    forsigtigGodkend.checked = forsigtig.checked;
+  }
 });
