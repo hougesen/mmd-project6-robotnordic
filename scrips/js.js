@@ -189,7 +189,7 @@ document.getElementById("videre").addEventListener("click", function () {
   let centerLoad = document.getElementById("centerLoad");
   let pakkerVedKant = document.getElementById("pakkerVedKant");
   let bindLag = document.getElementById("bindLag");
-
+  //GODKEND
   let blandedeLagGodkend = document.getElementById("blandedeLagGodkend");
   let spredPakkerGodkend = document.getElementById("spredPakkerGodkend");
   let kunFuldeLagGodkend = document.getElementById("kunFuldeLagGodkend");
@@ -218,4 +218,48 @@ document.getElementById("videre").addEventListener("click", function () {
   if (bindLag.checked) {
     bindLagGodkend.checked = bindLag.checked;
   }
+});
+
+document.getElementById("videre2").addEventListener("click", function () {
+  let produktNavn = document.getElementById("produktNavn");
+  let antalProdukter = document.getElementById("antalProdukter");
+  let fyldPalleProdukt = document.getElementById("fyldPalleProdukt");
+  let pakkeFrom = document.getElementById("pakkeFrom");
+  let pakkeBredde = document.getElementById("pakkeBredde");
+  let pakkeHøjde = document.getElementById("pakkeHøjde");
+  let pakkeLængde = document.getElementById("pakkeLængde");
+  let vægt = document.getElementById("vægt");
+  let sideUd = document.getElementById("sideUd");
+  let kunTopPlacering = document.getElementById("kunTopPlacering");
+  let kunBundPlacering = document.getElementById("kunBundPlacering");
+  let forsigtig = document.getElementById("forsigtig");
+  //GODKEND
+  let produktNavnGodkend = document.getElementById("produktNavnGodkend");
+  let antalProdukterGodkend = document.getElementById("antalProdukterGodkend");
+  let fyldPalleProduktGodkend = document.getElementById("fyldPalleProduktGodkend");
+  let pakkeFromGodkend = document.getElementById("pakkeFromGodkend");
+  let pakkeBreddeGodkend = document.getElementById("pakkeBreddeGodkend");
+  let pakkeHøjdeGodkend = document.getElementById("pakkeHøjdeGodkend");
+  let pakkeLængdeGodkend = document.getElementById("pakkeLængdeGodkend");
+  let vægtGodkend = document.getElementById("vægtGodkend");
+  let sideUdGodkend = document.getElementById("sideUdGodkend");
+  let kunTopPlaceringGodkend = document.getElementById("kunTopPlaceringGodkend");
+  let kunBundPlaceringGodkend = document.getElementById("kunBundPlaceringGodkend");
+  let forsigtigGodkend = document.getElementById("forsigtigGodkend");
+
+
+  if (produktNavn.value) {
+    produktNavnGodkend.value = produktNavn.value;
+  }
+  if(antalProdukter){}
+  if(fyldPalleProdukt){}
+  if(pakkeFrom){}
+  if(pakkeBredde){}
+  if(pakkeHøjde){}
+  if(pakkeLængde){}
+  if(vægt){}
+  if(sideUd){}
+  if(kunTopPlacering){}
+  if(kunBundPlacering){}
+  if(forsigtig){}
 });

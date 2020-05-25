@@ -224,7 +224,7 @@
                         <input type="text" name="produktNavn" id="produktNavn">
                     </div>
                     <div>
-                        <label for="antalProdukter">Antal produkter</label>
+                        <label for="antalProdukter" >Antal produkter</label>
                         <input type="number" name="antalProdukter" id="antalProdukter">
                     </div>
                     <div>
@@ -293,7 +293,7 @@
             </form>
             <div class="tabButton">
                 <button class="tablinks tilbage" onclick="openProduktInfo(event, 'palleoplysninger')">Tilbage</button>
-                <button class="tablinks frem" onclick="openProduktInfo(event, 'godkend')">Videre</button>
+                <button class="tablinks frem" id="videre2" onclick="openProduktInfo(event, 'godkend')">Videre</button>
             </div>
         </div>
 
@@ -468,7 +468,7 @@
                     </div>
                     <div>
                         <label for="pakkeFrom">Pakke form</label>
-                        <select name="pakkeFrom" id="pakkeFrom">
+                        <select name="pakkeFrom" id="pakkeFromGodkend">
                             <option value="kasse">Kasse</option>
                             <option value="rund">Rund</option>
                         </select>
@@ -489,11 +489,11 @@
                     </div>
                     <div>
                         <label for="vægt">Vægt</label>
-                        <input type="number" name="vægt" id="vægt">
+                        <input type="number" name="vægt" id="vægtGodkend">
                     </div>
                     <div>
                         <label for="sideUd">Side ud</label>
-                        <input type="text" name="sideUd" id="sideUd">
+                        <input type="text" name="sideUd" id="sideUdGodkend">
                     </div>
                     <div></div>
                     <div>
@@ -514,7 +514,7 @@
                     </div>
                     <div>
                         <label class="checkboxContainerLayout">
-                            <input type="checkbox" name="forsigtig" id="forsigtig" />
+                            <input type="checkbox" name="forsigtig" id="forsigtigGodkend" />
                             <span class="checkmarkLayout"></span>
                             <p style="margin-left: 2rem;">Forsigtig</p>
                         </label>
