@@ -63,23 +63,6 @@ function loginCheck() {
   }
 }
 
-
-const manifest = () => {
-  const manifestKnap = document.querySelector(".manifestButton");
-  const manifestInhold = document.querySelector(".manifestContent");
-
-  manifestKnap.addEventListener("click", () => {
-    if(manifestInhold.style.width &&manifestKnap.style.right ){
-      manifestInhold.style.width = "";
-      manifestKnap.style.right = ""
-    }else{
-      manifestInhold.style.width = "355px";
-      manifestKnap.style.right = "355px"
-    }
-  });
-};
-manifest();
-
 function openProduktInfo(evt, produktInfo) {
   let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -305,3 +288,5 @@ document.getElementById("videre2").addEventListener("click", function () {
     forsigtigGodkend.checked = forsigtig.checked;
   }
 });
+
+
