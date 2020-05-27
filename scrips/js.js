@@ -1,22 +1,29 @@
-// When the user scrolls down 20px from the top of the document, show the button
-
+// Funktion som gør at en knap bliver synlig når man scroller 500px + ned fra toppen af siden. 
 function scrollFunction() {
+  // Definerer hvilken knap der er tale om. 
   let mybutton = document.getElementById("myBtn");
+  // If statement som checker hvor langt der er til toppen af siden. 
   if (
     document.body.scrollTop > 500 ||
     document.documentElement.scrollTop > 500
   ) {
+    // Hvis der er scrollet over 500px fra toppen får knappen display: block; hvilket samtidig gør den synlig. 
     mybutton.style.display = "block";
   } else {
+    // Hvis der er scrollet under 500px fra toppen beholder knappen display: none; hvilket gør den ikke bliver vist
     mybutton.style.display = "none";
   }
 }
+// Hver gang der bliver scrollet caller dette event den tidligere funktion scrollFunction for at tjekke om der er scrollet over/under 500px fra toppen. 
 window.onscroll = function () {
   scrollFunction();
 };
-// When the user clicks on the button, scroll to the top of the document
+
+// Funktion som gør at brugeren scroller til toppen hvis der klikkes på knappen
 function topFunction() {
+  // document.body.scrollTop bruges til Safari
   document.body.scrollTop = 0;
+  // document.documentElement.scrollTop bruges til Chrome, Firefox, IE og Opera
   document.documentElement.scrollTop = 0;
 }
 
@@ -62,19 +69,20 @@ function loginCheck() {
   }
 }
 
-function openProduktInfo(evt, produktInfo) {
-  let i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+// Denne funktion bruges til at inddele de forskellige sektioner af Nyt Layout siden i forskellige tabs, således at den er mere overskuelig
+function openNytLayout(evt, nytLayout) {
+  // Definerer vores variabler. Der bruges let i stedet for var pga. der ikke er behov for at variablerne kan genbruges i andre funktioner udenfor bracketsne. 
+  let i, tabContent, tabLinks;
+  // Her bliver indgoldet af de 3 tabs skjult med display: none;
+  tabContent = document.getElementsByClassName("tabContent");
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(produktInfo).style.display = "block";
-  evt.currentTarget.className += " active";
+  // Her gives display: block; til den valgte tab
+  document.getElementById(nytLayout).style.display = "block";
 }
+
+// Dette event bruges til at definere hvilken tab som skal åbnes først 
 document.getElementById("defaultOpen").click();
 
 

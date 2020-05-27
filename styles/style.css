@@ -186,7 +186,7 @@ li a:hover {
   text-decoration: underline;
 }
 
-.tabcontent {
+.tabContent {
   width: 60%;
   display: none;
   padding: 6px 12px;
@@ -468,7 +468,7 @@ li a:hover {
 /* Create a custom checkbox */
 .checkmarkLayout {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   height: 25px;
   width: 25px;
@@ -622,9 +622,8 @@ li a:hover {
 .produkterimg,
 .godkendimg {
   border: 10px solid #ddd;
-  /* margin-top: px;*/
-  max-width: 100%;
-  width: 700px;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -898,7 +897,7 @@ span.black:hover {
 
   }
 
-  .tabcontent {
+  .tabContent {
     width: 90%;
   }
 

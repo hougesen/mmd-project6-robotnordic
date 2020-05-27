@@ -37,13 +37,13 @@
 
     <section class="nytlayout">
         <div class="tab">
-            <button class="tablinks" onclick="openProduktInfo(event, 'palleoplysninger')" id="defaultOpen">Palle
+            <button class="tabLinks" onclick="openNytLayout(event, 'palleoplysninger')" id="defaultOpen">Palle
                 oplysninger</button>
-            <button class="tablinks" onclick="openProduktInfo(event, 'produkter')">Produkter</button>
-            <button class="tablinks" onclick="openProduktInfo(event, 'godkend')">Godkend</button>
+            <button class="tabLinks" onclick="openNytLayout(event, 'produkter')">Produkter</button>
+            <button class="tabLinks" onclick="openNytLayout(event, 'godkend')">Godkend</button>
         </div>
 
-        <div id="palleoplysninger" class="tabcontent">
+        <div id="palleoplysninger" class="tabContent">
             <div class="breadcrumb">
                 <div class="breadcrumbText">
                     <div>
@@ -192,11 +192,11 @@
                 </div>
             </form>
             <div class="tabButton">
-                <button class="tablinks frem" id="videre" onclick="openProduktInfo(event, 'produkter')">Videre</button>
+                <button class="tabLinks frem" id="videre" onclick="openNytLayout(event, 'produkter')">Videre</button>
             </div>
         </div>
 
-        <div id="produkter" class="tabcontent">
+        <div id="produkter" class="tabContent">
             <div class="breadcrumb">
                 <div class="breadcrumbText">
                     <div class="notActive">
@@ -292,12 +292,12 @@
                 </div>
             </form>
             <div class="tabButton">
-                <button class="tablinks tilbage" onclick="openProduktInfo(event, 'palleoplysninger')">Tilbage</button>
-                <button class="tablinks frem" id="videre2" onclick="openProduktInfo(event, 'godkend')">Videre</button>
+                <button class="tabLinks tilbage" onclick="openNytLayout(event, 'palleoplysninger')">Tilbage</button>
+                <button class="tabLinks frem" id="videre2" onclick="openNytLayout(event, 'godkend')">Videre</button>
             </div>
         </div>
 
-        <div id="godkend" class="tabcontent">
+        <div id="godkend" class="tabContent">
             <div class="breadcrumb">
                 <div class="breadcrumbText">
                     <div class="notActive">
@@ -524,8 +524,8 @@
             </form>
 
             <div class="tabButton">
-                <button class="tablinks tilbage" onclick="openProduktInfo(event, 'produkter')">Tilbage</button>
-                <button class="tablinks frem" onclick="window.location.href='dashboard.html';">Godkend</button>
+                <button class="tabLinks tilbage" onclick="openNytLayout(event, 'produkter')">Tilbage</button>
+                <button class="tabLinks frem" onclick="window.location.href='dashboard.html';">Godkend</button>
             </div>
         </div>
     </section>
