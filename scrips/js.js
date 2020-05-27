@@ -67,6 +67,7 @@ function loginCheck() {
       return;
     }
   }
+  alert("forkert kode")
 }
 
 // Denne funktion bruges til at inddele de forskellige sektioner af Nyt Layout siden i forskellige tabs, således at den er mere overskuelig
