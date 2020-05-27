@@ -8,10 +8,10 @@ const navSlide = () => {
         if (nav.style.width) {
             nav.style.width = "";
             main.style.marginLeft= "";
-            nav.style.borderRight = ""
+            nav.style.borderRight = "";
         } else {
             nav.style.width = "250px";
-            main.style.marginLeft = "250px"
+            main.style.marginLeft = "250px";
             nav.style.borderRight = "5px solid #F15A22";
         }
     });
@@ -28,7 +28,7 @@ navSlide();
             click.style.display ="block";
         }else {
             click.style.display ="none";
-        };
+        }
         }
 // vis-skjul kode for Forms
    let z = document.getElementById("visform");
@@ -41,7 +41,7 @@ navSlide();
             click.style.display ="block";
         }else {
             click.style.display ="none";
-        };
+        }
         }
 
    let zz = document.getElementById("visform2");
@@ -54,7 +54,7 @@ navSlide();
             click.style.display ="block";
         }else {
             click.style.display ="none";
-        };
+        }
         }
 
    let zzz = document.getElementById("visform3");
@@ -67,7 +67,7 @@ navSlide();
             click.style.display ="block";
         }else {
             click.style.display ="none";
-        };
+        }
         }
 
   let zzzz = document.getElementById("visform4");
@@ -80,7 +80,7 @@ navSlide();
             click.style.display ="block";
         }else {
             click.style.display ="none";
-        };
+        }
         }
 
   let zzzzz = document.getElementById("visform5");
@@ -93,7 +93,7 @@ navSlide();
             click.style.display ="block";
         }else {
             click.style.display ="none";
-        };
+        }
         }
 
 //vis-skjul kode funktionen for typografi
@@ -107,7 +107,7 @@ navSlide();
             click.style.display ="block";
         }else {
             click.style.display ="none";
-        };
+        }
         }
   let yy = document.getElementById("visskjul3");
         yy.addEventListener("click", showHideTypo2);
@@ -119,6 +119,6 @@ navSlide();
             click.style.display ="block";
         }else {
             click.style.display ="none";
-        };
+        }
         }
 

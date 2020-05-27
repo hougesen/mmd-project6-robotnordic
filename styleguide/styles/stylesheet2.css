@@ -188,9 +188,8 @@ body {
     background-color: #081225;
 }
 .thirdBtn{
-    border: 2px solid #EEE;
+    border: 1px solid #EEE;
     border-radius: 100px;
-    box-shadow: black;
     width: 140px;
     height: 50px;
     margin: 15px 35px;
@@ -268,7 +267,7 @@ input[type=submit]:hover {
 }
 
 /* Form koder opsætning */ 
-#form-koder{
+#form-koder1, #form-koder2, #form-koder3, #form-koder4, #form-koder5{
     font-size: 13px;
     background: #081225;
     padding: 10px 20px 10px 10px;
