@@ -60,6 +60,7 @@ function loginCheck() {
       return;
     }
   }
+  alert("forkert kode")
 }
 
 function openProduktInfo(evt, produktInfo) {
