@@ -78,9 +78,14 @@ function openProduktInfo(evt, produktInfo) {
 }
 document.getElementById("defaultOpen").click();
 
+
+//Auto fyld palle med de korrekte EU-PALLE størrelser
 function palleAutofill() {
+  //variable der gør det muligt at vælge input select attribute 
   let e = document.getElementById("palletype");
+  //EveneListener for palle dropdown
   e.addEventListener("change", function () {
+    //Variable der styre hvilken index, man klikker på i select atribute
     let val = e.options[e.selectedIndex].number;
     let fyldningsHeight = document.getElementById("fyldningsHeight");
     let fyldningsProcent = document.getElementById("fyldningsProcent");

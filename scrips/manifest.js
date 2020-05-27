@@ -7,8 +7,8 @@ function manifest() {
         manifestInhold.style.width = "";
         manifestKnap.style.right = ""
       }else{
-        manifestInhold.style.width = "355px";
-        manifestKnap.style.right = "355px"
+        manifestInhold.style.width = "335px";
+        manifestKnap.style.right = "335px"
       }
     });
   };
