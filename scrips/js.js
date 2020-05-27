@@ -21,8 +21,7 @@ function topFunction() {
 }
 
 function loginCheck() {
-  let users = [
-    {
+  let users = [{
       // Object @ 0 index
       username: "robotnordic",
       password: "so you think you can dance",
@@ -52,7 +51,7 @@ function loginCheck() {
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
 
-  for (var i = 0; i < users.length; i++) {
+  for (let i = 0; i < users.length; i++) {
     // check is user input matches username and password of a current index of the objPeople array
     // hvis user
     if (username == users[i].username && password == users[i].password) {
@@ -258,40 +257,38 @@ document.getElementById("videre2").addEventListener("click", function () {
   if (produktNavn.value) {
     produktNavnGodkend.value = produktNavn.value;
   }
-  if(antalProdukter){
+  if (antalProdukter) {
     antalProdukterGodkend.value = antalProdukter.value;
   }
-  if(fyldPalleProdukt.checked){
+  if (fyldPalleProdukt.checked) {
     fyldPalleProduktGodkend.checked = fyldPalleProdukt.checked;
     antalProdukterGodkend.value = "300";
   }
-  if(pakkeFrom.value){
+  if (pakkeFrom.value) {
     pakkeFromGodkend.value = pakkeFrom.value;
   }
-  if(pakkeBredde.value){
+  if (pakkeBredde.value) {
     pakkeBreddeGodkend.value = pakkeBredde.value;
   }
-  if(pakkeHøjde.value){
+  if (pakkeHøjde.value) {
     pakkeHøjdeGodkend.value = pakkeHøjde.value;
   }
-  if(pakkeLængde.value){
+  if (pakkeLængde.value) {
     pakkeLængdeGodkend.value = pakkeLængde.value;
   }
-  if(vægt.value){
+  if (vægt.value) {
     vægtGodkend.value = vægt.value;
   }
-  if(sideUd.value){
+  if (sideUd.value) {
     sideUdGodkend.value = sideUd.value;
   }
-  if(kunTopPlacering.checked){
+  if (kunTopPlacering.checked) {
     kunTopPlaceringGodkend.checked = kunTopPlacering.checked;
   }
-  if(kunBundPlacering.checked){
+  if (kunBundPlacering.checked) {
     kunBundPlaceringGodkend.checked = kunBundPlacering.checked;
   }
-  if(forsigtig.checked){
+  if (forsigtig.checked) {
     forsigtigGodkend.checked = forsigtig.checked;
   }
 });
-
-
