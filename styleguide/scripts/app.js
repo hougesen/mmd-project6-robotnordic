@@ -1,8 +1,9 @@
+//variablen navSlide går ind og tildelder værdien af de classes som står i parentesen til constanterne. Der gøres brug af arrow function, samt HTML DOM.
 const navSlide = () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".navi");
     const main = document.querySelector(".maini");
-
+//addEventlistener går ind og tildelder et event så snart der " clickes" og executer vha af if-else statementet herunder. 
     burger.addEventListener("click", () => {
         burger.classList.toggle("toggle");
         if (nav.style.width) {
@@ -21,7 +22,7 @@ navSlide();
     let x = document.getElementById("visskjul");
         x.addEventListener("click", myFunction);
 
-
+//her bliver der brugt " myFunction" for at vise en anden metode at deklarere og kalde en function på, fremfor metoden vist på kodelinje 7. 
         function myFunction() {
         let click = document.getElementById("displaykode");
         if (click.style.display === "none"){
