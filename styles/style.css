@@ -405,7 +405,7 @@ li a:hover {
   text-align: center;
 }
 
-.manifestButton{
+.manifestButton {
   cursor: pointer;
   position: fixed;
   display: none;
@@ -419,20 +419,22 @@ li a:hover {
   border-radius: 3px;
   transition: 300ms;
 }
-.manifestButton p{
+
+.manifestButton p {
   margin: 0;
   position: absolute;
   top: 30%;
   left: 5%;
 }
-.manifestContent{
+
+.manifestContent {
   display: none;
   position: fixed;
   top: 200px;
   right: 0px;
   background-color: #f7f5f5;
-  width:0px;
-  height:445px;
+  width: 0px;
+  height: 445px;
   border-radius: 3px;
   text-align: center;
   z-index: 99;
@@ -556,9 +558,6 @@ li a:hover {
   grid-column: 1 / 1;
   grid-row: 1/ 6;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
   text-align: center;
 }
@@ -623,7 +622,7 @@ li a:hover {
 .produkterimg,
 .godkendimg {
   border: 10px solid #ddd;
-  margin-top: px;
+  /* margin-top: px;*/
   max-width: 100%;
   width: 700px;
 }
@@ -766,7 +765,7 @@ span.black:hover {
 @media screen and (max-width: 768px) {
 
   .navbarLogo {
-    height: 70px; 
+    height: 70px;
   }
 
   .dashboardGridContainer {
@@ -780,12 +779,11 @@ span.black:hover {
 
   .dashboardBillede {
     width: 95%;
-    align: left;
   }
 
   .dashboardBillede2 {
     width: 95%;
-    align: left;
+
   }
 
   .one {
@@ -889,21 +887,26 @@ span.black:hover {
     text-align: left;
     padding-bottom: 10px;
   }
-  .twoLoad{
-    display:none;
+
+  .twoLoad {
+    display: none;
   }
+
   .formGrid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
 
   }
+
   .tabcontent {
     width: 90%;
   }
-  .manifestButton{
+
+  .manifestButton {
     display: block;
   }
-  .manifestContent{
+
+  .manifestContent {
     display: block;
   }
 
@@ -917,7 +920,7 @@ span.black:hover {
   .section-one {
     font-size: 20px;
   }
-  
+
 
   .manualGrid {
     display: flex;
