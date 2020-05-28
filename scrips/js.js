@@ -1,20 +1,20 @@
-// Funktion som gør at en knap bliver synlig når man scroller 500px + ned fra toppen af siden. 
+// Funktion som gør at en knap bliver synlig når man scroller 500px + ned fra toppen af siden.
 function scrollFunction() {
-  // Definerer hvilken knap der er tale om. 
+  // Definerer hvilken knap der er tale om.
   let mybutton = document.getElementById("myBtn");
-  // If statement som checker hvor langt der er til toppen af siden. 
+  // If statement som checker hvor langt der er til toppen af siden.
   if (
     document.body.scrollTop > 500 ||
     document.documentElement.scrollTop > 500
   ) {
-    // Hvis der er scrollet over 500px fra toppen får knappen display: block; hvilket samtidig gør den synlig. 
+    // Hvis der er scrollet over 500px fra toppen får knappen display: block; hvilket samtidig gør den synlig.
     mybutton.style.display = "block";
   } else {
     // Hvis der er scrollet under 500px fra toppen beholder knappen display: none; hvilket gør den ikke bliver vist
     mybutton.style.display = "none";
   }
 }
-// Hver gang der bliver scrollet caller dette event den tidligere funktion scrollFunction for at tjekke om der er scrollet over/under 500px fra toppen. 
+// Hver gang der bliver scrollet caller dette event den tidligere funktion scrollFunction for at tjekke om der er scrollet over/under 500px fra toppen.
 window.onscroll = function () {
   scrollFunction();
 };
@@ -28,7 +28,8 @@ function topFunction() {
 }
 
 function loginCheck() {
-  let users = [{
+  let users = [
+    {
       // Object @ 0 index
       username: "robotnordic",
       password: "so you think you can dance",
@@ -66,5 +67,5 @@ function loginCheck() {
       return;
     }
   }
-  alert("forkert kode")
+  alert("forkert kode");
 }
