@@ -11,8 +11,9 @@
 body {
     margin: 0;
 }
- /*navigationens opsætning */
-.navi{
+
+/*navigationens opsætning */
+.navi {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,7 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    z-index: 3; 
+    z-index: 3;
     transition: 0.5s;
     overflow-x: hidden;
 }
@@ -34,7 +35,10 @@ body {
     display: block;
     margin-bottom: 35px;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .navi a {
     display: inline-block;
     text-decoration: none;
@@ -47,113 +51,127 @@ body {
     transition: 300ms;
     align-self: flex-start;
 }
-.nav a:hover{
+
+.nav a:hover {
     color: #F15A22;
 }
+
 .burger {
     cursor: pointer;
     position: fixed;
     display: none;
     z-index: 99;
-  }
-  .burger div {
+}
+
+.burger div {
     width: 35px;
     height: 3px;
     background-color: #F15A22;
     margin: 5px;
     transition: all 0.3s ease;
-  }
-  
+}
+
 /*main opsætning */
-.maini{
-    margin-left:250px;
+.maini {
+    margin-left: 250px;
     margin-top: 30px;
     padding: 40px;
 }
 
 /* logo opsætningen*/
-.logobox{
+.logobox {
     display: flex;
     flex-direction: column;
 }
 
-.logo1{
+.logo1 {
     width: 150px;
     margin: 20px 30px;
+
 }
-.logo2{
+
+.logo2 {
     width: 800px;
     margin: 20px 37px;
 }
-.logo3{
+
+.logo3 {
     width: 170px;
     margin: 20px;
 }
+
 /*Farvepalet bokse */
-.farvebox{
+.farvebox {
     display: flex;
     flex-direction: row;
-    
+
 }
-.farvekode1{
+
+.farvekode1 {
     background-color: #F15A22;
     width: 120px;
     padding: 30px;
-    margin: 10px 10px; 
+    margin: 10px 10px;
     color: #fff;
 }
-.farvekode2{
+
+.farvekode2 {
     background-color: #212529;
     width: 120px;
     padding: 30px;
-    margin: 10px 10px; 
+    margin: 10px 10px;
     color: #fff;
 }
-.farvekode3{
+
+.farvekode3 {
     background-color: #081225;
     width: 120px;
     padding: 30px;
-    margin: 10px 10px; 
+    margin: 10px 10px;
     color: #fff;
 }
-.farvekode4{
+
+.farvekode4 {
     background-color: #EEEEEE;
     width: 120px;
     padding: 30px;
-    margin: 10px 10px; 
+    margin: 10px 10px;
     color: #000;
 }
-.farvekode5{
+
+.farvekode5 {
     background-color: #FFFFFF;
     width: 120px;
     padding: 30px;
-    margin: 10px 10px; 
+    margin: 10px 10px;
     border: 1px solid #000;
     color: #000;
 }
 
 
-/*Knapper styling */ 
-.knappebox{
+/*Knapper styling */
+.knappebox {
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
 }
+
 /* koder display*/
-#displaykode{
+#displaykode {
     display: none;
 }
-#knappekode{
+
+#knappekode {
     display: flex;
     flex-direction: row;
 }
 
-.firstBtn{
+.firstBtn {
     background-color: #F15A22;
     width: 140px;
     height: 50px;
-    margin: 15px 50px 15px 0px; 
+    margin: 15px 50px 15px 0px;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -162,7 +180,10 @@ body {
 }
 
 /* placering af fremvist kode*/
-.Btn1kode, .Btn2kode,.Btn3kode,.Btn4kode{
+.Btn1kode,
+.Btn2kode,
+.Btn3kode,
+.Btn4kode {
     font-size: 13px;
     background: #081225;
     padding: 10px 20px 10px 10px;
@@ -172,22 +193,24 @@ body {
     border: 5px solid #fff;
 }
 
-.secondBtn{
+.secondBtn {
     background-color: #F15A22;
     border-radius: 3px;
     width: 140px;
     height: 50px;
-    margin: 15px 50px 15px 50px; 
+    margin: 15px 50px 15px 50px;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-.secondBtn:hover{
+
+.secondBtn:hover {
     background-color: #081225;
 }
-.thirdBtn{
+
+.thirdBtn {
     border: 1px solid #EEE;
     border-radius: 100px;
     width: 140px;
@@ -199,29 +222,32 @@ body {
     align-items: center;
     cursor: pointer;
 }
+
 .arrow {
-  color: #888888;
-  margin: 1em 0;
-}
-.arrow::after {
-  display: inline-block;
-  padding-left: 8px;
-  content: "\0279E";
-  -webkit-transition: transform 0.3s ease-out;
-  -moz-transition: transform 0.3s ease-out;
-  -ms-transition: transform 0.3s ease-out;
-  -o-transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-}
-.arrow:hover::after {
-  -webkit-transform: translateX(4px);
-  -moz-transform: translateX(4px);
-  -ms-transform: translateX(4px);
-  -o-transform: translateX(4px);
-  transform: translateX(4px);
+    color: #888888;
+    margin: 1em 0;
 }
 
-.fourthBtn{
+.arrow::after {
+    display: inline-block;
+    padding-left: 8px;
+    content: "\0279E";
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
+    -ms-transition: transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.arrow:hover::after {
+    -webkit-transform: translateX(4px);
+    -moz-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    -o-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+.fourthBtn {
     background-color: #F15A22;
     border-radius: 3px;
     width: 80px;
@@ -233,41 +259,48 @@ body {
     align-items: center;
     cursor: pointer;
 }
-.fourthBtn:hover{
+
+.fourthBtn:hover {
     background-color: #d86842;
 }
 
-/* Form opsætning */ 
+/* Form opsætning */
 
-input[type=text], select, textarea {
-  width: 138px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+input[type=text],
+select,
+textarea {
+    width: 138px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
 label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
-/* Form koder opsætning */ 
-#form-koder1, #form-koder2, #form-koder3, #form-koder4, #form-koder5{
+/* Form koder opsætning */
+#form-koder1,
+#form-koder2,
+#form-koder3,
+#form-koder4,
+#form-koder5 {
     font-size: 13px;
     background: #081225;
     padding: 10px 20px 10px 10px;
@@ -275,28 +308,37 @@ input[type=submit]:hover {
     border: 5px solid #fff;
     display: flex;
     justify-content: space-evenly;
-    
+
 }
-#form-1, #form-2, #form-3, #form-4, #form-5{
+
+#form-1,
+#form-2,
+#form-3,
+#form-4,
+#form-5 {
     display: none;
 }
 
 /*Typografi */
-.font1{
-  font-family: 'Rubik', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+.font1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
-.font2{
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+
+.font2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
+
 /*Typografi koder */
-#displaytypo, #displaytypo2{
+#displaytypo,
+#displaytypo2 {
     display: none;
 }
-.typokode{
+
+.typokode {
     background: #081225;
     color: #F15A22;
     padding: 10px 0px 10px 0px;
@@ -305,7 +347,8 @@ input[type=submit]:hover {
     font-size: 13px;
     justify-content: space-evenly;
 }
-.typokode2{
+
+.typokode2 {
     background: #081225;
     color: #F15A22;
     padding: 10px 0px 10px 0px;
@@ -314,59 +357,70 @@ input[type=submit]:hover {
     font-size: 13px;
     justify-content: space-evenly;
 }
+
 /* Media queries start*/
-@media (max-width: 768px) { 
-    .navi{
+@media (max-width: 768px) {
+    .navi {
         width: 0;
         border: 0px;
     }
-   
-    .maini{
+
+    .maini {
         margin-left: 0px;
         transition: ease 300ms;
     }
+
     .burger {
         display: block;
-      }
-    
-    .logobox{
+    }
+
+    .logobox {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .logo1,.logo3{
+
+    .logo1,
+    .logo3 {
         width: 100px;
     }
-    .logo2{
+
+    .logo2 {
         width: 450px;
         height: 70px;
     }
-    
-    .farvebox{
+
+    .farvebox {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-    .knappebox{
-        flex-direction: column; 
+
+    .knappebox {
+        flex-direction: column;
         align-items: center;
     }
-    .firstBtn,.secondBtn,.thirdBtn,.fourthBtn{
+
+    .firstBtn,
+    .secondBtn,
+    .thirdBtn,
+    .fourthBtn {
         margin-left: 50px;
     }
-  }
+}
+
 /* Media queries slut*/
 
-  
-  .toggle .line1 {
+
+.toggle .line1 {
     transform: rotate(-45deg) translate(-6px, 5px);
-  }
-  .toggle .line2 {
+}
+
+.toggle .line2 {
     opacity: 0;
-  }
-  .toggle .line3 {
+}
+
+.toggle .line3 {
     transform: rotate(45deg) translate(-6px, -4px);
     background-color: orange;
-  }
-  
+}
