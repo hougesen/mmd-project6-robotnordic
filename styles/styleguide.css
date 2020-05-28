@@ -148,6 +148,10 @@ body {
     color: #000;
 }
 
+.rubik {
+    font-family: "Rubik",
+        sans-serif;
+}
 
 /*Knapper styling */
 .knappebox {
@@ -321,13 +325,18 @@ input[type=submit]:hover {
 
 /*Typografi */
 .font1 {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik",
+        sans-serif;
+    font-family: 'Rubik',
+        sans-serif;
+
     font-size: 14px;
     font-weight: 500;
 }
 
 .font2 {
     font-family: 'Titillium Web', sans-serif;
+
     font-size: 14px;
     font-weight: 500;
 }
