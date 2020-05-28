@@ -255,6 +255,7 @@ li a:hover {
   box-sizing: border-box;
   border: 1px solid grey;
   border-radius: 3px;
+  background-color: #ffffff;
 }
 
 
@@ -333,6 +334,7 @@ li a:hover {
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid grey;
+  background-color: #ffffff;
   border-radius: 3px;
 }
 
@@ -624,12 +626,14 @@ li a:hover {
   border: 10px solid #ddd;
   width: 100%;
   height: auto;
+  background-color: #ddd;
 }
 
 
 .section-one {
   background-color: #ddd;
   padding: 10px;
+  height: 100%;
 }
 
 .manual-p {
@@ -925,6 +929,18 @@ span.black:hover {
     display: flex;
     flex-direction: column;
     padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobilBillede {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktopBillede {
+    display: none;
   }
 }
 

@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="scrips/js.js" defer></script>
-  <script src="scrips/manifest.js" defer></script>
+  <script src="scripts/js.js" defer></script>
+  <script src="scripts/manifest.js" defer></script>
 </head>
 
 <body>
+  <!--Top navigation-->
   <nav class="navbar">
     <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
       <i class="fa fa-bars fa-fw"></i>
@@ -30,59 +31,22 @@
         <a href="nytlayout.html" class="nav-links">NYT LAYOUT</a>
       </li>
       <li>
-        <a href="tutorial.html" class="nav-links">MANUAL</a>
+        <a href="manual.html" class="nav-links">MANUAL</a>
       </li>
     </ul>
   </nav>
-  <br>
-  <h1 style="text-align: center;">Dashboard</h1>
-  <br>
-  <div class="manifestButton">
-    <p>Manifest</p>
-  </div>
-  <div class="manifestContent">
-    <h3>Palletype</h3>
-    <label class="checkboxContainerDashboard">spreadblocks
-      <input type="checkbox" checked="checked" />
-      <span class="checkmark"></span>
-    </label>
-    <label class="checkboxContainerDashboard">Mixedlayers
-      <input type="checkbox" />
-      <span class="checkmark"></span>
-    </label>
-    <label class="checkboxContainerDashboard">centerload
-      <input type="checkbox" />
-      <span class="checkmark"></span>
-    </label>
-    <label class="checkboxContainerDashboard">Fulllayersonly
-      <input type="checkbox" />
-      <span class="checkmark"></span>
-    </label>
-    <label class="checkboxContainerDashboard">Fliplayers
-      <input type="checkbox" />
-      <span class="checkmark"></span>
-    </label>
-    <label class="checkboxContainerDashboard">Loadonoutside
-      <input type="checkbox" />
-      <span class="checkmark"></span>
-    </label>
+
+  <!--Sektion som omhandler det nuværende layout-->
+  <section>
     <br>
-    <h3>Produkter</h3>
-
-    <p>blå</p>
-    <p>Rød</p>
-    <p>Gul</p>
-    <p>Orange</p>
-    <p>Grøn</p>
-  </div>
-  <div class="dashboardGridContainer">
-    <div class="one">
-      <h2>Nuværende opgave</h2>
-      <img src="assets/images/unknown.png" alt="billede af nuværende opgave" class="dashboardBillede" />
+    <h1 style="text-align: center;">Dashboard</h1>
+    <br>
+    <!--Manifest knap som er i siden-->
+    <div class="manifestButton">
+      <p>Manifest</p>
     </div>
-    <div class="two">
-      <h2 style="text-align: center;">Manifest</h2>
-      <h3 style="padding-left: 50px;">Palletype</h3>
+    <div class="manifestContent">
+      <h3>Palletype</h3>
       <label class="checkboxContainerDashboard">spreadblocks
         <input type="checkbox" checked="checked" />
         <span class="checkmark"></span>
@@ -108,91 +72,144 @@
         <span class="checkmark"></span>
       </label>
       <br>
-      <h3 style="padding-left: 50px;">Produkter</h3>
-      <div class="produktFarver">
-        <p>blå</p>
-        <p>Rød</p>
-        <p>Gul</p>
-        <p>Orange</p>
-        <p>Grøn</p>
+      <h3>Produkter</h3>
+
+      <p>blå</p>
+      <p>Rød</p>
+      <p>Gul</p>
+      <p>Orange</p>
+      <p>Grøn</p>
+    </div>
+
+    <div class="dashboardGridContainer">
+      <!--Billede af nuværende opgave-->
+      <div class="one">
+        <h2>Nuværende opgave</h2>
+        <img src="assets/images/unknown.png" alt="billede af nuværende opgave" class="dashboardBillede" />
+      </div>
+      <!--Manifestet på nuværende opgave-->
+      <div class="two">
+        <h2 style="text-align: center;">Manifest</h2>
+        <h3 style="padding-left: 50px;">Palletype</h3>
+        <label class="checkboxContainerDashboard">spreadblocks
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkboxContainerDashboard">Mixedlayers
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkboxContainerDashboard">centerload
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkboxContainerDashboard">Fulllayersonly
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkboxContainerDashboard">Fliplayers
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkboxContainerDashboard">Loadonoutside
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <br>
+        <h3 style="padding-left: 50px;">Produkter</h3>
+        <div class="produktFarver">
+          <p>blå</p>
+          <p>Rød</p>
+          <p>Gul</p>
+          <p>Orange</p>
+          <p>Grøn</p>
+        </div>
+      </div>
+      <!--Status på opgaven. On / Off-->
+      <div class="three">
+        <h2>Status:</h2>
+      </div>
+      <!--Opgave kø-->
+      <div class="four">
+        <h2>Opgaver kø:</h2>
+        <p>- test2</p>
+        <p>- test3</p>
+      </div>
+      <!--Navn på nuværende opgave-->
+      <div class="five">
+        <h2>Nuværende opgave:</h2>
+        <p>test1</p>
+      </div>
+      <!--Forventet tid til opgaven er færdig-->
+      <div class="six">
+        <h2>Forventet færdig:</h2>
+        <p>1 time 5 minutter</p>
       </div>
     </div>
-    <div class="three">
-      <h2>Status:</h2>
-    </div>
-    <div class="four">
-      <h2>Opgaver kø:</h2>
-      <p>- test2</p>
-      <p>- test3</p>
-    </div>
-    <div class="five">
-      <h2>Nuværende opgave:</h2>
-      <p>test1</p>
-    </div>
-    <div class="six">
-      <h2>Forventet færdig:</h2>
-      <p>1 time 5 minutter</p>
-    </div>
-  </div>
+  </section>
 
-  <h1 style="text-align: center;">Load Layout</h1>
-  <div class="loadLayoutSection">
-    <select>
-      <option value="" disabled selected style="display: none;"> </option>
-      <option value="op1">op1</option>
-      <option value="op2">op2</option>
-      <option value="op3">op3</option>
-      <option value="op4">op4</option>
-    </select>
-
-    <button class="frem forsideKnap">Load</button>
-
-    <button class="tilbage forsideKnap" onclick="window.location.href= 'nytlayout.html';">Nyt layout</button>
-  </div>
-  <div class="loadLayoutGridContainer">
-    <div class="oneLoad">
-      <h2>Forhåndsvisning på opgave</h2>
-      <img src="assets/images/unknown.png" alt="Forhåndsvisning på opgave" class="dashboardBillede2" />
+  <!--Sektion som omhandler-->
+  <section>
+    <h1 style="text-align: center;">Load Layout</h1>
+    <!--Load layout knapper-->
+    <div class="loadLayoutSection">
+      <select>
+        <option value="" disabled selected style="display: none;"> </option>
+        <option value="op1">op1</option>
+        <option value="op2">op2</option>
+        <option value="op3">op3</option>
+        <option value="op4">op4</option>
+      </select>
+      <button class="frem forsideKnap">Load</button>
+      <button class="tilbage forsideKnap" onclick="window.location.href= 'nytlayout.html';">Nyt layout</button>
     </div>
-    <div class="twoLoad">
-      <h2 style="text-align: center;">Manifest</h2>
-      <h3 style="padding-left: 50px;">Palletype</h3>
-      <label class="checkboxContainerDashboard">spreadblocks
-        <input type="checkbox" checked="checked" />
-        <span class="checkmark"></span>
-      </label>
-      <label class="checkboxContainerDashboard">Mixedlayers
-        <input type="checkbox" />
-        <span class="checkmark"></span>
-      </label>
-      <label class="checkboxContainerDashboard">centerload
-        <input type="checkbox" />
-        <span class="checkmark"></span>
-      </label>
-      <label class="checkboxContainerDashboard">Fulllayersonly
-        <input type="checkbox" />
-        <span class="checkmark"></span>
-      </label>
-      <label class="checkboxContainerDashboard">Fliplayers
-        <input type="checkbox" />
-        <span class="checkmark"></span>
-      </label>
-      <label class="checkboxContainerDashboard">Loadonoutside
-        <input type="checkbox" />
-        <span class="checkmark"></span>
-      </label>
-      <br>
-      <h3 style="padding-left: 50px;">Produkter</h3>
-      <div class="produktFarver">
-        <p>blå</p>
-        <p>Rød</p>
-        <p>Gul</p>
-        <p>Orange</p>
-        <p>Grøn</p>
+
+    <div class="loadLayoutGridContainer">
+      <!--Forhåndsvisning på layoutet som er ved at blive loaded-->
+      <div class="oneLoad">
+        <h2>Forhåndsvisning på opgave</h2>
+        <img src="assets/images/unknown.png" alt="Forhåndsvisning på opgave" class="dashboardBillede2" />
+      </div>
+      <!--Manifestet på opgaven som er ved at blive loaded-->
+      <div class="twoLoad">
+        <h2 style="text-align: center;">Manifest</h2>
+        <h3 style="padding-left: 50px;">Palletype</h3>
+        <label class="checkboxContainerDashboard">spreadblocks
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkboxContainerDashboard">Mixedlayers
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkboxContainerDashboard">centerload
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkboxContainerDashboard">Fulllayersonly
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkboxContainerDashboard">Fliplayers
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkboxContainerDashboard">Loadonoutside
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <br>
+        <h3 style="padding-left: 50px;">Produkter</h3>
+        <div class="produktFarver">
+          <p>blå</p>
+          <p>Rød</p>
+          <p>Gul</p>
+          <p>Orange</p>
+          <p>Grøn</p>
+        </div>
       </div>
     </div>
-  </div>
-
+  </section>
 
 </body>
 

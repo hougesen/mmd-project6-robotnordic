@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="scrips/nytLayout.js" defer></script>
+    <script src="scripts/nytLayout.js" defer></script>
 </head>
 
 <body>
+    <!--Top navigation-->
     <nav class="navbar">
         <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
             <i class="fa fa-bars fa-fw"></i>
@@ -29,12 +30,12 @@
                 <a href="nytlayout.html" class="nav-links linkActive">NYT LAYOUT</a>
             </li>
             <li>
-                <a href="tutorial.html" class="nav-links">MANUAL</a>
+                <a href="manual.html" class="nav-links">MANUAL</a>
             </li>
         </ul>
     </nav>
 
-
+    <!--Indholdet på de forskellige tabs-->
     <section class="nytlayout">
         <div class="tab">
             <button class="tabLinks" onclick="openNytLayout(event, 'palleoplysninger')" id="defaultOpen">Palle
@@ -42,7 +43,7 @@
             <button class="tabLinks" onclick="openNytLayout(event, 'produkter')">Produkter</button>
             <button class="tabLinks" onclick="openNytLayout(event, 'godkend')">Godkend</button>
         </div>
-
+        <!--Palleoplysninger tabben-->
         <div id="palleoplysninger" class="tabContent">
             <div class="breadcrumb">
                 <div class="breadcrumbText">
@@ -191,11 +192,12 @@
                     </div>
                 </div>
             </form>
+            <!--Knapper til at gå frem/tilbage-->
             <div class="tabButton">
                 <button class="tabLinks frem" id="videre" onclick="openNytLayout(event, 'produkter')">Videre</button>
             </div>
         </div>
-
+        <!--Tabben som omhandler produkterne-->
         <div id="produkter" class="tabContent">
             <div class="breadcrumb">
                 <div class="breadcrumbText">
@@ -291,12 +293,13 @@
                     </div>
                 </div>
             </form>
+            <!--Knapper til at gå frem/tilbage-->
             <div class="tabButton">
                 <button class="tabLinks tilbage" onclick="openNytLayout(event, 'palleoplysninger')">Tilbage</button>
                 <button class="tabLinks frem" id="videre2" onclick="openNytLayout(event, 'godkend')">Videre</button>
             </div>
         </div>
-
+        <!--Godkend siden-->
         <div id="godkend" class="tabContent">
             <div class="breadcrumb">
                 <div class="breadcrumbText">
@@ -522,7 +525,7 @@
                     </div>
                 </div>
             </form>
-
+            <!--Knapper til at gå frem/tilbage-->
             <div class="tabButton">
                 <button class="tabLinks tilbage" onclick="openNytLayout(event, 'produkter')">Tilbage</button>
                 <button class="tabLinks frem" onclick="window.location.href='dashboard.html';">Godkend</button>

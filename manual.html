@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial</title>
+    <title>Manual</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="scrips/js.js" defer></script>
+    <script src="scripts/js.js" defer></script>
 </head>
 
 <body>
+    <!--Top navigation-->
     <nav class="navbar">
         <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
             <i class="fa fa-bars fa-fw"></i>
@@ -28,12 +29,13 @@
                 <a href="nytlayout.html" class="nav-links">NYT LAYOUT</a>
             </li>
             <li>
-                <a href="tutorial.html" class="nav-links linkActive">MANUAL</a>
+                <a href="manual.html" class="nav-links linkActive">MANUAL</a>
             </li>
         </ul>
     </nav>
 
     <div class="manualContainer">
+        <!--Navigationen som er i siden på manualen-->
         <ul class="manual-nav">
             <li><a href="#dashboard" class="manual-sider">Dashboard</a></li>
             <li><a href="#status" class="manual-links">Status</a></li>
@@ -51,7 +53,9 @@
                     download="dashboardpdf">Download PDF</a>
             </li>
         </ul>
+        <!--Start på manualens indhold-->
         <div class="manualGrid">
+            <!--Punkt 1-5 i manualen-->
             <div class="manual-space">
                 <div class="section-one">
                     <h3><span id="status" class="black">1</span>Status</h3>
@@ -60,7 +64,8 @@
                         <br>OFF: Ingen opgaver nu </p>
                     <br>
                     <h3><span id="opgaver" class="black">2</span>Opgaver kø</h3>
-                    <p class="manual-p">Opgaver i kø er en container, der viser alle opgaver du har sat i gang som skal
+                    <p class="manual-p">Opgaver i kø er en container, der viser alle opgaver du har sat i gang som
+                        skal
                         kunne starte op
                         efter nuværende opgave.</p>
                     <br>
@@ -78,53 +83,71 @@
                 </div>
             </div>
             <div class="manual-space">
-                <img src="assets/images/manual-dashboard.jpg" class="dashboardimg" alt="dashboard">
+                <img src="assets/images/manual-dashboard.jpg" class="dashboardimg " alt="dashboard">
             </div>
-            <div class="manual-space">
-                <img src="assets/images/manual-load-layout.jpg" class="loadlayoutimg" alt="loadlayoutimg">
+            <!--Punkt 6-8 i manualen-->
+            <div class="manual-space desktopBillede">
+                <img src="assets/images/manual-load-layout.jpg" class="loadlayoutimg " alt="loadlayoutimg">
             </div>
-            <div class="manual-space">
+            <div class="manual-space ">
                 <div class="section-one">
                     <h3><span id="layoutnavn" class="black">7</span>Layout navn</h3>
                     <p class="manual-p">En dropdown menu, som viser tidligere lavet layouts.</p>
                     <br>
                     <h3><span id="load" class="black">8</span>Load</h3>
-                    <p class="manual-p">load layout er en knap som loader den valgte layout som er valgt fra dropdown
+                    <p class="manual-p">load layout er en knap som loader den valgte layout som er valgt fra
+                        dropdown
                         menuen og viser
                         hvordan layoutet ser ud.</p>
                 </div>
             </div>
+
+            <div class="manual-space mobilBillede">
+                <img src="assets/images/manual-load-layout.jpg" class="loadlayoutimg" alt="loadlayoutimg">
+            </div>
+            <!--Punkt 9 i manualen-->
             <div class="manual-space">
                 <div class="section-one">
                     <h3><span id="palleoplysninger" class="black">9</span>Palle oplysninger</h3>
                     <p class="manual-p">Her skal der stå alle relevante oplysninger omkring den valgte palle, som
                         robotten skal opstille
-                        varerne på. Alle dimensioner som kræves opfyldt kan ses i rubrikkerne herunder, for udførelse af
+                        varerne på. Alle dimensioner som kræves opfyldt kan ses i rubrikkerne herunder, for
+                        udførelse af
                         trinnet. </p>
                 </div>
             </div>
             <div class="manual-space">
                 <img src="assets/images/manual-palleoplysninger.jpg" class="palleopimg" alt="palleopimg">
             </div>
-            <div class="manual-space">
+            <!--Punkt 10 i manualen-->
+            <div class="manual-space desktopBillede">
                 <img src="assets/images/manual-produkter.jpg" class="produkterimg" alt="produkterimg">
             </div>
             <div class="manual-space">
                 <div class="section-one">
                     <h3><span id="produkter" class="black">10</span>Produkter</h3>
-                    <p class="manual-p">På dette trin skal alle oplysninger omkring produktet tilføjes. Dimensioner kan
+                    <p class="manual-p">På dette trin skal alle oplysninger omkring produktet tilføjes. Dimensioner
+                        kan
                         ses på rubrikkerne,
-                        som kræves opfyldt. Skal der tilføjes flere produkter, kan der klikkes på den grønne + knap, som
+                        som kræves opfyldt. Skal der tilføjes flere produkter, kan der klikkes på den grønne + knap,
+                        som
                         vil
-                        folde en sektion ned med de selvsamme rubrikker, fra dit tidligere udfyldte produktinfo. </p>
+                        folde en sektion ned med de selvsamme rubrikker, fra dit tidligere udfyldte produktinfo.
+                    </p>
                 </div>
             </div>
+            <div class="manual-space mobilBillede">
+                <img src="assets/images/manual-produkter.jpg" class="produkterimg" alt="produkterimg">
+            </div>
+            <!--Punkt 11 i manualen-->
             <div class="manual-space">
                 <div class="section-one">
                     <h3><span id="godkend" class="black">11</span>Godkend</h3>
-                    <p class="manual-p">På dette sidste trin, ses oplysningerne som blev tastet ind fra de forrige to
+                    <p class="manual-p">På dette sidste trin, ses oplysningerne som blev tastet ind fra de forrige
+                        to
                         trin. Godkend fasen,
-                        kan bruges som en checkliste til hurtigt at igennem de oplyste informationer omkring pallen og
+                        kan bruges som en checkliste til hurtigt at igennem de oplyste informationer omkring pallen
+                        og
                         produkterne og kan rettes omgående, hvis fejl er opstået. </p>
                 </div>
             </div>
@@ -132,6 +155,7 @@
                 <img src="assets/images/manual-godkend.jpg" class="godkendimg" alt="godkendimg">
             </div>
         </div>
+        <!--Knap som tager brugeren tilbage til toppen af siden-->
         <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
     </div>
 </body>
