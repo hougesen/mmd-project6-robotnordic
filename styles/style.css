@@ -726,6 +726,46 @@ span.black:hover {
 }
 
 /*Manual slut*/
+/*Tooltips*/
+.tooltip {
+  position: relative;
+  float: left;
+  font-size: 15px;
+  display: inline-block;
+}
+.tooltipimg{
+    width: 20px;
+    height: 20px;
+}
+.tooltipmanifest, .tooltipstatus, .tooltipopgaver, .tooltipnuv, .tooltipforventet, .tooltippreview{
+  visibility: hidden;
+  width: 120px;
+  font-size: 15px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px 10px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 120%;
+}
+.tooltip:hover .tooltipmanifest, .tooltip:hover .tooltipstatus, .tooltip:hover .tooltipopgaver, .tooltip:hover .tooltipnuv, .tooltip:hover .tooltipforventet, .tooltip:hover .tooltippreview{
+  visibility: visible;
+}
+.tooltip .tooltipmanifest::after, .tooltip .tooltipstatus::after, .tooltip .tooltipopgaver::after, .tooltip .tooltipnuv::after, .tooltip .tooltipforventet::after, .tooltip:hover .tooltippreview {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
 /*Mediaqueries*/
 @media screen and (min-width: 1000px) {
   .navbar {
