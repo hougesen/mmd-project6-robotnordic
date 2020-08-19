@@ -103,7 +103,7 @@ html {
   display: none;
 }
 
-#chkToggle:checked+ul.main-nav {
+#chkToggle:checked + ul.main-nav {
   display: block;
 }
 
@@ -190,7 +190,8 @@ li a:hover {
   width: 60%;
   display: none;
   padding: 6px 12px;
-  animation: fadeEffect 1s;
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
   margin: auto;
   font-weight: 300;
 }
@@ -201,17 +202,15 @@ li a:hover {
 }
 
 .frem {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   height: 40px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100px;
   font-size: 16px;
   padding: 8px;
-  background-color: #F15A22;
-  border: solid #F15A22 3px;
+  background-color: #f15a22;
+  border: solid #f15a22 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -219,17 +218,15 @@ li a:hover {
 }
 
 .tilbage {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   height: 40px;
   line-height: 20px;
-  color: #F15A22;
-  background-color: rgba(0, 0, 0, 0.0);
+  color: #f15a22;
+  background-color: rgba(0, 0, 0, 0);
   width: 100px;
   font-size: 16px;
   padding: 8px;
-  border: solid #F15A22 3px;
+  border: solid #f15a22 3px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -246,7 +243,7 @@ li a:hover {
   text-align: left;
 }
 
-.nytlayout input[type=text],
+.nytlayout input[type="text"],
 .nytlayout input[type="number"],
 .nytlayout select {
   width: 90%;
@@ -257,7 +254,6 @@ li a:hover {
   border-radius: 3px;
   background-color: #ffffff;
 }
-
 
 /* Nytlayout */
 .checkboxContainerDashboard {
@@ -292,12 +288,12 @@ li a:hover {
   border-radius: 3px;
 }
 
-.checkboxContainerDashboard:hover input~.checkmark {
+.checkboxContainerDashboard:hover input ~ .checkmark {
   background-color: #eeeeee;
 }
 
 /* When the checkbox is checked, add a blue background */
-.checkboxContainerDashboard input:checked~.checkmark {
+.checkboxContainerDashboard input:checked ~ .checkmark {
   background-color: #f15a22;
 }
 
@@ -309,7 +305,7 @@ li a:hover {
 }
 
 /* Show the checkmark when checked */
-.checkboxContainerDashboard input:checked~.checkmark:after {
+.checkboxContainerDashboard input:checked ~ .checkmark:after {
   display: block;
 }
 
@@ -358,8 +354,6 @@ li a:hover {
   grid-row: 1/6;
   background-color: #f7f5f5;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
 }
 
@@ -367,8 +361,6 @@ li a:hover {
   grid-column: 4 / 3;
   grid-row: 1 / 2;
   background-color: #f7f5f5;
-  -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   text-align: center;
@@ -378,8 +370,6 @@ li a:hover {
   grid-column: 4 / 3;
   grid-row: 2 / 4;
   background-color: #f7f5f5;
-  -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   text-align: center;
@@ -389,8 +379,6 @@ li a:hover {
   grid-column: 4 / 3;
   grid-row: 4 / 5;
   background-color: #f7f5f5;
-  -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   text-align: center;
@@ -400,8 +388,6 @@ li a:hover {
   grid-column: 3 / 3;
   grid-row: 6/ 5;
   background-color: #f7f5f5;
-  -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   text-align: center;
@@ -442,7 +428,6 @@ li a:hover {
   z-index: 99;
   transition: 300ms;
 }
-
 
 /* The container */
 .checkboxContainerLayout {
@@ -491,11 +476,11 @@ li a:hover {
   border-radius: 3px;
 }
 
-.checkboxContainerLayout:hover input~.checkmarkLayout {
+.checkboxContainerLayout:hover input ~ .checkmarkLayout {
   background-color: #eeeeee;
 }
 
-.checkboxContainerLayout input:checked~.checkmarkLayout {
+.checkboxContainerLayout input:checked ~ .checkmarkLayout {
   background-color: #f15a22;
 }
 
@@ -507,7 +492,7 @@ li a:hover {
 }
 
 /* Show the checkmark when checked */
-.checkboxContainerLayout input:checked~.checkmarkLayout:after {
+.checkboxContainerLayout input:checked ~ .checkmarkLayout:after {
   display: block;
 }
 
@@ -568,24 +553,20 @@ li a:hover {
   grid-column: 2 / 2;
   grid-row: 1/6;
   background-color: #f7f5f5;
-  -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
 }
 
 .linkActive {
-  color: #F15A22;
+  color: #f15a22;
 }
-
-
 
 /*Dashboard Slut*/
 
 /*Manual*/
 
 .manualContainer {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   height: 100%;
 }
@@ -629,7 +610,6 @@ li a:hover {
   background-color: #ddd;
 }
 
-
 .section-one {
   background-color: #ddd;
   padding: 10px;
@@ -653,11 +633,10 @@ li a:hover {
 
 .manual-nav li a {
   display: block;
-
 }
 
 .manual-nav li a:hover {
-  color: #F15A22;
+  color: #f15a22;
 }
 
 .manual-links {
@@ -702,7 +681,7 @@ span.black {
 
 span.black:hover {
   cursor: pointer;
-  background: #F15A22;
+  background: #f15a22;
 }
 
 #myBtn {
@@ -712,8 +691,8 @@ span.black:hover {
   right: 30px;
   height: 50px;
   width: 50px;
-  background-color: #F15A22;
-  color: #FFFFFF;
+  background-color: #f15a22;
+  color: #ffffff;
   border-radius: 50%;
   border: none;
   transition: 300ms;
@@ -721,7 +700,7 @@ span.black:hover {
 }
 
 #myBtn:hover {
-  color: #F15a22;
+  color: #f15a22;
   background-color: #212529;
 }
 
@@ -733,11 +712,16 @@ span.black:hover {
   font-size: 15px;
   display: inline-block;
 }
-.tooltipimg{
-    width: 20px;
-    height: 20px;
+.tooltipimg {
+  width: 20px;
+  height: 20px;
 }
-.tooltipmanifest, .tooltipstatus, .tooltipopgaver, .tooltipnuv, .tooltipforventet, .tooltippreview{
+.tooltipmanifest,
+.tooltipstatus,
+.tooltipopgaver,
+.tooltipnuv,
+.tooltipforventet,
+.tooltippreview {
   visibility: hidden;
   width: 120px;
   font-size: 15px;
@@ -746,17 +730,27 @@ span.black:hover {
   text-align: center;
   border-radius: 6px;
   padding: 15px 10px;
-  
+
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
   top: -5px;
   right: 120%;
 }
-.tooltip:hover .tooltipmanifest, .tooltip:hover .tooltipstatus, .tooltip:hover .tooltipopgaver, .tooltip:hover .tooltipnuv, .tooltip:hover .tooltipforventet, .tooltip:hover .tooltippreview{
+.tooltip:hover .tooltipmanifest,
+.tooltip:hover .tooltipstatus,
+.tooltip:hover .tooltipopgaver,
+.tooltip:hover .tooltipnuv,
+.tooltip:hover .tooltipforventet,
+.tooltip:hover .tooltippreview {
   visibility: visible;
 }
-.tooltip .tooltipmanifest::after, .tooltip .tooltipstatus::after, .tooltip .tooltipopgaver::after, .tooltip .tooltipnuv::after, .tooltip .tooltipforventet::after, .tooltip:hover .tooltippreview {
+.tooltip .tooltipmanifest::after,
+.tooltip .tooltipstatus::after,
+.tooltip .tooltipopgaver::after,
+.tooltip .tooltipnuv::after,
+.tooltip .tooltipforventet::after,
+.tooltip:hover .tooltippreview {
   content: "";
   position: absolute;
   top: 10%;
@@ -776,7 +770,7 @@ span.black:hover {
     align-items: center;
   }
 
-  #chkToggle:checked+ul.main-nav {
+  #chkToggle:checked + ul.main-nav {
     display: flex;
   }
 
@@ -802,11 +796,9 @@ span.black:hover {
   .navbar-toggle {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-
   .navbarLogo {
     height: 70px;
   }
@@ -826,15 +818,12 @@ span.black:hover {
 
   .dashboardBillede2 {
     width: 95%;
-
   }
 
   .one {
     grid-column: 3 / 1;
     grid-row: 5/ 1;
     background-color: #f7f5f5;
-    -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     text-align: center;
@@ -846,8 +835,6 @@ span.black:hover {
     grid-column: 3 / 1;
     grid-row: 6/ 5;
     background-color: #f7f5f5;
-    -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     text-align: left;
@@ -858,8 +845,6 @@ span.black:hover {
     grid-column: 2 / 1;
     grid-row: 6/ 5;
     background-color: #f7f5f5;
-    -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     text-align: center;
@@ -869,8 +854,6 @@ span.black:hover {
     grid-column: 3 / 2;
     grid-row: 6/ 5;
     background-color: #f7f5f5;
-    -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     text-align: center;
@@ -880,8 +863,6 @@ span.black:hover {
     grid-column: 2 / 1;
     grid-row: 7/ 6;
     background-color: #f7f5f5;
-    -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     text-align: center;
@@ -891,8 +872,6 @@ span.black:hover {
     grid-column: 3 / 2;
     grid-row: 7/ 6;
     background-color: #f7f5f5;
-    -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     text-align: center;
@@ -911,8 +890,6 @@ span.black:hover {
     grid-column: 3 / 1;
     grid-row: 5/ 1;
     background-color: #f7f5f5;
-    -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     text-align: center;
@@ -923,8 +900,6 @@ span.black:hover {
     grid-column: 3 / 1;
     grid-row: 6/ 5;
     background-color: #f7f5f5;
-    -webkit-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 8px 10px -3px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     text-align: left;
@@ -938,7 +913,6 @@ span.black:hover {
   .formGrid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
-
   }
 
   .tabContent {
@@ -953,7 +927,6 @@ span.black:hover {
     display: block;
   }
 
-
   /* manual queries */
 
   .manual-nav {
@@ -963,7 +936,6 @@ span.black:hover {
   .section-one {
     font-size: 20px;
   }
-
 
   .manualGrid {
     display: flex;

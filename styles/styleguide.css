@@ -1,186 +1,183 @@
 @charset "UTF-8";
 
 * {
-    box-sizing: border-box;
-    letter-spacing: -0.013em;
-    font-weight: 400;
-    font-family: "Titillium Web", sans-serif;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  letter-spacing: -0.013em;
+  font-weight: 400;
+  font-family: "Titillium Web", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /*navigationens opsætning */
 .navi {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background: #081225;
-    border-right: 5px solid #F15A22;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    z-index: 3;
-    transition: 0.5s;
-    overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #081225;
+  border-right: 5px solid #f15a22;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 3;
+  transition: 0.5s;
+  overflow-x: hidden;
 }
 
 .navi img {
-    width: 60%;
-    margin: 50px 0px 0px 0px;
-    display: block;
-    margin-bottom: 35px;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+  width: 60%;
+  margin: 50px 0px 0px 0px;
+  display: block;
+  margin-bottom: 35px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navi a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 30px 30px;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.20em;
-    transition: 300ms;
-    align-self: flex-start;
+  display: inline-block;
+  text-decoration: none;
+  padding: 30px 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: 300ms;
+  align-self: flex-start;
 }
 
 .nav a:hover {
-    color: #F15A22;
+  color: #f15a22;
 }
 
 .burger {
-    cursor: pointer;
-    position: fixed;
-    display: none;
-    z-index: 99;
+  cursor: pointer;
+  position: fixed;
+  display: none;
+  z-index: 99;
 }
 
 .burger div {
-    width: 35px;
-    height: 3px;
-    background-color: #F15A22;
-    margin: 5px;
-    transition: all 0.3s ease;
+  width: 35px;
+  height: 3px;
+  background-color: #f15a22;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
 /*main opsætning */
 .maini {
-    margin-left: 250px;
-    margin-top: 30px;
-    padding: 40px;
+  margin-left: 250px;
+  margin-top: 30px;
+  padding: 40px;
 }
 
 /* logo opsætningen*/
 .logobox {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo1 {
-    width: 150px;
-    margin: 20px 30px;
-
+  width: 150px;
+  margin: 20px 30px;
 }
 
 .logo2 {
-    width: 800px;
-    margin: 20px 37px;
+  width: 800px;
+  margin: 20px 37px;
 }
 
 .logo3 {
-    width: 170px;
-    margin: 20px;
+  width: 170px;
+  margin: 20px;
 }
 
 /*Farvepalet bokse */
 .farvebox {
-    display: flex;
-    flex-direction: row;
-
+  display: flex;
+  flex-direction: row;
 }
 
 .farvekode1 {
-    background-color: #F15A22;
-    width: 120px;
-    padding: 30px;
-    margin: 10px 10px;
-    color: #fff;
+  background-color: #f15a22;
+  width: 120px;
+  padding: 30px;
+  margin: 10px 10px;
+  color: #fff;
 }
 
 .farvekode2 {
-    background-color: #212529;
-    width: 120px;
-    padding: 30px;
-    margin: 10px 10px;
-    color: #fff;
+  background-color: #212529;
+  width: 120px;
+  padding: 30px;
+  margin: 10px 10px;
+  color: #fff;
 }
 
 .farvekode3 {
-    background-color: #081225;
-    width: 120px;
-    padding: 30px;
-    margin: 10px 10px;
-    color: #fff;
+  background-color: #081225;
+  width: 120px;
+  padding: 30px;
+  margin: 10px 10px;
+  color: #fff;
 }
 
 .farvekode4 {
-    background-color: #EEEEEE;
-    width: 120px;
-    padding: 30px;
-    margin: 10px 10px;
-    color: #000;
+  background-color: #eeeeee;
+  width: 120px;
+  padding: 30px;
+  margin: 10px 10px;
+  color: #000;
 }
 
 .farvekode5 {
-    background-color: #FFFFFF;
-    width: 120px;
-    padding: 30px;
-    margin: 10px 10px;
-    border: 1px solid #000;
-    color: #000;
+  background-color: #ffffff;
+  width: 120px;
+  padding: 30px;
+  margin: 10px 10px;
+  border: 1px solid #000;
+  color: #000;
 }
 
 .rubik {
-    font-family: "Rubik",
-        sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 /*Knapper styling */
 .knappebox {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 /* koder display*/
 #displaykode {
-    display: none;
+  display: none;
 }
 
 #knappekode {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .firstBtn {
-    background-color: #F15A22;
-    width: 140px;
-    height: 50px;
-    margin: 15px 50px 15px 0px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  background-color: #f15a22;
+  width: 140px;
+  height: 50px;
+  margin: 15px 50px 15px 0px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* placering af fremvist kode*/
@@ -188,115 +185,107 @@ body {
 .Btn2kode,
 .Btn3kode,
 .Btn4kode {
-    font-size: 13px;
-    background: #081225;
-    padding: 10px 20px 10px 10px;
-    color: #F15A22;
-    height: 100%;
-    width: 100%;
-    border: 5px solid #fff;
+  font-size: 13px;
+  background: #081225;
+  padding: 10px 20px 10px 10px;
+  color: #f15a22;
+  height: 100%;
+  width: 100%;
+  border: 5px solid #fff;
 }
 
 .secondBtn {
-    background-color: #F15A22;
-    border-radius: 3px;
-    width: 140px;
-    height: 50px;
-    margin: 15px 50px 15px 50px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  background-color: #f15a22;
+  border-radius: 3px;
+  width: 140px;
+  height: 50px;
+  margin: 15px 50px 15px 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .secondBtn:hover {
-    background-color: #081225;
+  background-color: #081225;
 }
 
 .thirdBtn {
-    border: 1px solid #EEE;
-    border-radius: 100px;
-    width: 140px;
-    height: 50px;
-    margin: 15px 35px;
-    color: #EEE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  border: 1px solid #eee;
+  border-radius: 100px;
+  width: 140px;
+  height: 50px;
+  margin: 15px 35px;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .arrow {
-    color: #888888;
-    margin: 1em 0;
+  color: #888888;
+  margin: 1em 0;
 }
 
 .arrow::after {
-    display: inline-block;
-    padding-left: 8px;
-    content: "\0279E";
-    -webkit-transition: transform 0.3s ease-out;
-    -moz-transition: transform 0.3s ease-out;
-    -ms-transition: transform 0.3s ease-out;
-    -o-transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
+  display: inline-block;
+  padding-left: 8px;
+  content: "\0279E";
+  transition: transform 0.3s ease-out;
 }
 
 .arrow:hover::after {
-    -webkit-transform: translateX(4px);
-    -moz-transform: translateX(4px);
-    -ms-transform: translateX(4px);
-    -o-transform: translateX(4px);
-    transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .fourthBtn {
-    background-color: #F15A22;
-    border-radius: 3px;
-    width: 80px;
-    height: 40px;
-    margin: 20px 70px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  background-color: #f15a22;
+  border-radius: 3px;
+  width: 80px;
+  height: 40px;
+  margin: 20px 70px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .fourthBtn:hover {
-    background-color: #d86842;
+  background-color: #d86842;
 }
 
 /* Form opsætning */
 
-input[type=text],
+input[type="text"],
 select,
 textarea {
-    width: 138px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+  width: 138px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
 label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
 /* Form koder opsætning */
@@ -305,14 +294,13 @@ input[type=submit]:hover {
 #form-koder3,
 #form-koder4,
 #form-koder5 {
-    font-size: 13px;
-    background: #081225;
-    padding: 10px 20px 10px 10px;
-    color: #F15A22;
-    border: 5px solid #fff;
-    display: flex;
-    justify-content: space-evenly;
-
+  font-size: 13px;
+  background: #081225;
+  padding: 10px 20px 10px 10px;
+  color: #f15a22;
+  border: 5px solid #fff;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #form-1,
@@ -320,116 +308,113 @@ input[type=submit]:hover {
 #form-3,
 #form-4,
 #form-5 {
-    display: none;
+  display: none;
 }
 
 /*Typografi */
 .font1 {
-    font-family: "Rubik",
-        sans-serif;
-    font-family: 'Rubik',
-        sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 
-    font-size: 14px;
-    font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .font2 {
-    font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 
-    font-size: 14px;
-    font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /*Typografi koder */
 #displaytypo,
 #displaytypo2 {
-    display: none;
+  display: none;
 }
 
 .typokode {
-    background: #081225;
-    color: #F15A22;
-    padding: 10px 0px 10px 0px;
-    display: flex;
-    align-content: center;
-    font-size: 13px;
-    justify-content: space-evenly;
+  background: #081225;
+  color: #f15a22;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  align-content: center;
+  font-size: 13px;
+  justify-content: space-evenly;
 }
 
 .typokode2 {
-    background: #081225;
-    color: #F15A22;
-    padding: 10px 0px 10px 0px;
-    display: flex;
-    align-content: center;
-    font-size: 13px;
-    justify-content: space-evenly;
+  background: #081225;
+  color: #f15a22;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  align-content: center;
+  font-size: 13px;
+  justify-content: space-evenly;
 }
 
 /* Media queries start*/
 @media (max-width: 768px) {
-    .navi {
-        width: 0;
-        border: 0px;
-    }
+  .navi {
+    width: 0;
+    border: 0px;
+  }
 
-    .maini {
-        margin-left: 0px;
-        transition: ease 300ms;
-    }
+  .maini {
+    margin-left: 0px;
+    transition: ease 300ms;
+  }
 
-    .burger {
-        display: block;
-    }
+  .burger {
+    display: block;
+  }
 
-    .logobox {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .logobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .logo1,
-    .logo3 {
-        width: 100px;
-    }
+  .logo1,
+  .logo3 {
+    width: 100px;
+  }
 
-    .logo2 {
-        width: 450px;
-        height: 70px;
-    }
+  .logo2 {
+    width: 450px;
+    height: 70px;
+  }
 
-    .farvebox {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .farvebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .knappebox {
-        flex-direction: column;
-        align-items: center;
-    }
+  .knappebox {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .firstBtn,
-    .secondBtn,
-    .thirdBtn,
-    .fourthBtn {
-        margin-left: 50px;
-    }
+  .firstBtn,
+  .secondBtn,
+  .thirdBtn,
+  .fourthBtn {
+    margin-left: 50px;
+  }
 }
 
 /* Media queries slut*/
 
-
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-6px, 5px);
+  transform: rotate(-45deg) translate(-6px, 5px);
 }
 
 .toggle .line2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-6px, -4px);
-    background-color: orange;
+  transform: rotate(45deg) translate(-6px, -4px);
+  background-color: orange;
 }

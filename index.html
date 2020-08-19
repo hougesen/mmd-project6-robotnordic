@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loginside</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/js.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loginside</title>
-  <link rel="stylesheet" href="styles/style.css" />
-  <script src="scripts/js.js" defer></script>
-</head>
-
-<body>
-  <!--Fiktiv loginside med formål at illustrere hvordan en login side kan se ud. 
+  <body>
+    <!--Fiktiv loginside med formål at illustrere hvordan en login side kan se ud. 
     Login systemet fungere ved at den checker i et array om hvorvidt det indtaste login er korrekt, hvis det er korrekt bliver man sendt videre til dashboardet, hvis ikke vil der komme en besked om at inputtet er forkert. 
     Eftersom det kun er en prototype er der ikke taget højde for sikkerhed. I en færdig version ville vi lave et system hvor kodeordet blev krypteret samt hashed/salted.  -->
-  <div class="login">
-    <div class="loginLogo">
-      <img src="assets/images/rnlogo2.png" alt="robot nordic logo" />
+    <div class="login">
+      <div class="loginLogo">
+        <img src="assets/images/rnlogo2.png" alt="robot nordic logo" />
+      </div>
+      <div class="loginInput">
+        <form name="logind" id="loginForm">
+          <input
+            id="username"
+            type="text"
+            placeholder="Brugernavn"
+            name="username"
+            oninvalid="this.setCustomValidity('Indtast korrekt Brugernavn')"
+            required
+          />
+          <br />
+          <input
+            id="password"
+            type="password"
+            placeholder="Kodeord"
+            name="password"
+            oninvalid="this.setCustomValidity('Forkert kode')"
+            required
+          />
+          <br />
+          <button type="submit" onclick="loginCheck(this.form)" value="logind">
+            Login
+          </button>
+        </form>
+      </div>
     </div>
-    <div class="loginInput">
-      <form name="logind" id="loginForm">
-        <input id="username" type="text" placeholder="Brugernavn" name="username"
-          oninvalid="this.setCustomValidity('Indtast korrekt Brugernavn')" required />
-        <br>
-        <input id="password" type="password" placeholder="Kodeord" name="password"
-          oninvalid="this.setCustomValidity('Forkert kode')" required />
-        <br>
-        <button type="submit" onclick="loginCheck(this.form)" value="logind">
-          Login
-        </button>
-      </form>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>

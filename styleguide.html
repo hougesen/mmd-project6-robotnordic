@@ -1,333 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Styleguide Robot Nordic</title>
-    <link rel="stylesheet" type="text/css" href="styles/styleguide.css">
+    <link rel="stylesheet" type="text/css" href="styles/styleguide.css" />
     <script src="scripts/app.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Hamburgermenu-->
     <header>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </header>
     <!--Sidenav-->
     <nav class="navi">
-        <img src="assets/images/RN.png" alt="logo">
-        <a href="#intro">Introduktion</a>
-        <a href="#logo">Logo</a>
-        <a href="#farver">Farver</a>
-        <a href="#knapper">Knapper</a>
-        <a href="#forms">Forms</a>
-        <a href="#typografi">Typografi</a>
+      <img src="assets/images/RN.png" alt="logo" />
+      <a href="#intro">Introduktion</a>
+      <a href="#logo">Logo</a>
+      <a href="#farver">Farver</a>
+      <a href="#knapper">Knapper</a>
+      <a href="#forms">Forms</a>
+      <a href="#typografi">Typografi</a>
     </nav>
     <!--Styleguide indhold-->
     <main class="maini">
-        <h1 id="intro">Introduktion</h1>
-        <p>Denne styleguide er udarbejdet for virksomheden Robot Nordic af gruppe 2, som led i andet semester
-            eksamensprojekt multimedieproduktion UCL </p>
-        <hr>
-        <!--Sektion omkring de forskellig logo som bliver brugt-->
-        <h1 id="logo">Logo</h1>
-        <p>På klientens website gøres der brug af følgende logoer</p>
-        <div class="logobox">
-            <div>
-                <img src="assets/images/RN.png" alt="logo1" class="logo1">
-            </div>
-            <div>
-                <img src="assets/images/logo-horisontal-tekst.png" alt="logo2" class="logo2">
-            </div>
-            <div>
-                <img src="assets/images/logo-vertikal-tekst.png" alt="logo3" class="logo3">
-            </div>
-        </div>
-        <hr>
-        <!--Farvepaletten som er blevet brugt-->
-        <h1 id="farver">Farver</h1>
-        <p> Websitets farvepalet fremvist herunder i hexkoder</p>
-        <div class="farvebox">
-            <div class="farvekode1">
-                <p>#F15A22</p>
-            </div>
-            <div class="farvekode2">
-                <p>#212529</p>
-            </div>
-            <div class="farvekode3">
-                <p>#081225</p>
-            </div>
-            <div class="farvekode4">
-                <p>#EEEEEE</p>
-            </div>
-            <div class="farvekode5">
-                <p>#FFFFFF</p>
-            </div>
-        </div>
-        <hr>
-        <!--De forskellige knapper-->
-        <h1 id="knapper">Knapper</h1>
-        <div class="knappebox">
-            <div class="firstBtn">Læs mere</div>
-            <div class="secondBtn">Læs mere</div>
-            <div class="thirdBtn arrow">SE MERE</div>
-            <div class="fourthBtn">Log ind</div>
-        </div>
-        <button id="visskjul">Vis Html / Css</button>
-        <br>
-        <br>
-        <div id="displaykode">
-            <div id="knappekode">
-                <div class="Btn1kode">Html: &lt;div class="firstBtn"&gt;Læs mere&lt;/&gt; <br><br>Css: <br>.firstBtn
-                    {<br>
-                    background-color: #F15A22;<br>
-                    width: 140px;<br>
-                    height: 50px;<br>
-                    margin: 15px 25px 15px 10px;<br>
-                    color: #fff;<br>
-                    display: flex;<br>
-                    justify-content: center;<br>
-                    align-items: center;<br>
-                    cursor: pointer;<br>
-                    }
-                </div>
-                <div class="Btn2kode">Html: &lt;div class="secondBtn"&gt;Læs mere&lt;/&gt; <br><br>Css:<br>.secondBtn
-                    {<br>
-                    background-color: #F15A22;<br>
-                    border-radius: 3px;<br>
-                    width: 140px;<br>
-                    height: 50px;<br>
-                    margin: 15px 20px 15px 0px; <br>
-                    color: #fff;<br>
-                    display: flex;<br>
-                    justify-content: center;<br>
-                    align-items: center;<br>
-                    cursor: pointer; <br>
-                    }
-                </div>
-                <div class="Btn3kode">Html:&lt;div class="thirdBtn"&gt;Se mere&lt;/&gt; <br><br>Css:<br>.thirdBtn {<br>
-                    border: 2px solid #EEE;<br>
-                    border-radius: 100px;<br>
-                    box-shadow: black;<br>
-                    width: 140px;<br>
-                    height: 50px;<br>
-                    margin: 15px 35px;<br>
-                    color: #EEE;<br>
-                    display: flex;<br>
-                    justify-content: center;<br>
-                    align-items: center;<br>
-                    cursor: pointer;<br>
-                    }<br><br>
-                    .arrow{<br>
-                    color: #888888;<br>
-                    margin: 1em 0;<br>
-                    }<br>
-                    .arrow::after {<br>
-                    display: inline-block;<br>
-                    padding-left: 8px;<br>
-                    content: "\0279E";<br>
-                    -webkit-transition: transform 0.3s ease-out;<br>
-                    -moz-transition: transform 0.3s ease-out;<br>
-                    -ms-transition: transform 0.3s ease-out;<br>
-                    -o-transition: transform 0.3s ease-out;<br>
-                    transition: transform 0.3s ease-out;<br>
-                    } <br>
-                    .arrow:hover::after {<br>
-                    -webkit-transform: translateX(4px);<br>
-                    -moz-transform: translateX(4px);<br>
-                    -ms-transform: translateX(4px);<br>
-                    -o-transform: translateX(4px);<br>
-                    transform: translateX(4px);<br>
-                    }
-                </div>
-                <div class="Btn4kode">Html:&lt;div class="fourthBtn"&gt;Log ind&lt;/&gt; <br><br>Css:<br>.fourthBtn{<br>
-                    background-color: #F15A22;<br>
-                    border-radius: 3px;<br>
-                    width: 80px;<br>
-                    height: 40px;<br>
-                    margin: 20px 70px;<br>
-                    color: #fff;<br>
-                    display: flex;<br>
-                    justify-content: center;<br>
-                    align-items: center;<br>
-                    cursor: pointer;<br>
-                    }<br>
-                    .fourthBtn:hover{<br>
-                    background-color: #d86842;<br>
-                    }
-                </div>
-            </div>
-        </div>
-        <hr>
-        <!--Stylingen af de forskellige formularer-->
-        <h1 id="forms">Forms</h1>
+      <h1 id="intro">Introduktion</h1>
+      <p>
+        Denne styleguide er udarbejdet for virksomheden Robot Nordic af gruppe
+        2, som led i andet semester eksamensprojekt multimedieproduktion UCL
+      </p>
+      <hr />
+      <!--Sektion omkring de forskellig logo som bliver brugt-->
+      <h1 id="logo">Logo</h1>
+      <p>På klientens website gøres der brug af følgende logoer</p>
+      <div class="logobox">
         <div>
-            <label for="12">Mønster</label>
-            <input type="text" id="12" name="firstname" placeholder="mønster navn..">
-        </div>
-        <button id="visform">Vis Html/Css</button>
-        <br>
-        <br>
-        <div id="form-1">
-            <div id="form-koder1">
-                <div>Html:<br> &lt;label for="12"&gt;Mønster&lt;/label&gt;<br>
-                    &lt;input type="text" id="12" name="firstname" placeholder="mønster navn..&gt; <br><br>
-                </div>
-                <div>Css:<br>label{<br>padding: 12px 12px 12px 0px;<br>display: inline-block;<br>}<br> input[type=text],
-                    select, textarea {<br>
-                    width: 138px;<br>
-                    padding: 12px;<br>
-                    border: 1px solid #ccc;<br>
-                    border-radius: 4px;<br>
-                    resize: vertical;<br>
-                    }<br>
-                </div>
-            </div>
+          <img src="assets/images/RN.png" alt="logo1" class="logo1" />
         </div>
         <div>
-            <label for="Paller">Paller</label>
-            <select id="Paller" name="paller">
-                <option value="Palle 1">Palle 1</option>
-                <option value="Palle 2">Palle 2</option>
-                <option value="Palle 3">Palle 3</option>
-                <option value="Palle 4">Palle 4</option>
-                <option value="Palle 5">Palle 5</option>
-                <option value="Palle 6">Palle 6</option>
-                <option value="Palle 7">Palle 7</option>
-                <option value="Palle 8">Palle 8</option>
-                <option value="Palle 9">Palle 9</option>
-            </select>
-        </div>
-        <button id="visform2">Vis Html/Css</button>
-        <br>
-        <br>
-        <div id="form-2">
-            <div id="form-koder2">
-                <div>Html: <br> &lt;label for="Paller"&gt; Paller &lt;/label&gt;<br>&lt;select id="Paller"
-                    name="paller"&gt;<br>
-                    &lt;option value="Palle 1"&gt; Palle 1&lt;/option&gt;<br>&lt;option value="Palle 2"&gt; Palle
-                    2&lt;/option&gt;<br>
-                    &lt;option value="Palle 3"&gt; Palle 3&lt;/option&gt;<br>
-                    &lt;option value="Palle 4"&gt; Palle 4&lt;/option&gt;<br>
-                    &lt;option value="Palle 5"&gt; Palle 5&lt;/option&gt;<br>
-                    &lt;option value="Palle 6"&gt; Palle 6&lt;/option&gt;<br>
-                    &lt;option value="Palle 7"&gt; Palle 7&lt;/option&gt;<br>
-                    &lt;option value="Palle 8"&gt; Palle 8&lt;/option&gt;<br>
-                    &lt;option value="Palle 9"&gt; Palle 9&lt;/option&gt;<br>
-                    &lt;/select&gt;<br><br>
-                </div>
-                <div>Css:<br>label{<br>padding: 12px 12px 12px 0px;<br>display: inline-block;<br>}
-                </div>
-            </div>
+          <img
+            src="assets/images/logo-horisontal-tekst.png"
+            alt="logo2"
+            class="logo2"
+          />
         </div>
         <div>
-            <label for="myChoice1">Center load<br />
-                <input type="radio" id="myChoice1" name="myChoice" value="1" />
-            </label>
+          <img
+            src="assets/images/logo-vertikal-tekst.png"
+            alt="logo3"
+            class="logo3"
+          />
         </div>
-        <button id="visform3">Vis Html/Css</button>
-        <br>
-        <br>
-        <!--brug denne knap-->
-        <div id="form-3">
-            <!--brug dette id -->
-            <div id="form-koder3">
-                <div>Html:<br>&lt;label for="myChoice1"&gt;Center load&lt;br /&gt; <br>&lt;input type="radio"
-                    id="myChoice1" name="myChoice" value="1"/&gt;<br>&lt;/label&gt;br><br><br>
-                </div>
-                <div>Css:<br>label{<br>padding: 12px 12px 12px 0px;<br>display: inline- block;<br>}
-                </div>
-            </div>
+      </div>
+      <hr />
+      <!--Farvepaletten som er blevet brugt-->
+      <h1 id="farver">Farver</h1>
+      <p>Websitets farvepalet fremvist herunder i hexkoder</p>
+      <div class="farvebox">
+        <div class="farvekode1">
+          <p>#F15A22</p>
         </div>
-        <div>
-            <label for="myChoice2">Bind lag<br />
-                <input type="radio" id="myChoice2" name="myChoice" value="1" />
-            </label>
+        <div class="farvekode2">
+          <p>#212529</p>
         </div>
-        <button id="visform4">Vis Html/Css</button>
-        <br>
-        <br>
-        <!--brug denne knap-->
-        <div id="form-4">
-            <div id="form-koder4">
-                <div>Html:<br>&lt;label for="mychoice2"&gt;Bind lag&lt;br /&gt;<br>&lt;input type="radio" id="myChoice2"
-                    name="myChoice" value="1"/&gt;<br>&lt;/label&gt;<br><br></div>
-                <div>Css:<br>label{<br>padding: 12px 12px 12px 0px;<br>display: inline-block;<br>}
-                </div>
-            </div>
+        <div class="farvekode3">
+          <p>#081225</p>
         </div>
-        <div>
-            <label for="Antal-produkter">Antal produkter</label>
-            <input type="number" id="Antal-produkter" name="someid" onkeypress="return isNumberKey(event)" />
+        <div class="farvekode4">
+          <p>#EEEEEE</p>
         </div>
-        <button id="visform5">Vis Html/Css</button>
-        <br>
-        <br>
-        <!--brug denne knap-->
-        <div id="form-5">
-            <div id="form-koder5">
-                <div>Html:<br>&lt;label for="Antal produkter"&gt;Antal produkter&lt;/label&gt;<br>&lt;input
-                    type="number" id="Antal-produkter" name="someid" onkeypress="returnisNumberKey(event)"/&gt;<br><br>
-                </div>
-                <div>Css:<br>label{<br>padding: 12px 12px 12px 0px;<br>display: inline-block;<br>}
-                </div>
-            </div>
+        <div class="farvekode5">
+          <p>#FFFFFF</p>
         </div>
-        <hr>
-        <!--Typografi-->
-        <h1 id="typografi">Typografi</h1>
-        <h2>Rubik</h2>
-        <div class="font1">
-            <h3 class="rubik">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit
-                debitis qui aspernatur ea est, pariatur dolorum laborum minus
-                nobis esse, aliquid adipisci nihil! Nesciunt earum excepturi est
-                numquam incidunt!
-            </h3>
+      </div>
+      <hr />
+      <!--De forskellige knapper-->
+      <h1 id="knapper">Knapper</h1>
+      <div class="knappebox">
+        <div class="firstBtn">Læs mere</div>
+        <div class="secondBtn">Læs mere</div>
+        <div class="thirdBtn arrow">SE MERE</div>
+        <div class="fourthBtn">Log ind</div>
+      </div>
+      <button id="visskjul">Vis Html / Css</button>
+      <br />
+      <br />
+      <div id="displaykode">
+        <div id="knappekode">
+          <div class="Btn1kode">
+            Html: &lt;div class="firstBtn"&gt;Læs mere&lt;/&gt; <br /><br />Css:
+            <br />.firstBtn {<br />
+            background-color: #F15A22;<br />
+            width: 140px;<br />
+            height: 50px;<br />
+            margin: 15px 25px 15px 10px;<br />
+            color: #fff;<br />
+            display: flex;<br />
+            justify-content: center;<br />
+            align-items: center;<br />
+            cursor: pointer;<br />
+            }
+          </div>
+          <div class="Btn2kode">
+            Html: &lt;div class="secondBtn"&gt;Læs mere&lt;/&gt;
+            <br /><br />Css:<br />.secondBtn {<br />
+            background-color: #F15A22;<br />
+            border-radius: 3px;<br />
+            width: 140px;<br />
+            height: 50px;<br />
+            margin: 15px 20px 15px 0px; <br />
+            color: #fff;<br />
+            display: flex;<br />
+            justify-content: center;<br />
+            align-items: center;<br />
+            cursor: pointer; <br />
+            }
+          </div>
+          <div class="Btn3kode">
+            Html:&lt;div class="thirdBtn"&gt;Se mere&lt;/&gt;
+            <br /><br />Css:<br />.thirdBtn {<br />
+            border: 2px solid #EEE;<br />
+            border-radius: 100px;<br />
+            box-shadow: black;<br />
+            width: 140px;<br />
+            height: 50px;<br />
+            margin: 15px 35px;<br />
+            color: #EEE;<br />
+            display: flex;<br />
+            justify-content: center;<br />
+            align-items: center;<br />
+            cursor: pointer;<br />
+            }<br /><br />
+            .arrow{<br />
+            color: #888888;<br />
+            margin: 1em 0;<br />
+            }<br />
+            .arrow::after {<br />
+            display: inline-block;<br />
+            padding-left: 8px;<br />
+            content: "\0279E";<br />
+            -webkit-transition: transform 0.3s ease-out;<br />
+            -moz-transition: transform 0.3s ease-out;<br />
+            -ms-transition: transform 0.3s ease-out;<br />
+            -o-transition: transform 0.3s ease-out;<br />
+            transition: transform 0.3s ease-out;<br />
+            } <br />
+            .arrow:hover::after {<br />
+            -webkit-transform: translateX(4px);<br />
+            -moz-transform: translateX(4px);<br />
+            -ms-transform: translateX(4px);<br />
+            -o-transform: translateX(4px);<br />
+            transform: translateX(4px);<br />
+            }
+          </div>
+          <div class="Btn4kode">
+            Html:&lt;div class="fourthBtn"&gt;Log ind&lt;/&gt;
+            <br /><br />Css:<br />.fourthBtn{<br />
+            background-color: #F15A22;<br />
+            border-radius: 3px;<br />
+            width: 80px;<br />
+            height: 40px;<br />
+            margin: 20px 70px;<br />
+            color: #fff;<br />
+            display: flex;<br />
+            justify-content: center;<br />
+            align-items: center;<br />
+            cursor: pointer;<br />
+            }<br />
+            .fourthBtn:hover{<br />
+            background-color: #d86842;<br />
+            }
+          </div>
         </div>
-        <button id="visskjul2">Vis Html/Css</button>
-        <br>
-        <br>
-        <div id="displaytypo">
-            <div class="typokode">
-                <div>Html: &lt;h3 class="font1"&gt;
-                </div>
-                <br><br>
-                <div> Css:.font1{<br>
-                    font-family: 'Rubik', sans-serif;<br>
-                    font-size: 14px;<br>
-                    font-weight: 500;<br>
-                    }
-                </div>
-            </div>
+      </div>
+      <hr />
+      <!--Stylingen af de forskellige formularer-->
+      <h1 id="forms">Forms</h1>
+      <div>
+        <label for="12">Mønster</label>
+        <input
+          type="text"
+          id="12"
+          name="firstname"
+          placeholder="mønster navn.."
+        />
+      </div>
+      <button id="visform">Vis Html/Css</button>
+      <br />
+      <br />
+      <div id="form-1">
+        <div id="form-koder1">
+          <div>
+            Html:<br />
+            &lt;label for="12"&gt;Mønster&lt;/label&gt;<br />
+            &lt;input type="text" id="12" name="firstname" placeholder="mønster
+            navn..&gt; <br /><br />
+          </div>
+          <div>
+            Css:<br />label{<br />padding: 12px 12px 12px 0px;<br />display:
+            inline-block;<br />}<br />
+            input[type=text], select, textarea {<br />
+            width: 138px;<br />
+            padding: 12px;<br />
+            border: 1px solid #ccc;<br />
+            border-radius: 4px;<br />
+            resize: vertical;<br />
+            }<br />
+          </div>
         </div>
-        <div class="font2">
-            <h2>Titillium web</h2>
-            <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit
-                debitis qui aspernatur ea est, pariatur dolorum laborum minus
-                nobis esse, aliquid adipisci nihil! Nesciunt earum excepturi est
-                numquam incidunt!
-            </h3>
+      </div>
+      <div>
+        <label for="Paller">Paller</label>
+        <select id="Paller" name="paller">
+          <option value="Palle 1">Palle 1</option>
+          <option value="Palle 2">Palle 2</option>
+          <option value="Palle 3">Palle 3</option>
+          <option value="Palle 4">Palle 4</option>
+          <option value="Palle 5">Palle 5</option>
+          <option value="Palle 6">Palle 6</option>
+          <option value="Palle 7">Palle 7</option>
+          <option value="Palle 8">Palle 8</option>
+          <option value="Palle 9">Palle 9</option>
+        </select>
+      </div>
+      <button id="visform2">Vis Html/Css</button>
+      <br />
+      <br />
+      <div id="form-2">
+        <div id="form-koder2">
+          <div>
+            Html: <br />
+            &lt;label for="Paller"&gt; Paller &lt;/label&gt;<br />&lt;select
+            id="Paller" name="paller"&gt;<br />
+            &lt;option value="Palle 1"&gt; Palle 1&lt;/option&gt;<br />&lt;option
+            value="Palle 2"&gt; Palle 2&lt;/option&gt;<br />
+            &lt;option value="Palle 3"&gt; Palle 3&lt;/option&gt;<br />
+            &lt;option value="Palle 4"&gt; Palle 4&lt;/option&gt;<br />
+            &lt;option value="Palle 5"&gt; Palle 5&lt;/option&gt;<br />
+            &lt;option value="Palle 6"&gt; Palle 6&lt;/option&gt;<br />
+            &lt;option value="Palle 7"&gt; Palle 7&lt;/option&gt;<br />
+            &lt;option value="Palle 8"&gt; Palle 8&lt;/option&gt;<br />
+            &lt;option value="Palle 9"&gt; Palle 9&lt;/option&gt;<br />
+            &lt;/select&gt;<br /><br />
+          </div>
+          <div>
+            Css:<br />label{<br />padding: 12px 12px 12px 0px;<br />display:
+            inline-block;<br />}
+          </div>
         </div>
-        <button id="visskjul3">Vis Html/Css</button>
-        <div id="displaytypo2">
-            <div class="typokode2">
-                <div>Html:&lt;h3 class="font2"&gt;</div><br><br>
-                <div>Css:.font2{<br>
-                    font-family: 'Titillium Web', sans-serif;<br>
-                    font-size: 14px;<br>
-                    font-weight: 500;<br>
-                    }
-                </div>
-            </div>
+      </div>
+      <div>
+        <label for="myChoice1"
+          >Center load<br />
+          <input type="radio" id="myChoice1" name="myChoice" value="1" />
+        </label>
+      </div>
+      <button id="visform3">Vis Html/Css</button>
+      <br />
+      <br />
+      <!--brug denne knap-->
+      <div id="form-3">
+        <!--brug dette id -->
+        <div id="form-koder3">
+          <div>
+            Html:<br />&lt;label for="myChoice1"&gt;Center load&lt;br /&gt;
+            <br />&lt;input type="radio" id="myChoice1" name="myChoice"
+            value="1"/&gt;<br />&lt;/label&gt;br><br /><br />
+          </div>
+          <div>
+            Css:<br />label{<br />padding: 12px 12px 12px 0px;<br />display:
+            inline- block;<br />}
+          </div>
         </div>
-    </main>
-</body>
+      </div>
+      <div>
+        <label for="myChoice2"
+          >Bind lag<br />
+          <input type="radio" id="myChoice2" name="myChoice" value="1" />
+        </label>
+      </div>
+      <button id="visform4">Vis Html/Css</button>
+      <br />
+      <br />
+      <!--brug denne knap-->
+      <div id="form-4">
+        <div id="form-koder4">
+          <div>
+            Html:<br />&lt;label for="mychoice2"&gt;Bind lag&lt;br /&gt;<br />&lt;input
+            type="radio" id="myChoice2" name="myChoice" value="1"/&gt;<br />&lt;/label&gt;<br /><br />
+          </div>
 
+          <div>
+            Css:<br />label{<br />padding: 12px 12px 12px 0px;<br />display:
+            inline-block;<br />}
+          </div>
+        </div>
+      </div>
+      <div>
+        <label for="Antal-produkter">Antal produkter</label>
+        <input
+          type="number"
+          id="Antal-produkter"
+          name="someid"
+          onkeypress="return isNumberKey(event)"
+        />
+      </div>
+      <button id="visform5">Vis Html/Css</button>
+      <br />
+      <br />
+      <!--brug denne knap-->
+      <div id="form-5">
+        <div id="form-koder5">
+          <div>
+            Html:<br />&lt;label for="Antal produkter"&gt;Antal
+            produkter&lt;/label&gt;<br />&lt;input type="number"
+            id="Antal-produkter" name="someid"
+            onkeypress="returnisNumberKey(event)"/&gt;<br /><br />
+          </div>
+          <div>
+            Css:<br />label{<br />padding: 12px 12px 12px 0px;<br />display:
+            inline-block;<br />}
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!--Typografi-->
+      <h1 id="typografi">Typografi</h1>
+      <h2>Rubik</h2>
+      <div class="font1">
+        <h3 class="rubik">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit
+          debitis qui aspernatur ea est, pariatur dolorum laborum minus nobis
+          esse, aliquid adipisci nihil! Nesciunt earum excepturi est numquam
+          incidunt!
+        </h3>
+      </div>
+      <button id="visskjul2">Vis Html/Css</button>
+      <br />
+      <br />
+      <div id="displaytypo">
+        <div class="typokode">
+          <div>Html: &lt;h3 class="font1"&gt;</div>
+          <br /><br />
+          <div>
+            Css:.font1{<br />
+            font-family: 'Rubik', sans-serif;<br />
+            font-size: 14px;<br />
+            font-weight: 500;<br />
+            }
+          </div>
+        </div>
+      </div>
+      <div class="font2">
+        <h2>Titillium web</h2>
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit
+          debitis qui aspernatur ea est, pariatur dolorum laborum minus nobis
+          esse, aliquid adipisci nihil! Nesciunt earum excepturi est numquam
+          incidunt!
+        </h3>
+      </div>
+      <button id="visskjul3">Vis Html/Css</button>
+      <div id="displaytypo2">
+        <div class="typokode2">
+          <div>Html:&lt;h3 class="font2"&gt;</div>
+          <br /><br />
+          <div>
+            Css:.font2{<br />
+            font-family: 'Titillium Web', sans-serif;<br />
+            font-size: 14px;<br />
+            font-weight: 500;<br />
+            }
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
